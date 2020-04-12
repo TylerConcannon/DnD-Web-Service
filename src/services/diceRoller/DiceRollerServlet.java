@@ -26,6 +26,9 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 import java.beans.XMLEncoder;
+import java.io.BufferedReader;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class DiceRollerServlet extends HttpServlet
 {
@@ -39,8 +42,20 @@ public class DiceRollerServlet extends HttpServlet
         sendResponse(request, response, rolls);
     }
     
-        public void doPost(HttpServletRequest request, HttpServletResponse response) {
-        throw new HTTPException(HttpServletResponse.SC_METHOD_NOT_ALLOWED);
+    public void doPost(HttpServletRequest request, HttpServletResponse response) {
+        System.out.println(request.getHeader("Content-type"));
+        try {
+            StringBuilder buffer = new StringBuilder();
+            BufferedReader reader = request.getReader();
+            String line;
+            while ((line = reader.readLine()) != null)
+            {
+                buffer.append(line);
+            }
+            System.out.println(buffer.toString());
+        } catch (IOException ex) {
+            Logger.getLogger(DiceRollerServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     public void doDelete(HttpServletRequest request, HttpServletResponse response) {
