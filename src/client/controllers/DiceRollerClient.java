@@ -14,6 +14,13 @@ import java.io.InputStreamReader;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import com.google.gson.*;
+import client.models.*;
+import org.apache.hc.client5.http.classic.HttpClient;
+import org.apache.hc.client5.http.classic.methods.HttpPost;
+import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
+import org.apache.hc.core5.http.HttpResponse;
+import org.apache.hc.core5.http.io.entity.StringEntity;
 
 class DiceRollerClient {
     private static final String url = "http://localhost:8080/diceRoller/diceRoller";
@@ -25,11 +32,35 @@ class DiceRollerClient {
     private void sendRequest() {
         try {
             HttpURLConnection conn = null;
-            String rolls = "testclient";
-            conn = getConnection(url + "?rolls=" + rolls, "GET");
-            conn.setRequestProperty("accept", "text/plain");
-            conn.connect();
-            getResponse(conn);
+            HttpClient client = HttpClientBuilder.create().build();
+            
+            Gson payload = new Gson();
+            DiceRoll roll = new DiceRoll();
+            
+            ArrayList<Integer> roll1 = new ArrayList<>();
+            roll1.add(6);
+            roll1.add(4);
+            
+            ArrayList<Integer> roll2 = new ArrayList<>();
+            roll2.add(8);
+            roll2.add(4);
+            
+            ArrayList<List<Integer>> rolls = new ArrayList<>(); 
+            rolls.add(roll1);
+            rolls.add(roll2);
+            
+            HttpPost post = new HttpPost(url);
+            StringEntity entity = new StringEntity(payload.toJson(rolls));
+            post.setEntity(entity);
+            post.setHeader("Content-type", "application/json");
+            HttpResponse response = client.execute(post);
+            int i = 0;
+            
+//            conn = getConnection(url, "POST");
+//            conn.setRequestProperty("accept", "text/plain");
+//
+//            conn.connect();
+//            getResponse(conn);
         }
         catch(NullPointerException e) { System.err.println(e); } catch (IOException ex) {
             Logger.getLogger(DiceRollerClient.class.getName()).log(Level.SEVERE, null, ex);

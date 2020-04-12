@@ -14,7 +14,11 @@ import java.util.List;
  */
 public class Roll {
     private int total;
-    private List<List<Integer>> rolls = new ArrayList<>();
+    private List<List<Integer>> rolls;
+    
+    public Roll(){
+        rolls = new ArrayList<>();
+    }
     
     public int getTotal() {
         return total;
