@@ -10,6 +10,9 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# Local project config
+nbproject/
+
 # Package Files #
 *.war
 *.nar
