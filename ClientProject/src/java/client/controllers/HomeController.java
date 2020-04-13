@@ -39,7 +39,7 @@ public class HomeController {
     public ModelAndView index()
     {
         sendPost();
-        sendGet();
+        //sendGet();
         return new ModelAndView("index");
     }
 

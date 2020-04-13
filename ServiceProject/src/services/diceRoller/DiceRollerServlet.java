@@ -58,15 +58,22 @@ public class DiceRollerServlet extends HttpServlet
             Roll roll = gson.fromJson(buffer.toString(), Roll.class);
             System.out.println(roll);
             List<List<Integer>> rolls = roll.getRolls();
+          
             System.out.println(rolls.toString());
-//            for (List<Integer> list : rolls)
-//            {
-//                for (Integer i : list)
-//                {
-//                    System.out.println(i + " ");
-//                }
-//                System.out.println("\n");
-//            }
+            
+            DiceRoller diceRoller = new DiceRoller();
+            roll = diceRoller.rollDice(rolls);
+            rolls = roll.getRolls();
+            
+            for (List<Integer> list : rolls)
+            {
+                for (Integer i : list)
+                {
+                    System.out.println(i + " ");
+                    System.out.println("\n");
+                }
+            }
+
             
         } catch (IOException ex) {
             Logger.getLogger(DiceRollerServlet.class.getName()).log(Level.SEVERE, null, ex);
