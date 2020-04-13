@@ -30,6 +30,7 @@ import java.beans.XMLEncoder;
 import java.io.BufferedReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.servlet.annotation.WebServlet;
 
 public class DiceRollerServlet extends HttpServlet
 {
@@ -39,7 +40,6 @@ public class DiceRollerServlet extends HttpServlet
     
     public void doGet(HttpServletRequest request, HttpServletResponse response){
         String rolls = request.getParameter("rolls");
-        
         sendResponse(request, response, rolls);
     }
     
