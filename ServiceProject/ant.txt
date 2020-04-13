@@ -1,0 +1,9 @@
+  <target depends="init,compile" name="RunHttpServlet">
+    <!--<copy .class files to folder WEB-INF/classes/>-->
+    <mkdir dir="./build/classes/temp/ch04/rc"/>
+    <copy file="./build/classes/ch04/rc/RabbitCounterServlet.class"
+tofile="./build/classes/temp/ch04/rc/RabbitCounterServlet.class"/>
+    <war webxml="./src/ch04/rc/web.xml" destfile="./rc.war">
+        <classes dir="./build/classes/temp"/>
+    </war>
+  </target>
