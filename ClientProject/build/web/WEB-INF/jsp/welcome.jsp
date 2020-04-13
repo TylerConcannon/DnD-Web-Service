@@ -1,8 +1,4 @@
-<%-- 
-    Document   : welcome.jsp
-    Created on : Apr 12, 2020, 9:23:37 PM
-    Author     : larry
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

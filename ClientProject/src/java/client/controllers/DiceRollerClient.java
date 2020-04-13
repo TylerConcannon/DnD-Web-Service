@@ -23,8 +23,9 @@ import org.apache.hc.core5.http.HttpResponse;
 import org.apache.hc.core5.http.io.entity.StringEntity;
 
 class DiceRollerClient {
-    private static final String url = "http://localhost:8080/diceRoller/diceRoller";
-
+    private static final String url = "http://localhost:8084/ServiceProject/diceRoller";
+    private static final String deployUrl = "http://localhost:8080/ServiceProject/diceRoller";
+    
     public static void main(String[ ] args) {
         new DiceRollerClient().sendRequest();
     }
@@ -49,8 +50,12 @@ class DiceRollerClient {
             rolls.add(roll1);
             rolls.add(roll2);
             
+            roll.setRolls(rolls);
+            
+            
+            
             HttpPost post = new HttpPost(url);
-            StringEntity entity = new StringEntity(payload.toJson(rolls));
+            StringEntity entity = new StringEntity(payload.toJson(roll));
             post.setEntity(entity);
             post.setHeader("Content-type", "application/json");
             HttpResponse response = client.execute(post);
