@@ -13,6 +13,9 @@
 # Local project config
 nbproject/
 
+# build directories -- populated when built locally
+build/
+
 # Package Files #
 *.war
 *.nar
