@@ -3,3 +3,9 @@
 127.0.0.1 - - [12/Apr/2020:00:42:59 -0400] "POST /diceRoller/diceRoller HTTP/1.1" 200 -
 127.0.0.1 - - [12/Apr/2020:00:43:13 -0400] "POST /diceRoller/diceRoller HTTP/1.1" 200 -
 127.0.0.1 - - [12/Apr/2020:00:47:48 -0400] "POST /diceRoller/diceRoller HTTP/1.1" 200 -
+127.0.0.1 - - [12/Apr/2020:19:41:41 -0400] "POST /diceRoller/diceRoller HTTP/1.1" 500 2303
+127.0.0.1 - - [12/Apr/2020:19:42:34 -0400] "POST /diceRoller/diceRoller HTTP/1.1" 500 2303
+127.0.0.1 - - [12/Apr/2020:19:47:52 -0400] "POST /diceRoller/diceRoller HTTP/1.1" 500 1758
+127.0.0.1 - - [12/Apr/2020:19:49:33 -0400] "POST /diceRoller/diceRoller HTTP/1.1" 500 1758
+127.0.0.1 - - [12/Apr/2020:19:49:37 -0400] "POST /diceRoller/diceRoller HTTP/1.1" 500 1758
+127.0.0.1 - - [12/Apr/2020:21:46:14 -0400] "POST /diceRoller/diceRoller HTTP/1.1" 500 2303
