@@ -24,6 +24,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 import java.beans.XMLEncoder;
 import java.io.BufferedReader;
+import java.io.PrintWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.http.HttpServlet;
@@ -47,40 +48,8 @@ public class DiceRollerServlet extends HttpServlet {
     }
     
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
-        System.out.println(request.getHeader("Content-type"));
-        try {
-            StringBuilder buffer = new StringBuilder();
-            BufferedReader reader = request.getReader();
-            String line;
-            while ((line = reader.readLine()) != null)
-            {
-                buffer.append(line);
-            }
-            
-            Gson gson = new Gson();
-            Roll roll = gson.fromJson(buffer.toString(), Roll.class);
-            
-            System.out.println(roll);
-            List<List<Integer>> rolls = roll.getRolls();
-            System.out.println(rolls.toString());
-            
-            
-            DiceRoller roller = new DiceRoller();
-            roll = roller.rollDice(rolls);
-            rolls = roll.getRolls();
-            
-            for (List<Integer> list : rolls)
-            {
-                for (Integer i : list)
-                {
-                    System.out.println(i + " ");
-                }
-                System.out.println("\n");
-            }
-            
-        } catch (IOException ex) {
-            Logger.getLogger(DiceRollerServlet.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Roll roll = getRoll(request);
+        sendRollJson(response, roll);
     }
 
     public void doDelete(HttpServletRequest request, HttpServletResponse response) {
@@ -113,6 +82,59 @@ public class DiceRollerServlet extends HttpServlet {
             sendHtml(response, data);
         else
             sendXml(response, data);
+    }
+    
+    private Roll getRoll(HttpServletRequest request)
+    {
+        Gson gson = new Gson();
+        String content = getBody(request);
+        Roll roll = gson.fromJson(content, Roll.class);
+
+        System.out.println(roll);
+        List<List<Integer>> rolls = roll.getRolls();
+        System.out.println(rolls.toString());
+
+
+        DiceRoller roller = new DiceRoller();
+        roll = roller.rollDice(rolls);
+        //rolls = roll.getRolls();
+        return roll;
+    }
+    
+    private String getBody(HttpServletRequest request)
+    {
+        StringBuilder buffer = new StringBuilder();
+        BufferedReader reader;
+        String content = "";
+        try {
+            reader = request.getReader();
+            String line;
+            while ((line = reader.readLine()) != null)
+            {
+                buffer.append(line);
+            }
+            content = buffer.toString();
+            
+        } catch (IOException ex) {
+            Logger.getLogger(DiceRollerServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return content;
+    }
+    
+    private void sendRollJson(HttpServletResponse response, Roll roll)
+    {
+        Gson gson = new Gson();
+        String rollJson = gson.toJson(roll);
+        try {
+            PrintWriter out = response.getWriter();
+            response.setContentType("application/json");
+            response.setCharacterEncoding("UTF-8");
+            out.print(rollJson);
+            out.flush();
+                          
+        } catch (IOException ex) {
+            Logger.getLogger(DiceRollerServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
         private void sendXml(HttpServletResponse response, Object data) {

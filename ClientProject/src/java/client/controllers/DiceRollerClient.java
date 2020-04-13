@@ -16,11 +16,19 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import com.google.gson.*;
 import client.models.*;
+import java.io.InputStream;
 import org.apache.hc.client5.http.classic.HttpClient;
+import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.classic.methods.HttpPost;
 import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
+import org.apache.hc.core5.http.ClassicHttpResponse;
+import org.apache.hc.core5.http.HttpEntity;
 import org.apache.hc.core5.http.HttpResponse;
+import org.apache.hc.core5.http.io.entity.EntityUtils;
 import org.apache.hc.core5.http.io.entity.StringEntity;
+
+
+
 
 class DiceRollerClient {
     private static final String url = "http://localhost:8084/ServiceProject/diceRoller";
@@ -31,7 +39,6 @@ class DiceRollerClient {
     }
 
     private void sendRequest() {
-        try {
             HttpURLConnection conn = null;
             HttpClient client = HttpClientBuilder.create().build();
             
@@ -51,25 +58,37 @@ class DiceRollerClient {
             rolls.add(roll2);
             
             roll.setRolls(rolls);
-            
-            
-            
-            HttpPost post = new HttpPost(url);
-            StringEntity entity = new StringEntity(payload.toJson(roll));
-            post.setEntity(entity);
-            post.setHeader("Content-type", "application/json");
-            HttpResponse response = client.execute(post);
-            int i = 0;
+
+            try {
+                 HttpPost post = new HttpPost(url);
+                 StringEntity entity = new StringEntity(payload.toJson(roll));
+                 post.setEntity(entity);
+                 post.setHeader("Content-type", "application/json");
+
+                 ClassicHttpResponse res = (ClassicHttpResponse) client.execute(post);
+                 HttpResponse response = client.execute(post);
+                 HttpEntity ent = res.getEntity();
+                 String str = EntityUtils.toString(ent, "UTF-8");
+                 
+                 Gson gson = new Gson();
+                 DiceRoll serviceRoll = gson.fromJson(str, DiceRoll.class);
+                 
+                 int i = 0;
+            }
+            catch (Exception e)
+            {
+                
+            }
+           // HttpPost post = new HttpPost(url);
+
             
 //            conn = getConnection(url, "POST");
 //            conn.setRequestProperty("accept", "text/plain");
 //
 //            conn.connect();
 //            getResponse(conn);
-        }
-        catch(NullPointerException e) { System.err.println(e); } catch (IOException ex) {
-            Logger.getLogger(DiceRollerClient.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        
+
     }
 
     private HttpURLConnection getConnection(String url_string, String verb) {
