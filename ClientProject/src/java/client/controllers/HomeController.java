@@ -10,6 +10,7 @@ package client.controllers;
  * @author larry
  */
 import client.models.DiceRoll;
+import client.models.Message;
 import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -28,7 +29,7 @@ import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
 import org.apache.hc.core5.http.HttpResponse;
 import org.apache.hc.core5.http.io.entity.StringEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -39,7 +40,7 @@ public class HomeController {
     public ModelAndView index()
     {
         sendPost();
-        //sendGet();
+        sendGet();
         return new ModelAndView("index");
     }
 
@@ -51,7 +52,8 @@ public class HomeController {
         return new ModelAndView("welcome", "message", message);
     }
     
-    private void sendGet()
+    @RequestMapping("/roll")
+    private ModelAndView sendGet()
     {
         HttpClient client = HttpClientBuilder.create().build();
 
@@ -62,6 +64,25 @@ public class HomeController {
         } catch (IOException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        DiceRoll diceRolls = new DiceRoll();
+        
+      
+        ArrayList<Integer> roll1 = new ArrayList<>();
+        roll1.add(6);
+        roll1.add(4);
+
+        ArrayList<Integer> roll2 = new ArrayList<>();
+        roll2.add(8);
+        roll2.add(4);
+
+        ArrayList<List<Integer>> rolls = new ArrayList<>(); 
+        rolls.add(roll1);
+        rolls.add(roll2);
+        
+        diceRolls.setRolls(rolls);
+        
+        ModelAndView mv = new ModelAndView("roll", "model", diceRolls);
+        return mv;
     }
     
     private void sendPost() {

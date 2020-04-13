@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        <a href="/roll-module/roll">Test GET</a>
+        <a href="roll.html">Test GET</a>
 
         <p>Hello! This is the default welcome page for a Spring Web MVC project.</p>
         <p><i>To display a different welcome page for this project, modify</i>
