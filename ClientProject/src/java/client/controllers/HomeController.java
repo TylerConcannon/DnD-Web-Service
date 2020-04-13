@@ -34,7 +34,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
-    private static final String url = "http://localhost:8080/diceRoller/diceRoller";
+    private static final String url = "http://localhost:8084/ServiceProject/diceRoller";
 
     @RequestMapping("/index")
     public ModelAndView index()
