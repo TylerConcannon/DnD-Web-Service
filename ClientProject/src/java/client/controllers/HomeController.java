@@ -38,7 +38,7 @@ public class HomeController {
     @RequestMapping("/index")
     public ModelAndView index()
     {
-        //sendPost();
+        sendPost();
         sendGet();
         return new ModelAndView("index");
     }

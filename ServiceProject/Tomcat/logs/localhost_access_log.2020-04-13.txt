@@ -18,3 +18,6 @@
 127.0.0.1 - - [13/Apr/2020:12:02:16 -0400] "GET /diceRoller/diceRoller?rolls=test HTTP/1.1" 200 14
 127.0.0.1 - - [13/Apr/2020:12:02:27 -0400] "GET /diceRoller/diceRoller?rolls=test HTTP/1.1" 200 14
 127.0.0.1 - - [13/Apr/2020:12:23:25 -0400] "GET /diceRoller/diceRoller?rolls=test HTTP/1.1" 200 14
+127.0.0.1 - - [13/Apr/2020:14:03:49 -0400] "GET /diceRoller/diceRoller?rolls=test HTTP/1.1" 200 14
+127.0.0.1 - - [13/Apr/2020:14:04:22 -0400] "POST /diceRoller/diceRoller HTTP/1.1" 500 2303
+127.0.0.1 - - [13/Apr/2020:14:04:22 -0400] "GET /diceRoller/diceRoller?rolls=test HTTP/1.1" 200 14
