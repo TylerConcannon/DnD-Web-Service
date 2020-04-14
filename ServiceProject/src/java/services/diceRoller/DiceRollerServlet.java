@@ -42,14 +42,19 @@ public class DiceRollerServlet extends HttpServlet {
     }
     
     public void doGet(HttpServletRequest request, HttpServletResponse response){
-        String rolls = request.getParameter("rolls");
-        System.out.println("test build deploy");
-        sendResponse(request, response, rolls);
+//        String rolls = request.getParameter("rolls");
+//        System.out.println("test build deploy");
+//        sendResponse(request, response, rolls);
+        Roll roll = getRoll(request);
+        sendRollJson(response, roll);
     }
     
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
-        Roll roll = getRoll(request);
-        sendRollJson(response, roll);
+//        Roll roll = getRoll(request);
+//        sendRollJson(response, roll);
+
+        throw new HTTPException(HttpServletResponse.SC_METHOD_NOT_ALLOWED);
+
     }
 
     public void doDelete(HttpServletRequest request, HttpServletResponse response) {

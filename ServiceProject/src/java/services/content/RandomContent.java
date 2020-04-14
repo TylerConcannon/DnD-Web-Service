@@ -22,6 +22,15 @@ import services.diceRoller.Roll;
  *
  * @author Me
  */
+
+//Item types:
+/*  Wondrous Item
+    Book
+    Weapon
+    Treasure
+    Armor
+*/
+
 public class RandomContent 
 {
 	List<Loot> mundaneItems = new ArrayList<>();
@@ -280,7 +289,10 @@ public class RandomContent
 	
 	
 	public void setLoot() throws IOException {
-		String file = "src/java/services/content/LootTable.csv";
+            
+                String currentDirectory = System.getProperty("user.dir");
+
+		String file = "resource/LootTable.csv";
 		
 		
 		Reader in = new FileReader(file);
