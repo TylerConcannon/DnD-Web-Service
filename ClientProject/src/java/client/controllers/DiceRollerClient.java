@@ -31,7 +31,9 @@ import org.apache.hc.core5.http.io.entity.StringEntity;
 
 
 class DiceRollerClient {
-    private static final String url = "http://localhost:8084/ServiceProject/diceRoller";
+    private static final String diceRollerUrl = "http://localhost:8084/ServiceProject/diceRoller";
+    private static final String contentUrl = "http://localhost:8084/ServiceProject/randomContent";
+
     private static final String deployUrl = "http://localhost:8080/ServiceProject/diceRoller";
     
     public static void main(String[ ] args) {
@@ -39,7 +41,49 @@ class DiceRollerClient {
     }
 
     private void sendRequest() {
-            HttpURLConnection conn = null;
+
+           // HttpPost post = new HttpPost(url);
+
+            
+//            conn = getConnection(url, "POST");
+//            conn.setRequestProperty("accept", "text/plain");
+//
+//            conn.connect();
+//            getResponse(conn);
+        
+            sendContentRequest();
+         //   sendDiceRequest();
+    }
+    
+    private void sendContentRequest()
+    {
+            try {
+            HttpClient client = HttpClientBuilder.create().build();
+
+             HttpGet get = new HttpGet(contentUrl + "?rarity=Rare&type=Armor");
+            // StringEntity entity = new StringEntity(payload.toJson(roll));
+           //  get.setEntity(entity);
+           //  get.setHeader("Content-type", "application/json");
+
+             ClassicHttpResponse res = (ClassicHttpResponse) client.execute(get);
+             //HttpResponse response = client.execute(get);
+             HttpEntity ent = res.getEntity();
+             String str = EntityUtils.toString(ent, "UTF-8");
+
+             Gson gson = new Gson();
+             //DiceRoll serviceRoll = gson.fromJson(str, DiceRoll.class);
+
+                 
+                 
+                 int i = 0;
+            }
+            catch (Exception e)
+            {
+                
+            }
+    }
+    
+    private void sendDiceRequest() {
             HttpClient client = HttpClientBuilder.create().build();
             
             Gson payload = new Gson();
@@ -60,18 +104,20 @@ class DiceRollerClient {
             roll.setRolls(rolls);
 
             try {
-                 HttpPost post = new HttpPost(url);
+                 HttpGet get = new HttpGet(diceRollerUrl);
                  StringEntity entity = new StringEntity(payload.toJson(roll));
-                 post.setEntity(entity);
-                 post.setHeader("Content-type", "application/json");
+                 get.setEntity(entity);
+                 get.setHeader("Content-type", "application/json");
 
-                 ClassicHttpResponse res = (ClassicHttpResponse) client.execute(post);
-                 HttpResponse response = client.execute(post);
+                 ClassicHttpResponse res = (ClassicHttpResponse) client.execute(get);
+                 HttpResponse response = client.execute(get);
                  HttpEntity ent = res.getEntity();
                  String str = EntityUtils.toString(ent, "UTF-8");
                  
                  Gson gson = new Gson();
                  DiceRoll serviceRoll = gson.fromJson(str, DiceRoll.class);
+                 
+                 
                  
                  int i = 0;
             }
@@ -79,16 +125,6 @@ class DiceRollerClient {
             {
                 
             }
-           // HttpPost post = new HttpPost(url);
-
-            
-//            conn = getConnection(url, "POST");
-//            conn.setRequestProperty("accept", "text/plain");
-//
-//            conn.connect();
-//            getResponse(conn);
-        
-
     }
 
     private HttpURLConnection getConnection(String url_string, String verb) {

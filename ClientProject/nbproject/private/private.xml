@@ -8,6 +8,7 @@
             <file>file:/D:/GitHub/GitKraken/DnDWebServices/ClientProject/web/WEB-INF/jsp/roll.jsp</file>
             <file>file:/D:/GitHub/GitKraken/DnDWebServices/ClientProject/src/java/client/models/RollData.java</file>
             <file>file:/D:/GitHub/GitKraken/DnDWebServices/ClientProject/web/WEB-INF/dnd-servlet.xml</file>
+            <file>file:/D:/GitHub/GitKraken/DnDWebServices/ClientProject/src/java/client/controllers/DiceRollerClient.java</file>
         </group>
     </open-files>
 </project-private>

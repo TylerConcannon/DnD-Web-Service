@@ -86,7 +86,7 @@ public class HomeController {
         return new ModelAndView("welcome", "message", message);
     }
     
-    @RequestMapping(value="/getRoll", method = RequestMethod.POST)
+    @RequestMapping(value="/getRoll", method = RequestMethod.GET)
     public ModelAndView sendRoller(@ModelAttribute("RollData") RollData rollData)
     {
         HttpClient client = HttpClientBuilder.create().build();
