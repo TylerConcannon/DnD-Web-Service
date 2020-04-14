@@ -1341,3 +1341,16 @@
 127.0.0.1 - - [13/Apr/2020:22:56:28 -0400] "GET /diceRoller/diceRoller?randomEncounter=test HTTP/1.1" 404 992
 127.0.0.1 - - [13/Apr/2020:22:56:28 -0400] "GET /diceRoller/diceRoller?randomCharacter=test HTTP/1.1" 404 992
 127.0.0.1 - - [13/Apr/2020:22:56:28 -0400] "GET /diceRoller/diceRoller?randomCharacter=test HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:57:49 -0400] "POST /diceRoller/diceRoller HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:57:49 -0400] "GET /diceRoller/diceRoller?rolls=test HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:57:49 -0400] "GET /diceRoller/diceRoller?randomContent=test HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:57:49 -0400] "GET /diceRoller/diceRoller?randomEncounter=test HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:57:49 -0400] "GET /diceRoller/diceRoller?randomCharacter=test HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:57:49 -0400] "GET /diceRoller/diceRoller?randomCharacter=test HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:58:26 -0400] "GET /diceRoller/diceRoller?randomCharacter=test HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:58:51 -0400] "GET /diceRoller/diceRoller?randomEncounter=test HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:58:57 -0400] "GET /diceRoller/diceRoller?randomEncounter=test HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:59:00 -0400] "GET /diceRoller/diceRoller?randomContent=test HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:59:10 -0400] "GET /diceRoller/diceRoller?randomContent=test HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:59:13 -0400] "GET /diceRoller/diceRoller?rolls=test HTTP/1.1" 404 992
+127.0.0.1 - - [13/Apr/2020:22:59:31 -0400] "GET /diceRoller/diceRoller?randomEncounter=test HTTP/1.1" 404 992
