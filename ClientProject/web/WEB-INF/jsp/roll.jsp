@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<access orgin="*"/>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -135,6 +136,7 @@
       .row.content {height:auto;} 
     }
   </style>
+    
 </head>
 <body>
 
@@ -174,14 +176,14 @@
                  <div class="num-sides-body">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-sides-text" id="inputGroup-sizing-default">Number of Items:</span>
+                        <span class="input-sides-text" id="inputGroup-sizing-default">Number of Dice:</span>
                     </div>
-                    <input type="text" id="numItems" class="side-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    <input type="text" id="numD" class="side-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
                 </div>
             </div>
              <div class="dice-type">
                  <span class="input-sides-text" id="inputGroup-sizing-default">Dice Type:</span>
-                    <select class="browser-default custom-select">
+                    <select class="browser-default custom-select" id="diceTypeValue">
                         <option selected>Select dice type:</option>
                         <option value="4">4-Sided Dice</option>
                         <option value="6">6-Sided Dice</option>
@@ -193,15 +195,13 @@
              </div>
                  <div class="dice-button">
                       <div class="dice-button">
-                            <form action="#">
-                                <button type="submit" class="btn btn-primary btn-lg">Roll Dice</button>
-                            </form>
+                                <button type="submit" onclick="getRolls()" class="btn btn-primary btn-lg">Roll Dice</button>
                         </div>
                  </div>
                  <form>
                         <div class="form-group-result">
                             <label class="input-sides-text" for="exampleFormControlTextarea1">Result:</label>
-                            <textarea class="form-control" id="diceResults" rows="3"></textarea>
+                            <textarea class="form-control" id="diceResults" rows="3" readonly></textarea>
                         </div>
                  </form>
              </div>
@@ -211,6 +211,30 @@
     </div>
 </div>
 
+<script>
+      function getRolls()
+      {
+          var numDice = document.getElementById("numD").value;
+          var dType = document.getElementById("diceTypeValue").value;
+          
+          var diceO = {"numDice":numDice, "diceType":dType};
+          
+          $.ajax({
+              type:"GET",
+              dataType: "json",
+              url:"http://localhost:8084/ClientProject/diceClient",
+              contentType: "application/json",
+              data: diceO,
+              success: function(result){
+                  document.getElementById("diceResults").textContent = result.toString() + " Success";
+              },
+              error: function(result){
+                  document.getElementById("diceResults").textContent = result.toString() + " Failure";
+              }
+          })
+      }
+      
+</script>
 
 <footer class="container-fluid text-center">
   <p>SWENG 465 - Web Services Final</p>

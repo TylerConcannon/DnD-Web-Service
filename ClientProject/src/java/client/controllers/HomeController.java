@@ -39,14 +39,50 @@ public class HomeController {
     @RequestMapping("/index")
     public ModelAndView index()
     {
-        sendPost();
-        sendRoller();
-        sendContent();
-        sendEncounter();
-        sendCharacter();
-        sendAbout();
+//        sendPost();
+//        sendRoller();
+//        sendContent();
+//        sendEncounter();
+//        sendCharacter();
+//        sendAbout();
         return new ModelAndView("index");
     }
+    
+    @RequestMapping("/roll")
+    public ModelAndView roll()
+    {
+
+        return new ModelAndView("roll");
+    }
+    
+    @RequestMapping("/randomContent")
+    public ModelAndView randomContent()
+    {
+
+        return new ModelAndView("randomContent");
+    }
+    
+    @RequestMapping("/randomEncounter")
+    public ModelAndView randomEncounter()
+    {
+
+        return new ModelAndView("randomEncounter");
+    }
+    
+    @RequestMapping("/randomCharacter")
+    public ModelAndView randomCharacter()
+    {
+
+        return new ModelAndView("randomCharacter");
+    }
+    
+    @RequestMapping("/about")
+    public ModelAndView about()
+    {
+
+        return new ModelAndView("about");
+    }
+    
 
     @RequestMapping("/welcome")
     public ModelAndView welcome()
@@ -56,18 +92,20 @@ public class HomeController {
         return new ModelAndView("welcome", "message", message);
     }
     
-    @RequestMapping("/roll")
-    private void sendRoller()
+    @RequestMapping(value="/getRoll")
+    private String sendRoller(@RequestBody Object dices)
     {
-        HttpClient client = HttpClientBuilder.create().build();
-
-        HttpGet get = new HttpGet(url + "?rolls=test");
-        get.addHeader("accept", "text/plain");
-        try {
-            HttpResponse response = client.execute(get);
-        } catch (IOException ex) {
-            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        HttpClient client = HttpClientBuilder.create().build();
+//
+//        HttpGet get = new HttpGet(url + "?rolls=test");
+//        get.addHeader("accept", "text/plain");
+//        try {
+//            HttpResponse response = client.execute(get);
+//        } catch (IOException ex) {
+//            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+       
+        return dices.toString();
 //        DiceRoll diceRolls = new DiceRoll();
 //        
 //      
@@ -89,7 +127,7 @@ public class HomeController {
         //return mv;
     }
     
-       @RequestMapping("/randomContent")
+       @RequestMapping("/getRandomContent")
     private void sendContent()
     {
         HttpClient client = HttpClientBuilder.create().build();
@@ -103,7 +141,7 @@ public class HomeController {
         }
     }
     
-           @RequestMapping("/randomEncounter")
+           @RequestMapping("/getRandomEncounter")
     private void sendEncounter()
     {
         HttpClient client = HttpClientBuilder.create().build();
@@ -117,7 +155,7 @@ public class HomeController {
         }
     }
     
-           @RequestMapping("/randomCharacter")
+           @RequestMapping("/getRandomCharacter")
     private void sendCharacter()
     {
         HttpClient client = HttpClientBuilder.create().build();
@@ -131,7 +169,7 @@ public class HomeController {
         }
     }
     
-             @RequestMapping("/about")
+             @RequestMapping("/getAbout")
     private void sendAbout()
     {
         HttpClient client = HttpClientBuilder.create().build();
