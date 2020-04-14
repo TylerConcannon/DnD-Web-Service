@@ -86,40 +86,40 @@ public class HomeController {
         return new ModelAndView("welcome", "message", message);
     }
     
-    @RequestMapping(value="/getRoll", method = RequestMethod.GET)
-    public ModelAndView sendRoller(@ModelAttribute("RollData") RollData rollData)
-    {
-//        HttpClient client = HttpClientBuilder.create().build();
-//
-//        HttpGet get = new HttpGet(url + "?rolls=test");
-//        get.addHeader("accept", "text/plain");
-//        try {
-//            HttpResponse response = client.execute(get);
-//        } catch (IOException ex) {
-//            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-       
-        return dices.toString();
-//        DiceRoll diceRolls = new DiceRoll();
-//        
-//      
-//        ArrayList<Integer> roll1 = new ArrayList<>();
-//        roll1.add(6);
-//        roll1.add(4);
-//
-//        ArrayList<Integer> roll2 = new ArrayList<>();
-//        roll2.add(8);
-//        roll2.add(4);
-//
-//        ArrayList<List<Integer>> rolls = new ArrayList<>(); 
-//        rolls.add(roll1);
-//        rolls.add(roll2);
-//        
-//        diceRolls.setRolls(rolls);
-//        
-//        ModelAndView mv = new ModelAndView("roll", "model", diceRolls);
-        //return mv;
-    }
+//    @RequestMapping(value="/getRoll", method = RequestMethod.GET)
+//    public ModelAndView sendRoller(@ModelAttribute("RollData") RollData rollData)
+//    {
+////        HttpClient client = HttpClientBuilder.create().build();
+////
+////        HttpGet get = new HttpGet(url + "?rolls=test");
+////        get.addHeader("accept", "text/plain");
+////        try {
+////            HttpResponse response = client.execute(get);
+////        } catch (IOException ex) {
+////            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+////        }
+//       
+//        return dices.toString();
+////        DiceRoll diceRolls = new DiceRoll();
+////        
+////      
+////        ArrayList<Integer> roll1 = new ArrayList<>();
+////        roll1.add(6);
+////        roll1.add(4);
+////
+////        ArrayList<Integer> roll2 = new ArrayList<>();
+////        roll2.add(8);
+////        roll2.add(4);
+////
+////        ArrayList<List<Integer>> rolls = new ArrayList<>(); 
+////        rolls.add(roll1);
+////        rolls.add(roll2);
+////        
+////        diceRolls.setRolls(rolls);
+////        
+////        ModelAndView mv = new ModelAndView("roll", "model", diceRolls);
+//        //return mv;
+//    }
     
     private void sendContent()
     {
