@@ -89,15 +89,17 @@ public class HomeController {
     @RequestMapping(value="/getRoll", method = RequestMethod.GET)
     public ModelAndView sendRoller(@ModelAttribute("RollData") RollData rollData)
     {
-        HttpClient client = HttpClientBuilder.create().build();
-
-        HttpGet get = new HttpGet(url + "?rolls=test");
-        get.addHeader("accept", "text/plain");
-        try {
-            HttpResponse response = client.execute(get);
-        } catch (IOException ex) {
-            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        HttpClient client = HttpClientBuilder.create().build();
+//
+//        HttpGet get = new HttpGet(url + "?rolls=test");
+//        get.addHeader("accept", "text/plain");
+//        try {
+//            HttpResponse response = client.execute(get);
+//        } catch (IOException ex) {
+//            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+       
+        return dices.toString();
 //        DiceRoll diceRolls = new DiceRoll();
 //        
 //      
