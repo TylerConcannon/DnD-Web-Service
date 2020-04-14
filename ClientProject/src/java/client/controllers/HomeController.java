@@ -68,25 +68,25 @@ public class HomeController {
         } catch (IOException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        DiceRoll diceRolls = new DiceRoll();
-        
-      
-        ArrayList<Integer> roll1 = new ArrayList<>();
-        roll1.add(6);
-        roll1.add(4);
-
-        ArrayList<Integer> roll2 = new ArrayList<>();
-        roll2.add(8);
-        roll2.add(4);
-
-        ArrayList<List<Integer>> rolls = new ArrayList<>(); 
-        rolls.add(roll1);
-        rolls.add(roll2);
-        
-        diceRolls.setRolls(rolls);
-        
-        ModelAndView mv = new ModelAndView("roll", "model", diceRolls);
-        return mv;
+//        DiceRoll diceRolls = new DiceRoll();
+//        
+//      
+//        ArrayList<Integer> roll1 = new ArrayList<>();
+//        roll1.add(6);
+//        roll1.add(4);
+//
+//        ArrayList<Integer> roll2 = new ArrayList<>();
+//        roll2.add(8);
+//        roll2.add(4);
+//
+//        ArrayList<List<Integer>> rolls = new ArrayList<>(); 
+//        rolls.add(roll1);
+//        rolls.add(roll2);
+//        
+//        diceRolls.setRolls(rolls);
+//        
+//        ModelAndView mv = new ModelAndView("roll", "model", diceRolls);
+        //return mv;
     }
     
        @RequestMapping("/randomContent")
