@@ -221,10 +221,7 @@
           
           $.ajax({
               type:"GET",
-              dataType: "json",
-              url:"http://localhost:8084/ClientProject/diceClient",
-              contentType: "application/json",
-              data: diceO,
+              url:"http://localhost:8084/ClientProject/diceClient?numDice=" + numDice + "&diceType=" + dType,
               success: function(result){
                   document.getElementById("diceResults").textContent = result.toString() + " Success";
               },

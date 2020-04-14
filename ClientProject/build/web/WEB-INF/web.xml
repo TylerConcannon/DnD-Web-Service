@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="2.5">
-  <display-name>DnDClient</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  
-      <servlet>
+<web-app id="WebApp_ID" version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <display-name>DnDClient</display-name>
+    <servlet-mapping>
+        <servlet-name>DiceClientServlet</servlet-name>
+        <url-pattern>/diceClient</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
         <servlet-name>dnd</servlet-name>
         <servlet-class>
             org.springframework.web.servlet.DispatcherServlet
         </servlet-class>
         <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>DiceClientServlet</servlet-name>
+        <servlet-class>client.controllers.DiceClientServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>dnd</servlet-name>
@@ -27,7 +33,6 @@
         <url-pattern>/randomEncounter.jsp</url-pattern>
         <url-pattern>/randomCharacter.jsp</url-pattern>
         <url-pattern>/about.jsp</url-pattern>
-        
         <url-pattern>/welcome.html</url-pattern>
         <url-pattern>/index.html</url-pattern>
         <url-pattern>/roll.html</url-pattern>
@@ -35,8 +40,5 @@
         <url-pattern>/randomEncounter.html</url-pattern>
         <url-pattern>/randomCharacter.html</url-pattern>
         <url-pattern>/about.html</url-pattern>
-        <url-pattern>/getRoll</url-pattern>
-
     </servlet-mapping>
-  
 </web-app>
