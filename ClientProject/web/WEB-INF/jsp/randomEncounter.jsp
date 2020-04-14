@@ -196,7 +196,7 @@
                     <input type="text" id="numEnemies" class="side-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
              </div>
              <div class="loot-rarity-selection">
-                 <span class="input-sides-text" id="inputGroup-sizing-default">Loot Rarity:</span>
+                 <span class="input-sides-text" id="inputGroup-sizing-default">Terrain Selection:</span>
                     <select class="browser-default custom-select">
                         <option selected>Select Terrain:</option>
                         <option value="Forest">Forest</option>
