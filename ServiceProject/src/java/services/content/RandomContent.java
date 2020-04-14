@@ -5,6 +5,13 @@
  */
 package services.content;
 
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 import static java.util.Arrays.*;
@@ -17,6 +24,11 @@ import services.diceRoller.Roll;
  */
 public class RandomContent 
 {
+	List<Loot> mundaneItems = new ArrayList<>();
+	List<Loot> commonItems = new ArrayList<>();
+	List<Loot> rareItems = new ArrayList<>();
+	List<Loot> veryRareItems = new ArrayList<>();
+	List<Loot> legendaryItems = new ArrayList<>();
     
     List<List<String>> simpleMelee = asList
     ( 
@@ -102,9 +114,48 @@ public class RandomContent
     
     
     
-    public Loot generateLoot()
+    public List<Loot> generateLoot(String rarity, String type, int amt) throws IOException
     {
-        return new Loot();
+		setLoot(); // set loot lists
+		
+		List<Loot> rarityItems = new ArrayList<>();
+		
+		switch(rarity){
+			case "Mundane":
+				rarityItems.addAll(mundaneItems);
+				break;
+			case "Common":
+				rarityItems = commonItems;
+				break;
+			case "Rare":
+				rarityItems = rareItems;
+				break;
+			case "Very Rare":
+				rarityItems = veryRareItems;
+				break;
+			case "Legendary":
+				rarityItems = legendaryItems;
+				break;	
+		}
+		
+		List<Loot> lootItems = new ArrayList<>();
+		
+		for(Loot l: rarityItems){
+			if(l.getType().equals(type)){
+				lootItems.add(l);
+			}
+		}	
+		
+		List<Loot> returnItems = new ArrayList<>();
+		DiceRoller diceRoller = new DiceRoller();
+
+		
+		for(int i = 0; i < amt; i++){
+			Roll randomNumber = diceRoller.rollDice(asList(asList(lootItems.size(), 1)));
+			returnItems.add(lootItems.get(randomNumber.getTotal()-1));
+		}
+		
+        return returnItems;
     }
     
     
@@ -225,4 +276,39 @@ public class RandomContent
         }
         return new Weapon(valuesString.get(0), valuesString.get(1), totalDamage, totalValue);
     }
+	
+	
+	
+	public void setLoot() throws IOException {
+		String file = "src/java/services/content/LootTable.csv";
+		
+		
+		Reader in = new FileReader(file);
+		Iterable<CSVRecord> records = CSVFormat.EXCEL.parse(in);
+		
+		for (CSVRecord record : records) {
+			Loot loot = new Loot();
+			loot.setName( record.get(0));			
+			loot.setDescription(record.get(1)+ record.get(6)); //description and properties
+			loot.setValue(record.get(2)); //value
+			loot.setType(record.get(5));
+			String rarity = record.get(3);
+			
+			if(rarity.equals("Mundane")){
+				mundaneItems.add(loot);
+			}else
+			if(rarity.equals("Common")){
+				commonItems.add(loot);
+			}else
+			if(rarity.equals("Rare")){
+				rareItems.add(loot);
+			}else
+			if(rarity.equals("Very Rare")){
+				veryRareItems.add(loot);
+			}else
+			if(rarity.equals("Legendary")){
+				legendaryItems.add(loot);
+			}			
+		}
+	}
 }
