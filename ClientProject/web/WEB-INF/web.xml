@@ -20,7 +20,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>dnd</servlet-name>
-       <url-pattern>/welcome.jsp</url-pattern>
+        <url-pattern>/welcome.jsp</url-pattern>
         <url-pattern>/index.jsp</url-pattern>
         <url-pattern>/roll.jsp</url-pattern>
         <url-pattern>/randomContent.jsp</url-pattern>
@@ -35,6 +35,8 @@
         <url-pattern>/randomEncounter.html</url-pattern>
         <url-pattern>/randomCharacter.html</url-pattern>
         <url-pattern>/about.html</url-pattern>
+        <url-pattern>/getRoll</url-pattern>
+
     </servlet-mapping>
   
 </web-app>

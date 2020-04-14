@@ -11,8 +11,8 @@ package client.controllers;
  */
 import client.models.DiceRoll;
 import client.models.Message;
+import client.models.RollData;
 import com.google.gson.Gson;
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -39,15 +39,45 @@ public class HomeController {
     @RequestMapping("/index")
     public ModelAndView index()
     {
-        sendPost();
-        sendRoller();
-        sendContent();
-        sendEncounter();
-        sendCharacter();
-        sendAbout();
+//        sendPost();
+//        sendRoller();
+//        sendContent();
+//        sendEncounter();
+//        sendCharacter();
+//        sendAbout();
         return new ModelAndView("index");
     }
+    
+    @RequestMapping("/roll")
+    public ModelAndView roll()
+    {
+        return new ModelAndView("roll");
+    }
+    
+    @RequestMapping("/about")
+    public ModelAndView about()
+    {
+        return new ModelAndView("about");
+    }
 
+    @RequestMapping("/randomCharacter")
+    public ModelAndView character()
+    {
+        return new ModelAndView("randomCharacter");
+    }
+    
+    @RequestMapping("/randomContent")
+    public ModelAndView content()
+    {
+        return new ModelAndView("randomContent");
+    }
+    
+    @RequestMapping("/randomEncounter")
+    public ModelAndView encounter()
+    {
+        return new ModelAndView("randomEncounter");
+    }
+    
     @RequestMapping("/welcome")
     public ModelAndView welcome()
     {
@@ -56,8 +86,8 @@ public class HomeController {
         return new ModelAndView("welcome", "message", message);
     }
     
-    @RequestMapping("/roll")
-    private void sendRoller()
+    @RequestMapping(value="/getRoll", method = RequestMethod.POST)
+    public ModelAndView sendRoller(@ModelAttribute("RollData") RollData rollData)
     {
         HttpClient client = HttpClientBuilder.create().build();
 
@@ -89,7 +119,6 @@ public class HomeController {
         //return mv;
     }
     
-       @RequestMapping("/randomContent")
     private void sendContent()
     {
         HttpClient client = HttpClientBuilder.create().build();
@@ -103,7 +132,6 @@ public class HomeController {
         }
     }
     
-           @RequestMapping("/randomEncounter")
     private void sendEncounter()
     {
         HttpClient client = HttpClientBuilder.create().build();
@@ -117,7 +145,6 @@ public class HomeController {
         }
     }
     
-           @RequestMapping("/randomCharacter")
     private void sendCharacter()
     {
         HttpClient client = HttpClientBuilder.create().build();
@@ -131,19 +158,19 @@ public class HomeController {
         }
     }
     
-             @RequestMapping("/about")
-    private void sendAbout()
-    {
-        HttpClient client = HttpClientBuilder.create().build();
-
-        HttpGet get = new HttpGet(url + "?randomCharacter=test");
-        get.addHeader("accept", "text/plain");
-        try {
-            HttpResponse response = client.execute(get);
-        } catch (IOException ex) {
-            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//             @RequestMapping("/about")
+//    private void sendAbout()
+//    {
+//        HttpClient client = HttpClientBuilder.create().build();
+//
+//        HttpGet get = new HttpGet(url + "?randomCharacter=test");
+//        get.addHeader("accept", "text/plain");
+//        try {
+//            HttpResponse response = client.execute(get);
+//        } catch (IOException ex) {
+//            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
     
     private void sendPost() {
     try {
@@ -183,29 +210,29 @@ public class HomeController {
     }
 }
 
-    private HttpURLConnection getConnection(String url_string, String verb) {
-        HttpURLConnection conn = null;
-        try {
-            URL url = new URL(url_string);
-            conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod(verb);
-            conn.setDoInput(true);
-            conn.setDoOutput(true);
-        }
-        catch(MalformedURLException e) { System.err.println(e); }
-        catch(IOException e) { System.err.println(e); }
-        return conn;
-    }
-    private void getResponse(HttpURLConnection conn) {
-        try {
-            String xml = "";
-            BufferedReader reader =
-                new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            String next = null;
-            while ((next = reader.readLine()) != null)
-                xml += next;
-            System.out.println(xml);
-        }
-        catch(IOException e) { System.err.println(e); }
-    }
+//    private HttpURLConnection getConnection(String url_string, String verb) {
+//        HttpURLConnection conn = null;
+//        try {
+//            URL url = new URL(url_string);
+//            conn = (HttpURLConnection) url.openConnection();
+//            conn.setRequestMethod(verb);
+//            conn.setDoInput(true);
+//            conn.setDoOutput(true);
+//        }
+//        catch(MalformedURLException e) { System.err.println(e); }
+//        catch(IOException e) { System.err.println(e); }
+//        return conn;
+//    }
+//    private void getResponse(HttpURLConnection conn) {
+//        try {
+//            String xml = "";
+//            BufferedReader reader =
+//                new BufferedReader(new InputStreamReader(conn.getInputStream()));
+//            String next = null;
+//            while ((next = reader.readLine()) != null)
+//                xml += next;
+//            System.out.println(xml);
+//        }
+//        catch(IOException e) { System.err.println(e); }
+//    }
 }
