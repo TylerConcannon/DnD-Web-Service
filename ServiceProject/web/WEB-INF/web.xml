@@ -4,9 +4,17 @@
         <servlet-name>DiceRollerServlet</servlet-name>
         <servlet-class>services.diceRoller.DiceRollerServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RandomContentServlet</servlet-name>
+        <servlet-class>services.content.RandomContentServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>DiceRollerServlet</servlet-name>
         <url-pattern>/diceRoller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RandomContentServlet</servlet-name>
+        <url-pattern>/randomContent</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
