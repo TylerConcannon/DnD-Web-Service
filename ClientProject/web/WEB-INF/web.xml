@@ -22,8 +22,19 @@
         <servlet-name>dnd</servlet-name>
 <!--        <url-pattern>/welcome.jsp</url-pattern>
         <url-pattern>/index.jsp</url-pattern>
+        <url-pattern>/roll.jsp</url-pattern>
+        <url-pattern>/randomContent.jsp</url-pattern>
+        <url-pattern>/randomEncounter.jsp</url-pattern>
+        <url-pattern>/randomCharacter.jsp</url-pattern>
+        <url-pattern>/about.jsp</url-pattern>
+        
         <url-pattern>/welcome.html</url-pattern>
-        <url-pattern>/index.html</url-pattern>-->
+        <url-pattern>/index.html</url-pattern>
+        <url-pattern>/roll.html</url-pattern>
+        <url-pattern>/randomContent.html</url-pattern>
+        <url-pattern>/randomEncounter.html</url-pattern>
+        <url-pattern>/randomCharacter.html</url-pattern>
+        <url-pattern>/about.html</url-pattern>
         <url-pattern>*.html</url-pattern>
 <!--        <url-pattern>*.htm</url-pattern>-->
 

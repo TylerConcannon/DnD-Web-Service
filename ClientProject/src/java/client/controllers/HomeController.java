@@ -40,7 +40,11 @@ public class HomeController {
     public ModelAndView index()
     {
         sendPost();
-        sendGet();
+        sendRoller();
+        sendContent();
+        sendEncounter();
+        sendCharacter();
+        sendAbout();
         return new ModelAndView("index");
     }
 
@@ -53,7 +57,7 @@ public class HomeController {
     }
     
     @RequestMapping("/roll")
-    private ModelAndView sendGet()
+    private void sendRoller()
     {
         HttpClient client = HttpClientBuilder.create().build();
 
@@ -83,6 +87,62 @@ public class HomeController {
         
         ModelAndView mv = new ModelAndView("roll", "model", diceRolls);
         return mv;
+    }
+    
+       @RequestMapping("/randomContent")
+    private void sendContent()
+    {
+        HttpClient client = HttpClientBuilder.create().build();
+
+        HttpGet get = new HttpGet(url + "?randomContent=test");
+        get.addHeader("accept", "text/plain");
+        try {
+            HttpResponse response = client.execute(get);
+        } catch (IOException ex) {
+            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+           @RequestMapping("/randomEncounter")
+    private void sendEncounter()
+    {
+        HttpClient client = HttpClientBuilder.create().build();
+
+        HttpGet get = new HttpGet(url + "?randomEncounter=test");
+        get.addHeader("accept", "text/plain");
+        try {
+            HttpResponse response = client.execute(get);
+        } catch (IOException ex) {
+            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+           @RequestMapping("/randomCharacter")
+    private void sendCharacter()
+    {
+        HttpClient client = HttpClientBuilder.create().build();
+
+        HttpGet get = new HttpGet(url + "?randomCharacter=test");
+        get.addHeader("accept", "text/plain");
+        try {
+            HttpResponse response = client.execute(get);
+        } catch (IOException ex) {
+            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+             @RequestMapping("/about")
+    private void sendAbout()
+    {
+        HttpClient client = HttpClientBuilder.create().build();
+
+        HttpGet get = new HttpGet(url + "?randomCharacter=test");
+        get.addHeader("accept", "text/plain");
+        try {
+            HttpResponse response = client.execute(get);
+        } catch (IOException ex) {
+            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
     private void sendPost() {
