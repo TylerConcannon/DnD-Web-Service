@@ -41,15 +41,6 @@ class ServiceClient {
     }
 
     private void sendRequest() {
-
-           // HttpPost post = new HttpPost(url);
-
-            
-//            conn = getConnection(url, "POST");
-//            conn.setRequestProperty("accept", "text/plain");
-//
-//            conn.connect();
-//            getResponse(conn);
         
             sendContentRequest();
          //   sendDiceRequest();
@@ -61,22 +52,14 @@ class ServiceClient {
             HttpClient client = HttpClientBuilder.create().build();
 
              HttpGet get = new HttpGet(contentUrl + "?rarity=Rare&type=Armor");
-            // StringEntity entity = new StringEntity(payload.toJson(roll));
-           //  get.setEntity(entity);
-           //  get.setHeader("Content-type", "application/json");
 
              ClassicHttpResponse res = (ClassicHttpResponse) client.execute(get);
-             //HttpResponse response = client.execute(get);
              HttpEntity ent = res.getEntity();
              String str = EntityUtils.toString(ent, "UTF-8");
 
              Gson gson = new Gson();
              Loot loot = gson.fromJson(str, Loot.class);
-             //DiceRoll serviceRoll = gson.fromJson(str, DiceRoll.class);
-
-                 
-                 
-                 int i = 0;
+             
             }
             catch (Exception e)
             {
@@ -126,31 +109,5 @@ class ServiceClient {
             {
                 
             }
-    }
-
-    private HttpURLConnection getConnection(String url_string, String verb) {
-        HttpURLConnection conn = null;
-        try {
-            URL url = new URL(url_string);
-            conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod(verb);
-            conn.setDoInput(true);
-            conn.setDoOutput(true);
-        }
-        catch(MalformedURLException e) { System.err.println(e); }
-        catch(IOException e) { System.err.println(e); }
-        return conn;
-    }
-    private void getResponse(HttpURLConnection conn) {
-        try {
-            String xml = "";
-            BufferedReader reader =
-                new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            String next = null;
-            while ((next = reader.readLine()) != null)
-                xml += next;
-            System.out.println(xml);
-        }
-        catch(IOException e) { System.err.println(e); }
     }
 }
