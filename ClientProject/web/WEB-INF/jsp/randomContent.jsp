@@ -3,10 +3,11 @@
     "http://www.w3.org/TR/html4/loose.dtd">
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -192,7 +193,7 @@
                         <option value="Common">Common</option>
 <!--                        <option value="Uncommon">Uncommon</option>-->
                         <option value="Rare">Rare</option>
-                        <option value="VeryRare">Very Rare</option>
+                        <option value="Very Rare">Very Rare</option>
                         <option value="Legendary">Legendary</option>
                     </select>
              </div>
@@ -202,15 +203,15 @@
                         <option selected>Select loot Category:</option>
                         <option value="Treasure">Treasure</option>
                         <option value="Weapon">Weapon</option>
-<!--                        <option value="Adventuring Gear">Adventuring Gear</option>-->
+                        <option value="Adventuring Gear">Adventuring Gear</option>
                         <option value="Book">Book</option>
-                        <option value="WondrousItem">Wondrous Item</option>
+                        <option value="Wondrous Item">Wondrous Item</option>
 <!--                        <option value="Trap">Trap</option>-->
                         <option value="Armor">Armor</option>
 <!--                        <option value="Shield">Shield</option>-->
-<!--                        <option value="Potion">Potion</option>-->
+                        <option value="Potion">Potion</option>
 <!--                        <option value="Quest Hook">Quest Hook</option>-->
-<!--                        <option value="Ring">Ring</option>-->
+                        <option value="Ring">Ring</option>
 <!--                        <option value="Rod">Rod</option>-->
                     </select>
              </div>
@@ -247,17 +248,38 @@
       {
           var rarity = document.getElementById("rarity").value;
           var type = document.getElementById("type").value;
-                    
-          console.log(type)
+          
+          var urlRarity = rarity.replace(/\s/g, '');
+          var urlType = type.replace(/\s/g, '');
+          
+          console.log(urlRarity);
+          console.log(urlType)
+          
+          console.log(urlType)
           
           $.ajax({
               type:"GET",
-              url:"http://localhost:8084/ClientProject/content?rarity=" + rarity + "&type=" + type,
+              url:"http://localhost:8084/ClientProject/content?rarity=" + urlRarity + "&type=" + urlType,
               success: function(result){
+                  
                   console.log(result)
-                  var content = "You found: " + result.name + "!\n";
-                  content += "Description: " + result.description + "\n";
-                  content += "Type: " + result.type;
+                  var content
+                  
+                  if (result.name === undefined){
+                      content = "We didn't find any entries for: " + rarity + " " + type + "\nBut you can help us out by adding your own!"
+                  }
+                  else {
+                    content = "You found: " + result.name + "!\n";
+
+                    if (result.description != ""){
+                      content += "Description: " + result.description + "\n";
+                    }
+                    if (result.value != ""){
+                        content += "Value: " + result.value
+                    }
+                  }
+
+                  
                   document.getElementById("contentResults").textContent = content;
               },
               error: function(result){
