@@ -81,7 +81,7 @@ public class RandomContentServlet extends HttpServlet {
     private void sendContentJson(HttpServletResponse response, List<Loot> loot)
     {
         Gson gson = new Gson();
-        String rollJson = gson.toJson(loot);
+        String rollJson = gson.toJson(loot.get(0));
         try {
             PrintWriter out = response.getWriter();
             response.setContentType("application/json");

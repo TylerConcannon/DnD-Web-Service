@@ -142,6 +142,10 @@
       }
       .row.content {height:auto;} 
     }
+    
+    textarea.form-control {
+    height: 175px;
+    }
   </style>
 </head>
 <body>
@@ -182,11 +186,11 @@
              <div class="dice-type">
              <div class="loot-rarity-selection">
                  <span class="input-sides-text" id="inputGroup-sizing-default">Loot Rarity:</span>
-                    <select class="browser-default custom-select">
+                    <select id="rarity" class="browser-default custom-select">
                         <option selected>Select loot rarity:</option>
                         <option value="Mundane">Mundane</option>
                         <option value="Common">Common</option>
-                        <option value="Uncommon">Uncommon</option>
+<!--                        <option value="Uncommon">Uncommon</option>-->
                         <option value="Rare">Rare</option>
                         <option value="Very Rare">Very Rare</option>
                         <option value="Legendary">Legendary</option>
@@ -194,27 +198,25 @@
              </div>
              <div class="loot-catagory-selection">
                  <span class="input-sides-text" id="inputGroup-sizing-default">Loot Category:</span>
-                    <select class="browser-default custom-select">
+                    <select id="type" class="browser-default custom-select">
                         <option selected>Select loot Category:</option>
                         <option value="Treasure">Treasure</option>
                         <option value="Weapon">Weapon</option>
-                        <option value="Adventuring Gear">Adventuring Gear</option>
+<!--                        <option value="Adventuring Gear">Adventuring Gear</option>-->
                         <option value="Book">Book</option>
-                        <option value="Wondrous Item">Wondrous Items</option>
-                        <option value="Trap">Trap</option>
+<!--                        <option value="Wondrous Item">Wondrous Item</option>-->
+<!--                        <option value="Trap">Trap</option>-->
                         <option value="Armor">Armor</option>
-                        <option value="Shield">Shield</option>
-                        <option value="Potion">Potion</option>
-                        <option value="Quest Hook">Quest Hook</option>
-                        <option value="Ring">Ring</option>
-                        <option value="Rod">Rod</option>
+<!--                        <option value="Shield">Shield</option>-->
+<!--                        <option value="Potion">Potion</option>-->
+<!--                        <option value="Quest Hook">Quest Hook</option>-->
+<!--                        <option value="Ring">Ring</option>-->
+<!--                        <option value="Rod">Rod</option>-->
                     </select>
              </div>
                  <div class="dice-button">
                       <div class="dice-button">
-                            <form action="#">
-                                <button type="submit" class="btn btn-primary btn-lg">Generate Loot</button>
-                            </form>
+                                <button onclick="getContent()" type="submit" class="btn btn-primary btn-lg">Generate Loot</button>
                         </div>
                  </div>
                  <form>
@@ -239,3 +241,29 @@
 
 </body>
 </html>
+
+<script>
+      function getContent()
+      {
+          var rarity = document.getElementById("rarity").value;
+          var type = document.getElementById("type").value;
+                    
+          console.log(type)
+          
+          $.ajax({
+              type:"GET",
+              url:"http://localhost:8084/ClientProject/content?rarity=" + rarity + "&type=" + type,
+              success: function(result){
+                  console.log(result)
+                  var content = "You found: " + result.name + "!\n";
+                  content += "Description: " + result.description + "\n";
+                  content += "Type: " + result.type;
+                  document.getElementById("contentResults").textContent = content;
+              },
+              error: function(result){
+                  document.getElementById("diceResults").textContent = result.toString() + " Failure";
+              }
+          })
+      }
+      
+</script>
