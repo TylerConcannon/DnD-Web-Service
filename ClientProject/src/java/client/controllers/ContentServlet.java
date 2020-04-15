@@ -7,8 +7,11 @@ package client.controllers;
 
 import client.models.Loot;
 import com.google.gson.Gson;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -62,13 +65,35 @@ public class ContentServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        //processRequest(request, response);
+        String content = getBody(request);
+        Gson gson = new Gson();
     }
 
 
     @Override
     public String getServletInfo() {
         return "Short description";
+    }
+    
+    private String getBody(HttpServletRequest request)
+    {
+        StringBuilder buffer = new StringBuilder();
+        BufferedReader reader;
+        String content = "";
+        try {
+            reader = request.getReader();
+            String line;
+            while ((line = reader.readLine()) != null)
+            {
+                buffer.append(line);
+            }
+            content = buffer.toString();
+            
+        } catch (IOException ex) {
+            Logger.getLogger(ContentServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return content;
     }
 
     

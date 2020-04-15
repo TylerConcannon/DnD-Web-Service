@@ -192,7 +192,7 @@
                         <option value="Common">Common</option>
 <!--                        <option value="Uncommon">Uncommon</option>-->
                         <option value="Rare">Rare</option>
-                        <option value="Very Rare">Very Rare</option>
+                        <option value="VeryRare">Very Rare</option>
                         <option value="Legendary">Legendary</option>
                     </select>
              </div>
@@ -204,7 +204,7 @@
                         <option value="Weapon">Weapon</option>
 <!--                        <option value="Adventuring Gear">Adventuring Gear</option>-->
                         <option value="Book">Book</option>
-<!--                        <option value="Wondrous Item">Wondrous Item</option>-->
+                        <option value="WondrousItem">Wondrous Item</option>
 <!--                        <option value="Trap">Trap</option>-->
                         <option value="Armor">Armor</option>
 <!--                        <option value="Shield">Shield</option>-->
