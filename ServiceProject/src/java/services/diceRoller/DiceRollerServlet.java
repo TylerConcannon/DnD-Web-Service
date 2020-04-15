@@ -35,9 +35,6 @@ public class DiceRollerServlet extends HttpServlet {
     }
     
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
-//        Roll roll = getRoll(request);
-//        sendRollJson(response, roll);
-
         throw new HTTPException(HttpServletResponse.SC_METHOD_NOT_ALLOWED);
 
     }

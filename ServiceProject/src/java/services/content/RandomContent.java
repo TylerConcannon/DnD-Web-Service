@@ -139,7 +139,7 @@ public class RandomContent
 			case "Rare":
 				rarityItems = rareItems;
 				break;
-			case "Very Rare":
+			case "VeryRare":
 				rarityItems = veryRareItems;
 				break;
 			case "Legendary":
@@ -150,6 +150,7 @@ public class RandomContent
 		List<Loot> lootItems = new ArrayList<>();
 		
 		for(Loot l: rarityItems){
+                   
 			if(l.getType().equals(type)){
 				lootItems.add(l);
 			}
@@ -273,7 +274,7 @@ public class RandomContent
                 totalValue = valuesString.get(3) + " + [25-100] gp";
                 break;
                 
-            case "Very Rare":
+            case "VeryRare":
                 totalDamage = valuesString.get(2) + " + 1d10";
                 totalValue = valuesString.get(3) + " + [200-500] gp";
                 break;
@@ -303,7 +304,9 @@ public class RandomContent
 			loot.setName( record.get(0));			
 			loot.setDescription(record.get(1)+ record.get(6)); //description and properties
 			loot.setValue(record.get(2)); //value
-			loot.setType(record.get(5));
+                        String type = record.get(5);
+                        type = type.replaceAll(" ", "");
+			loot.setType(type);
 			String rarity = record.get(3);
 			
 			if(rarity.equals("Mundane")){
@@ -324,4 +327,9 @@ public class RandomContent
 		}
                 int i = 0;
 	}
+        
+        public void postContent(Loot l)
+        {
+            //add loot object to csv
+        }
 }

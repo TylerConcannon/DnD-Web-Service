@@ -17,6 +17,7 @@ import java.util.logging.Logger;
 import com.google.gson.*;
 import client.models.*;
 import java.io.InputStream;
+import java.util.HashSet;
 import org.apache.hc.client5.http.classic.HttpClient;
 import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.classic.methods.HttpPost;
@@ -32,7 +33,7 @@ import org.apache.hc.core5.http.io.entity.StringEntity;
 
 class ServiceClient {
     private static final String diceRollerUrl = "http://localhost:8084/ServiceProject/diceRoller";
-    private static final String contentUrl = "http://localhost:8084/ServiceProject/content";
+    private static final String contentUrl = "http://localhost:8084/ServiceProject/randomContent";
 
     private static final String deployUrl = "http://localhost:8080/ServiceProject/diceRoller";
     
@@ -42,11 +43,12 @@ class ServiceClient {
 
     private void sendRequest() {
         
-            sendContentRequest();
+          //  sendContentRequest();
          //   sendDiceRequest();
+         sendContentPost();
     }
     
-    private void sendContentRequest()
+    private void sendContentGet()
     {
             try {
             HttpClient client = HttpClientBuilder.create().build();
@@ -65,6 +67,37 @@ class ServiceClient {
             {
                 
             }
+    }
+    
+    private void sendContentPost ()
+    {
+        try {
+            HttpClient client = HttpClientBuilder.create().build();
+            
+            HttpPost post = new HttpPost(contentUrl);
+            
+            Gson gson = new Gson();
+            Loot loot = new Loot();
+            loot.setName("Boots of asskicking");
+            loot.setDescription("These boots will kick the ass of your enemies");
+            loot.setType("Armor");
+            loot.setValue("100GP");
+            
+            String content = gson.toJson(loot);
+            
+            HttpEntity payload = new StringEntity(content);
+            post.setHeader("Content-type", "application/json");
+            post.setEntity(payload);
+
+            ClassicHttpResponse res = (ClassicHttpResponse) client.execute(post);
+            HttpEntity ent = res.getEntity();
+            String str = EntityUtils.toString(ent, "UTF-8");
+             
+        }
+        catch (Exception e)
+        {
+
+        }
     }
     
     private void sendDiceRequest() {

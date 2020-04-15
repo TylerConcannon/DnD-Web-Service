@@ -14,7 +14,7 @@ import java.util.List;
  * @author hanli
  */
 public class DiceRoller {
-
+   
     public Roll rollDice(List<List<Integer>> clientRolls)
     {
         Roll roll = new Roll();
@@ -33,58 +33,86 @@ public class DiceRoller {
                 serverRoll.add(dieRoll);
             }
             serverRolls.add(serverRoll);
-       
         }
         roll.setTotal(total);
         roll.setRolls(serverRolls);
+        
+        int[] minMax = getMinMax(roll);
+        roll.setMin(minMax[0]);
+        roll.setMax(minMax[1]);
+        
         return roll;
     }
     
-    public Roll maxRoll(List<List<Integer>> clientRolls)
+    public int[] getMinMax(Roll roll)
     {
-        Roll roll = new Roll();
-        List<List<Integer>> serverRolls = new ArrayList<>();
-        for (List<Integer> userCombination : clientRolls)
-        {
-            List<Integer> serverRoll = new ArrayList<>();
-            int total = 0;
-            int dieRoll = 0;
 
-            for(int i = 0; i < userCombination.get(1); i++)
+        List<List<Integer>> rolls = roll.getRolls();
+        int max = 0;
+        int min = Integer.MAX_VALUE;
+        
+        for (List<Integer> list : rolls)
+        {
+            for (Integer i : list)
             {
-                dieRoll = (int) (Math.random() * ((userCombination.get(0) - 1) + 1)) + 1;
-                if(dieRoll>total)
-                    total= dieRoll;
-                serverRoll.add(dieRoll);
+                if (i > max)
+                {
+                    max = i;
+                }
+                if (i < min)
+                {
+                    min = i;
+                }
             }
-            roll.setTotal(total);
-            roll.setRolls(serverRolls);        
         }
-        return roll;
+        return new int[] {min, max};
     }
     
-    public Roll minRoll(List<List<Integer>> clientRolls)
-    {
-        Roll roll = new Roll();
-        List<List<Integer>> serverRolls = new ArrayList<>();
-        for (List<Integer> userCombination : clientRolls)
-        {
-            List<Integer> serverRoll = new ArrayList<>();
-            int total = Integer.MAX_VALUE;
-            int dieRoll = 0;
-
-            for(int i = 0; i < userCombination.get(1); i++)
-            {
-                dieRoll = (int) (Math.random() * ((userCombination.get(0) - 1) + 1)) + 1;
-                if(dieRoll<total)
-                    total= dieRoll;
-                serverRoll.add(dieRoll);
-            }
-            roll.setTotal(total);
-            roll.setRolls(serverRolls);        
-        }
-        return roll;
-    }
+//    public Roll maxRoll(List<List<Integer>> clientRolls)
+//    {
+//        Roll roll = new Roll();
+//        List<List<Integer>> serverRolls = new ArrayList<>();
+//        for (List<Integer> userCombination : clientRolls)
+//        {
+//            List<Integer> serverRoll = new ArrayList<>();
+//            int total = 0;
+//            int dieRoll = 0;
+//
+//            for(int i = 0; i < userCombination.get(1); i++)
+//            {
+//                dieRoll = (int) (Math.random() * ((userCombination.get(0) - 1) + 1)) + 1;
+//                if(dieRoll>total)
+//                    total= dieRoll;
+//                serverRoll.add(dieRoll);
+//            }
+//            roll.setTotal(total);
+//            roll.setRolls(serverRolls);        
+//        }
+//        return roll;
+//    }
+//    
+//    public Roll minRoll(List<List<Integer>> clientRolls)
+//    {
+//        Roll roll = new Roll();
+//        List<List<Integer>> serverRolls = new ArrayList<>();
+//        for (List<Integer> userCombination : clientRolls)
+//        {
+//            List<Integer> serverRoll = new ArrayList<>();
+//            int total = Integer.MAX_VALUE;
+//            int dieRoll = 0;
+//
+//            for(int i = 0; i < userCombination.get(1); i++)
+//            {
+//                dieRoll = (int) (Math.random() * ((userCombination.get(0) - 1) + 1)) + 1;
+//                if(dieRoll<total)
+//                    total= dieRoll;
+//                serverRoll.add(dieRoll);
+//            }
+//            roll.setTotal(total);
+//            roll.setRolls(serverRolls);        
+//        }
+//        return roll;
+//    }
     
     public Roll averageRoll(List<List<Integer>> clientRolls)
     {

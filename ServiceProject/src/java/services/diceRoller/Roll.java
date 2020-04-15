@@ -15,6 +15,7 @@ import java.util.List;
 public class Roll {
     private int total;
     private List<List<Integer>> rolls;
+    private int max, min;
     
     public Roll(){
         rolls = new ArrayList<>();
@@ -35,4 +36,21 @@ public class Roll {
     public void setRolls(List<List<Integer>> rolls) {
         this.rolls = rolls;
     }
+
+    public int getMax() {
+        return max;
+    }
+
+    public void setMax(int max) {
+        this.max = max;
+    }
+
+    public int getMin() {
+        return min;
+    }
+
+    public void setMin(int min) {
+        this.min = min;
+    }
+    
 }

@@ -17,6 +17,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.xml.ws.http.HTTPException;
+import org.apache.hc.core5.http.HttpException;
 import services.diceRoller.DiceRoller;
 import services.diceRoller.DiceRollerServlet;
 import services.diceRoller.Roll;
@@ -35,14 +37,14 @@ public class RandomContentServlet extends HttpServlet {
         List<Loot> loot = getLoot(request);
         sendContentJson(response, loot);
         
-        
-        int i = 0;
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int i = 0;
+        
+        String content = getBody(request);
+        postNewContent(content);
     }
 
 
@@ -58,25 +60,32 @@ public class RandomContentServlet extends HttpServlet {
         return loot;
     }
     
-//    private String getBody(HttpServletRequest request)
-//    {
-//        StringBuilder buffer = new StringBuilder();
-//        BufferedReader reader;
-//        String content = "";
-//        try {
-//            reader = request.getReader();
-//            String line;
-//            while ((line = reader.readLine()) != null)
-//            {
-//                buffer.append(line);
-//            }
-//            content = buffer.toString();
-//            
-//        } catch (IOException ex) {
-//            Logger.getLogger(DiceRollerServlet.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        return content;
-//    }
+    private String getBody(HttpServletRequest request)
+    {
+        StringBuilder buffer = new StringBuilder();
+        BufferedReader reader;
+        String content = "";
+        try {
+            reader = request.getReader();
+            String line;
+            while ((line = reader.readLine()) != null)
+            {
+                buffer.append(line);
+            }
+            content = buffer.toString();
+            
+        } catch (IOException ex) {
+            Logger.getLogger(DiceRollerServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return content;
+    }
+    
+    private void postNewContent(String content){
+        Gson gson = new Gson();
+        Loot loot = gson.fromJson(content, Loot.class);
+        RandomContent randomContent = new RandomContent();
+        randomContent.postContent(loot);
+    }
     
     private void sendContentJson(HttpServletResponse response, List<Loot> loot)
     {
