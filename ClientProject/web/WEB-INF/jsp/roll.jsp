@@ -224,8 +224,7 @@
               url:"http://localhost:8084/ClientProject/diceClient?numDice=" + numDice + "&diceType=" + dType,
               success: function(result){
                   console.log(result)
-
-                  document.getElementById("diceResults").textContent = "Rolled " + numDice + "d" + dType + ". Total: " + result.total;
+                  document.getElementById("diceResults").textContent = "Rolled " + numDice + "d" + dType + ". Total: " + result.total + "\n{ " + result.rolls + " }";
               },
               error: function(result){
                   document.getElementById("diceResults").textContent = result.toString() + " Failure";
