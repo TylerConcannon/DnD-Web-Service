@@ -208,7 +208,7 @@ public class HomeController {
 //            getResponse(conn);
     }
     catch(NullPointerException e) { System.err.println(e); } catch (IOException ex) {
-        Logger.getLogger(DiceRollerClient.class.getName()).log(Level.SEVERE, null, ex);
+        Logger.getLogger(ServiceClient.class.getName()).log(Level.SEVERE, null, ex);
     }
 }
 

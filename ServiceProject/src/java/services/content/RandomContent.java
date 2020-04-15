@@ -322,5 +322,6 @@ public class RandomContent
 				legendaryItems.add(loot);
 			}			
 		}
+                int i = 0;
 	}
 }
