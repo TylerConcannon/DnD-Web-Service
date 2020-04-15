@@ -6,11 +6,10 @@
 package client.controllers;
 
 import client.models.DiceRoll;
+import client.models.Loot;
 import com.google.gson.Gson;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,17 +19,17 @@ import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
 import org.apache.hc.core5.http.ClassicHttpResponse;
 import org.apache.hc.core5.http.HttpEntity;
-import org.apache.hc.core5.http.NotImplementedException;
 import org.apache.hc.core5.http.io.entity.EntityUtils;
 import org.apache.hc.core5.http.io.entity.StringEntity;
 
 /**
  *
- * @author ChaseT
+ * @author larry
  */
-public class DiceClientServlet extends HttpServlet {
-    private static final String diceRollerUrl = "http://localhost:8084/ServiceProject/diceRoller";
- //   private static final String contentUrl = "http://localhost:8084/ServiceProject/randomContent";
+public class ContentServlet extends HttpServlet {
+    
+    private static final String contentUrl = "http://localhost:8084/ServiceProject/randomContent";
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -40,7 +39,7 @@ public class DiceClientServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    public void processRequest(HttpServletRequest request, HttpServletResponse response)
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
@@ -48,10 +47,10 @@ public class DiceClientServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet DiceClientServlet</title>");            
+            out.println("<title>Servlet ContentServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet DiceClientServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet ContentServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -67,19 +66,16 @@ public class DiceClientServlet extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response)
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        //processRequest(request, response);
+        String rarity = request.getParameter("rarity");
+        String type = request.getParameter("type");
         
-        String numberDice = request.getParameter("numDice");
-        String diceType = request.getParameter("diceType");
+        Loot loot = sendRequest(rarity, type);
+        sendJsonResponse(response, loot);
         
-        DiceRoll roll = getDiceRoll(numberDice, diceType);
-        DiceRoll serviceRoll = sendRequest(request, roll);
-        
-        sendJsonResponse(response, serviceRoll);
-        
-      //  processRequest(request, response);
-      //  processRequest(request, response);
+        int i = 0;
     }
 
     /**
@@ -91,7 +87,7 @@ public class DiceClientServlet extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    public void doPost(HttpServletRequest request, HttpServletResponse response)
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
@@ -106,40 +102,23 @@ public class DiceClientServlet extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
-    private DiceRoll getDiceRoll(String numDice, String diceType)
-    {
-        DiceRoll roll = new DiceRoll();
-
-        List<List<Integer>> rolls = new ArrayList<List<Integer>>();
-
-        List<Integer> roll1 = new ArrayList<>();
-        roll1.add(Integer.parseInt(diceType));
-        roll1.add(Integer.parseInt(numDice));
-
-        rolls.add(roll1);
-
-        roll.setRolls(rolls);
-        
-        return roll;
-    }
     
-    private DiceRoll sendRequest(HttpServletRequest request, DiceRoll roll)
+    private Loot sendRequest(String rarity, String type)
     {
         HttpClient client = HttpClientBuilder.create().build();
-        Gson payload = new Gson();
-        DiceRoll serviceRoll = new DiceRoll();
+        Loot loot = new Loot();
         try {
-             HttpGet get = new HttpGet(diceRollerUrl);
-             StringEntity entity = new StringEntity(payload.toJson(roll));
-             get.setEntity(entity);
-             get.setHeader("Content-type", "application/json");
+             HttpGet get = new HttpGet(contentUrl + "?rarity=" + rarity + "&type=" + type);
+           //  StringEntity entity = new StringEntity(payload.toJson(loot));
+           //  get.setEntity(entity);
+          //   get.setHeader("Content-type", "application/json");
 
              ClassicHttpResponse res = (ClassicHttpResponse) client.execute(get);
              HttpEntity ent = res.getEntity();
              String str = EntityUtils.toString(ent, "UTF-8");
 
              Gson gson = new Gson();
-             serviceRoll = gson.fromJson(str, DiceRoll.class);
+             loot = gson.fromJson(str, Loot.class);
 
 
        }
@@ -148,13 +127,13 @@ public class DiceClientServlet extends HttpServlet {
            e.printStackTrace();
        }
         
-       return serviceRoll;
+       return loot;
     }
     
-    private void sendJsonResponse(HttpServletResponse response, DiceRoll roll) throws IOException
+    private void sendJsonResponse(HttpServletResponse response, Loot loot) throws IOException
     {
         Gson gson = new Gson();
-        String payload = gson.toJson(roll);
+        String payload = gson.toJson(loot);
         
         PrintWriter out = response.getWriter();
         response.addHeader("Content-type", "application/json");

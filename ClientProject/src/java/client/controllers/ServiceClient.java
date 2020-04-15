@@ -30,14 +30,14 @@ import org.apache.hc.core5.http.io.entity.StringEntity;
 
 
 
-class DiceRollerClient {
+class ServiceClient {
     private static final String diceRollerUrl = "http://localhost:8084/ServiceProject/diceRoller";
-    private static final String contentUrl = "http://localhost:8084/ServiceProject/randomContent";
+    private static final String contentUrl = "http://localhost:8084/ServiceProject/content";
 
     private static final String deployUrl = "http://localhost:8080/ServiceProject/diceRoller";
     
     public static void main(String[ ] args) {
-        new DiceRollerClient().sendRequest();
+        new ServiceClient().sendRequest();
     }
 
     private void sendRequest() {
@@ -71,6 +71,7 @@ class DiceRollerClient {
              String str = EntityUtils.toString(ent, "UTF-8");
 
              Gson gson = new Gson();
+             Loot loot = gson.fromJson(str, Loot.class);
              //DiceRoll serviceRoll = gson.fromJson(str, DiceRoll.class);
 
                  
