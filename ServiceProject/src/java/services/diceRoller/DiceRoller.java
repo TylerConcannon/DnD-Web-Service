@@ -33,8 +33,7 @@ public class DiceRoller {
                 serverRoll.add(dieRoll);
             }
             serverRolls.add(serverRoll);
-          //  roll.setTotal(total);
-           // roll.setRolls(serverRolls);        
+       
         }
         roll.setTotal(total);
         roll.setRolls(serverRolls);

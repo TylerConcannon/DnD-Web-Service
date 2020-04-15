@@ -5,7 +5,6 @@
  */
 package client.controllers;
 
-import client.models.DiceRoll;
 import client.models.Loot;
 import com.google.gson.Gson;
 import java.io.IOException;
@@ -20,7 +19,6 @@ import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
 import org.apache.hc.core5.http.ClassicHttpResponse;
 import org.apache.hc.core5.http.HttpEntity;
 import org.apache.hc.core5.http.io.entity.EntityUtils;
-import org.apache.hc.core5.http.io.entity.StringEntity;
 
 /**
  *
@@ -30,15 +28,7 @@ public class ContentServlet extends HttpServlet {
     
     private static final String contentUrl = "http://localhost:8084/ServiceProject/randomContent";
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -56,15 +46,7 @@ public class ContentServlet extends HttpServlet {
         }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -74,33 +56,20 @@ public class ContentServlet extends HttpServlet {
         
         Loot loot = sendRequest(rarity, type);
         sendJsonResponse(response, loot);
-        
-        int i = 0;
-    }
+            }
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
 
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
+
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
     
     private Loot sendRequest(String rarity, String type)
@@ -109,9 +78,6 @@ public class ContentServlet extends HttpServlet {
         Loot loot = new Loot();
         try {
              HttpGet get = new HttpGet(contentUrl + "?rarity=" + rarity + "&type=" + type);
-           //  StringEntity entity = new StringEntity(payload.toJson(loot));
-           //  get.setEntity(entity);
-          //   get.setHeader("Content-type", "application/json");
 
              ClassicHttpResponse res = (ClassicHttpResponse) client.execute(get);
              HttpEntity ent = res.getEntity();
@@ -119,8 +85,6 @@ public class ContentServlet extends HttpServlet {
 
              Gson gson = new Gson();
              loot = gson.fromJson(str, Loot.class);
-
-
        }
        catch (Exception e)
        {
