@@ -290,8 +290,6 @@ public class RandomContent
 	
 	
 	public void setLoot() throws IOException {
-            
-                String currentDirectory = System.getProperty("user.dir");
 
 		String file = "resource/LootTable.csv";
 		
