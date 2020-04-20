@@ -15,13 +15,14 @@ public class Loot
     private String description;
 	private String type;
 	private String value;
+        private String rarity;
     
     // Setters -----------------------------------------------------------------
     public void setType(String type) {
 		this.type = type;
 	}
 	
-	public void setName(String name) 
+    public void setName(String name) 
     {
         this.name = name;
     }
@@ -41,9 +42,17 @@ public class Loot
 		return type;
 	}
 	
-	public String getName() 
+    public String getName() 
     {
         return name;
+    }
+
+    public String getRarity() {
+        return rarity;
+    }
+
+    public void setRarity(String rarity) {
+        this.rarity = rarity;
     }
     
     public String getDescription() 

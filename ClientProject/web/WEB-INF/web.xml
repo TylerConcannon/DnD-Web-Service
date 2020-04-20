@@ -3,7 +3,11 @@
     <display-name>DnDClient</display-name>
     <servlet>
         <servlet-name>ContentServlet</servlet-name>
-        <servlet-class>client.controllers.ContentServlet</servlet-class>
+        <servlet-class>client.controllers.ContentClientServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EncounterClientServlet</servlet-name>
+        <servlet-class>client.controllers.EncounterClientServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>DiceClientServlet</servlet-name>
@@ -12,6 +16,10 @@
     <servlet-mapping>
         <servlet-name>ContentServlet</servlet-name>
         <url-pattern>/content</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EncounterClientServlet</servlet-name>
+        <url-pattern>/encounter</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

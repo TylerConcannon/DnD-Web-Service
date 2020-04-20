@@ -18,16 +18,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.apache.hc.client5.http.classic.HttpClient;
 import org.apache.hc.client5.http.classic.methods.HttpGet;
+import org.apache.hc.client5.http.classic.methods.HttpPost;
 import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
 import org.apache.hc.core5.http.ClassicHttpResponse;
 import org.apache.hc.core5.http.HttpEntity;
+import org.apache.hc.core5.http.ParseException;
 import org.apache.hc.core5.http.io.entity.EntityUtils;
+import org.apache.hc.core5.http.io.entity.StringEntity;
 
 /**
  *
  * @author larry
  */
-public class ContentServlet extends HttpServlet {
+public class ContentClientServlet extends HttpServlet {
     
     private static final String contentUrl = "http://localhost:8084/ServiceProject/randomContent";
 
@@ -57,17 +60,24 @@ public class ContentServlet extends HttpServlet {
         String rarity = request.getParameter("rarity");
         String type = request.getParameter("type");
         
-        Loot loot = sendRequest(rarity, type);
+        Loot loot = sendGetRequest(rarity, type);
         sendJsonResponse(response, loot);
-            }
+    }
 
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //processRequest(request, response);
-        String content = getBody(request);
-        Gson gson = new Gson();
+        
+        try {
+            String body = getBody(request);
+            sendPostRequest(body); 
+        }  
+        catch (Exception e)
+        {
+
+        }
     }
 
 
@@ -91,13 +101,13 @@ public class ContentServlet extends HttpServlet {
             content = buffer.toString();
             
         } catch (IOException ex) {
-            Logger.getLogger(ContentServlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ContentClientServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
         return content;
     }
 
     
-    private Loot sendRequest(String rarity, String type)
+    private Loot sendGetRequest(String rarity, String type)
     {
         HttpClient client = HttpClientBuilder.create().build();
         Loot loot = new Loot();
@@ -118,6 +128,27 @@ public class ContentServlet extends HttpServlet {
         
        return loot;
     }
+    
+    private void sendPostRequest(String body) throws ParseException{
+        try{
+            HttpClient client = HttpClientBuilder.create().build();
+            
+            HttpPost post = new HttpPost(contentUrl);
+                                    
+            HttpEntity payload = new StringEntity(body);
+            post.setHeader("Content-type", "application/json");
+            post.setEntity(payload);
+
+            ClassicHttpResponse res = (ClassicHttpResponse) client.execute(post);
+            HttpEntity ent = res.getEntity();
+            String str = EntityUtils.toString(ent, "UTF-8");
+        }
+        catch (IOException e){
+            
+        }
+    }
+    
+    
     
     private void sendJsonResponse(HttpServletResponse response, Loot loot) throws IOException
     {

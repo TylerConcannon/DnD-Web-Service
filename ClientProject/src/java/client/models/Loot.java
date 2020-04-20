@@ -15,6 +15,15 @@ public class Loot
     private String description;
 	private String type;
 	private String value;
+        private String rarity;
+
+    public String getRarity() {
+        return rarity;
+    }
+
+    public void setRarity(String rarity) {
+        this.rarity = rarity;
+    }
     
     // Setters -----------------------------------------------------------------
     public void setType(String type) {
