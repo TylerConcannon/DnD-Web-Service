@@ -131,6 +131,47 @@
         height: 100px;
     }
     
+    .btn-secondary{
+        color: white;
+        background-color: darkslategrey;
+        border-color: white;
+    }
+    
+    .btn-secondary:hover{
+       color: white;
+       background-color: dimgrey;
+       border-color: whitesmoke;
+       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    
+    .btn-secondary:active{
+        color: white;
+        background-color: darkslategrey;
+        border-color: white;
+    }
+    
+     .btn-secondary:active:focus{
+        color: white;
+        background-color: darkslategrey;
+        border-color: white;
+    }
+    
+    .btn-secondary:focus{
+        color: white;
+        background-color: darkslategrey;
+        border-color: white;
+    }
+    
+     .btn-secondary:visited{
+        color: white;
+        background-color: darkslategrey;
+        border-color: white;
+    }
+    
+    .radio-buttons{
+        padding-bottom: 30px;
+    }
+    
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
@@ -197,6 +238,19 @@
                         <option value="20">20-Sided Dice</option>
                     </select>
              </div>
+<!--                 <div class="radio-buttons">
+                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="normalO" autocomplete="off" checked> Normal
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="advantageO" autocomplete="off"> Advantage
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="disadO" autocomplete="off"> Disadvantage
+                        </label>
+                    </div>
+             </div>-->
                  <div class="dice-button">
                       <div class="dice-button">
                                 <button type="submit" onclick="getRolls()" class="btn btn-primary btn-lg">Roll Dice</button>
@@ -208,6 +262,7 @@
                             <textarea class="form-control" id="diceResults" rows="3" readonly></textarea>
                         </div>
                  </form>
+                 <hr>
              </div>
             </div>
             

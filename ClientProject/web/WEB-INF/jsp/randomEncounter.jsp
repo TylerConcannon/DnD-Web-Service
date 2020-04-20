@@ -220,9 +220,10 @@
                  <form>
                         <div class="form-group-result">
                             <label class="input-sides-text" for="exampleFormControlTextarea1">Results:</label>
-                            <textarea class="form-control" id="contentResults" rows="3"></textarea>
+                            <textarea class="form-control" id="contentResults" rows="3" readonly></textarea>
                         </div>
                  </form>
+                 <hr>
              </div>
             </div>
         </div>
