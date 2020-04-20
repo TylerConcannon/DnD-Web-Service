@@ -197,7 +197,7 @@
              </div>
              <div class="loot-rarity-selection">
                  <span class="input-sides-text" id="inputGroup-sizing-default">Terrain Selection:</span>
-                    <select class="browser-default custom-select">
+                    <select id="terrain" class="browser-default custom-select">
                         <option selected>Select Terrain:</option>
                         <option value="Forest">Forest</option>
                         <option value="Hill">Hill</option>
@@ -237,3 +237,42 @@
 
 </body>
 </html>
+
+<script>
+    function getEncounters()
+      {
+          var terrain = document.getElementById("terrain").value;
+          var numEnemies = document.getElementById("numEnemies").value;
+          var groupCR = document.getElementById("groupCR").value;
+          
+          $.ajax({
+              type:"GET",
+              url:"http://localhost:8084/ClientProject/encounter?terrain=" + terrain + "&numEnemies=" + numEnemies + "&groupCR=" + groupCR,
+              success: function(result){
+                  
+                  console.log(result)
+                  var content
+                  
+                  if (result.name === undefined){
+                      content = "Please fill out all the fields for a random encounter!"
+                  }
+                  else {
+                    content = "You encountered: ";
+
+                    if (result.description != ""){
+                      content += "Description: ";
+                    }
+                    if (result.value != ""){
+                        content += "Enemy CR: ";
+                    }
+                  }
+
+                  
+                  document.getElementById("contentResults").textContent = content;
+              },
+              error: function(result){
+                  document.getElementById("diceResults").textContent = result.toString() + " Failure";
+              }
+          })
+      }
+</script>

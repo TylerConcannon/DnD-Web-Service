@@ -147,6 +147,26 @@
     textarea.form-control {
     height: 175px;
     }
+    
+    .loot-name{
+        padding-bottom: 30px;
+    }
+    
+    .loot-rarity{
+        padding-bottom: 30px;
+    }
+    
+    .loot-catagory-creation{
+        padding-bottom: 30px;
+    }
+    
+    .loot-description{
+        padding-bottom: 30px;
+    }
+    
+    .loot-value{
+        padding-bottom: 30px;
+    }
   </style>
 </head>
 <body>
@@ -215,6 +235,8 @@
 <!--                        <option value="Rod">Rod</option>-->
                     </select>
              </div>
+                 
+                
                  <div class="dice-button">
                       <div class="dice-button">
                                 <button onclick="getContent()" type="submit" class="btn btn-primary btn-lg">Generate Loot</button>
@@ -227,6 +249,57 @@
                         </div>
                  </form>
                  <hr>
+                  <div class="loot-creation">
+                     <h1 class="home-header">Create Loot</h1>
+                     <div class="loot-name">
+                         <span class="input-sides-text" id="inputGroup-sizing-default">Loot Name:</span>
+                         <input type="text" id="nameLoot" class="side-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                     </div>
+                     <div class="loot-rarity">
+                         <span class="input-sides-text" id="inputGroup-sizing-default">Loot Rarity:</span>
+                        <select id="rarityCreation" class="browser-default custom-select">
+                            <option selected>Select loot rarity:</option>
+                            <option value="Mundane">Mundane</option>
+                            <option value="Common">Common</option>
+<!--                        <option value="Uncommon">Uncommon</option>-->
+                            <option value="Rare">Rare</option>
+                            <option value="Very Rare">Very Rare</option>
+                            <option value="Legendary">Legendary</option>
+                        </select>
+                     </div>
+                     <div class="loot-catagory-creation">
+                         <span class="input-sides-text" id="inputGroup-sizing-default">Loot Category:</span>
+                        <select id="createCatagory" class="browser-default custom-select">
+                            <option selected>Select loot Category:</option>
+                            <option value="Treasure">Treasure</option>
+                            <option value="Weapon">Weapon</option>
+                            <option value="Adventuring Gear">Adventuring Gear</option>
+                            <option value="Book">Book</option>
+                            <option value="Wondrous Item">Wondrous Item</option>
+<!--                        <option value="Trap">Trap</option>-->
+                            <option value="Armor">Armor</option>
+<!--                        <option value="Shield">Shield</option>-->
+                            <option value="Potion">Potion</option>
+<!--                        <option value="Quest Hook">Quest Hook</option>-->
+                            <option value="Ring">Ring</option>
+<!--                        <option value="Rod">Rod</option>-->
+                        </select>
+                     </div>
+                     <div class="loot-description">
+                         <label class="input-sides-text" for="exampleFormControlTextarea1">Loot Description:</label>
+                         <textarea class="form-control" id="description" rows="3"></textarea>
+                     </div>
+                     <div class="loot-value">
+                         <span class="input-sides-text" id="inputGroup-sizing-default">Loot Value:</span>
+                         <input type="text" id="valueLoot" class="side-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                     </div>
+                     
+                     <div class="dice-button">
+                      <div class="dice-button">
+                                <button onclick="createContent()" type="submit" class="btn btn-primary btn-lg">Create Loot</button>
+                        </div>
+                 </div>
+                 </div>
              </div>
 </div>
              
@@ -285,6 +358,36 @@
               },
               error: function(result){
                   document.getElementById("diceResults").textContent = result.toString() + " Failure";
+              }
+          })
+      }
+      
+      function createContent()
+      {
+          var lootName = document.getElementById("nameLoot").value;
+          var lootRarity = document.getElementById("rarityCreation").value;
+          var lootCatagory = document.getElementById("createCatagory").value;
+          var lootDescription = document.getElementById("description").value;
+          var lootValue = document.getElementById("valueLoot").value;
+          
+          var json = {
+              "name": lootName,
+              "description": lootDescription,
+              "type": lootRarity,
+              "rarity": lootRarity,
+              "value": lootValue
+          }
+          
+           $.ajax({
+              type:"POST",
+              url:"http://localhost:8084/ClientProject/content",
+              data:json,
+              success: function(result){
+                  
+                 
+              },
+              error: function(result){
+                  
               }
           })
       }

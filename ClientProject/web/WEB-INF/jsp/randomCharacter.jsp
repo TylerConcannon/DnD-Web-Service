@@ -196,7 +196,7 @@
              
              <div class="loot-rarity-selection">
                  <span class="input-sides-text" id="inputGroup-sizing-default">Class:</span>
-                    <select class="browser-default custom-select">
+                    <select id="classType" class="browser-default custom-select">
                         <option selected>Select Class:</option>
                         <option value="Cleric">Cleric</option>
                         <option value="Fighter">Fighter</option>
@@ -207,7 +207,7 @@
              
              <div class="loot-rarity-selection">
                  <span class="input-sides-text" id="inputGroup-sizing-default">Race:</span>
-                    <select class="browser-default custom-select">
+                    <select id="raceType" class="browser-default custom-select">
                         <option selected>Select Race:</option>
                         <option value="Dwarf">Dwarf</option>
                         <option value="Elf">Elf</option>
@@ -219,7 +219,7 @@
              
              <div class="loot-rarity-selection">
                  <span class="input-sides-text" id="inputGroup-sizing-default">Level:</span>
-                    <select class="browser-default custom-select">
+                    <select id="level" class="browser-default custom-select">
                         <option selected>Select Race:</option>
                         <option value="1">Level 1</option>
                         <option value="2">Level 2</option>
@@ -273,3 +273,43 @@
 
 </body>
 </html>
+
+<script>
+    function getCharacter()
+      {
+          var name = document.getElementById("name").value;
+          var classType = document.getElementById("classType").value;
+          var raceType = document.getElementById("raceType").value;
+          var level = document.getElementById("level").value;
+          
+          $.ajax({
+              type:"GET",
+              url:"http://localhost:8084/ClientProject/character?name=" + name + "&classType=" + classType + "&raceType=" + raceType + "&level=" + level,
+              success: function(result){
+                  
+                  console.log(result)
+                  var content
+                  
+                  if (result.name === undefined){
+                      content = "Please fill out all the fields for a random character!"
+                  }
+                  else {
+                    content = "Character Name: ";
+
+                    if (result.description != ""){
+                      content += "Description: ";
+                    }
+                    if (result.value != ""){
+                        content += "Enemy CR: ";
+                    }
+                  }
+
+                  
+                  document.getElementById("contentResults").textContent = content;
+              },
+              error: function(result){
+                  document.getElementById("diceResults").textContent = result.toString() + " Failure";
+              }
+          })
+      }
+</script>
