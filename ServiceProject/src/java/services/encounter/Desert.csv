@@ -1,151 +1,145 @@
-﻿Monster,CR,Type,Subtype,Size,Align,Terrain,Sourcebook,,
-Accursed defiler,4    ,Undead,N/A,Medium,NE,"Desert, Special",ToB p.12,,
-Aerial servant,9    ,Fiend,N/A,Medium,N,"Desert, Grassland, Mountain",FEF p.7,,
-Air elemental,5    ,Elemental,N/A,Large,N,"Desert, Mountain, Special",MM p.124,,
-Air elemental myrmidon,7    ,Elemental,N/A,Medium,N,"Desert, Mountain, Special",PotA p.212,,
-Al-aeshma,9    ,Elemental,Genie,Large,CE,"Desert, Special",ToB p.211,,
-Androsphinx,17    ,Monstrosity,N/A,Large,LN,Desert,MM p.281,,
-Angatra,6    ,Undead,N/A,Medium,NE,"Desert, Special, Swamp, Underdark",ToB p.19,,
-Ant lion,4    ,Beast,N/A,Large,Un,Desert,FEF p.11,,
-Anubian,2    ,Elemental,N/A,Medium,CE,"Desert, Special, Underdark",ToB p.24,,
-Black dracolisk,7    ,Dragon,N/A,Large,Un,"Desert, Swamp, Underdark",FEF p.85,,
-"Blue dracolich, adult",17    ,Undead,Dragon,Huge,LE,Desert,MM p.84,,
-Blue dracolisk,7    ,Dragon,N/A,Large,Un,"Desert, Mountain, Underdark",FEF p.85,,
-"Blue dragon, adult",16    ,Dragon,N/A,Huge,LE,"Coastal, Desert",MM p.91,,
-"Blue dragon, ancient",23    ,Dragon,N/A,Gargantuan,LE,"Coastal, Desert",MM p.90,,
-"Blue dragon, wyrmling",3    ,Dragon,N/A,Medium,LE,"Coastal, Desert",MM p.91,,
-"Blue dragon, young",9    ,Dragon,N/A,Large,LE,"Coastal, Desert",MM p.91,,
-"Brass dragon, adult",13    ,Dragon,N/A,Huge,CG,Desert,MM p.105,,
-"Brass dragon, ancient",20    ,Dragon,N/A,Gargantuan,CG,Desert,MM p.104,,
-"Brass dragon, wyrmling",1    ,Dragon,N/A,Medium,CG,Desert,MM p.106,,
-"Brass dragon, young",6    ,Dragon,N/A,Large,CG,Desert,MM p.105,,
-Cactid,3    ,Plant,N/A,Large,Un,Desert,ToB p.50,,
-Camel, 1/8,Beast,N/A,Large,Un,Desert,MM p.320,,
-Cat,0    ,Beast,N/A,Tiny,Un,"Desert, Forest, Grassland, Urban",MM p.320,,
-Chelicerae,7    ,Aberration,N/A,Large,NE,"Desert, Forest, Mountain, Special, Urban",ToB p.54,,
-Clamor,2    ,Aberration,Extraplanar/incorporeal,Medium,Un,"Desert, Forest, Grassland, Hill, Mountain",FEF p.62,,
-Constrictor snake, 1/4,Beast,N/A,Large,Un,"Desert, Forest, Swamp, Underwater",MM p.320,,
-Corpse rook,4    ,Monstrosity,N/A,Large,NE,"Desert, Grassland, Hill",FEF p.66,,
-Couatl,4    ,Celestial,N/A,Medium,LG,"Desert, Forest, Grassland, Urban",MM p.43,,
-Dau,4    ,Fey,N/A,Small,CN,Desert,ToB p.70,,
-Denizen of leng,5    ,Aberration,N/A,Medium,CE,"Desert, Forest, Grassland, Hill, Mountain",FEF p.83,,
-Desert giant,9    ,Giant,N/A,Huge,N,Desert,ToB p.222,,
-Dorreq,4    ,Aberration,N/A,Medium,NE,"Coastal, Desert, Mountain, Swamp, Underdark",ToB p.124,,
-Dune mimic,8    ,Monstrosity,Shapechanger,Huge,N,"Desert, Mountain",ToB p.162,,
-Dust digger,3    ,Aberration,N/A,Large,Un,Desert,FEF p.88,,
-Dust goblin, 1/4,Humanoid,Goblinoid,Small,NE,"Desert, Special",ToB p.232,,
-Dust mephit, 1/2,Elemental,N/A,Small,NE,"Desert, Special",MM p.215,,
-Edimmu,4    ,Undead,N/A,Medium,CE,"Desert, Grassland",ToB p.165,,
-Efreeti,11    ,Elemental,Genie,Large,LE,"Desert, Special",MM p.145,,
-Encephalon gorger,4    ,Aberration,N/A,Medium,CE,"Desert, Forest, Grassland, Hill, Mountain",FEF p.94,,
-Eternal flame guardian,2    ,Humanoid,Human,Medium,CE,"Desert, Forest, Grassland, Hill",PotA p.200,,
-Eternal flame priest,3    ,Humanoid,Human,Medium,NE,"Desert, Forest, Grassland, Hill",PotA p.200-201,,
-Feathergale knight,1    ,Humanoid,Human,Medium,LE,"Coastal, Desert, Grassland, Mountain",PotA p.189,,
-Fire drake,1    ,Dragon,N/A,Small,CE,"Desert, Hill, Mountain",FEF p.86,,
-Fire elemental,5    ,Elemental,N/A,Large,N,"Desert, Special",MM p.125,,
-Fire elemental myrmidon,7    ,Elemental,N/A,Medium,N,"Desert, Special",PotA p.213,,
-Flamewrath,6    ,Humanoid,Human,Medium,CE,"Desert, Forest, Grassland, Hill",PotA p.201,,
-Flying snake, 1/8,Beast,N/A,Tiny,Un,"Desert, Forest, Grassland, Urban",MM p.322,,
-Fungus gargoyle,3    ,Plant,Fungus,Medium,NE,"Desert, Forest, Grassland, Hill, Underdark",FEF p.114,,
-Gbahali,6    ,Beast,N/A,Huge,Un,"Desert, Grassland, Hill, Mountain",ToB p.209,,
-Giant ant exoskeleton, 1/2,Construct,N/A,Large,Un,"Desert, Grassland",FEF p.95,,
-Giant beetle exoskeleton,2    ,Construct,N/A,Large,Un,"Desert, Forest, Grassland, Hill, Mountain",FEF p.96,,
-Giant constrictor snake,2    ,Beast,N/A,Huge,Un,"Desert, Forest, Swamp, Underdark, Underwater",MM p.324,,
-Giant crab exoskeleton,3    ,Construct,N/A,Large,Un,"Desert, Forest, Grassland, Hill, Mountain",FEF p.97,,
-Giant hyena,1    ,Beast,N/A,Large,Un,"Desert, Forest, Grassland, Hill",MM p.326,,
-Giant lizard, 1/4,Beast,N/A,Large,Un,"Coastal, Desert, Forest, Swamp, Underdark",MM p.326,,
-Giant scorpion,3    ,Beast,N/A,Large,Un,Desert,MM p.327,,
-Giant spider,1    ,Beast,N/A,Large,Un,"Desert, Forest, Swamp, Underdark, Urban",MM p.328,,
-Giant toad,1    ,Beast,N/A,Large,Un,"Coastal, Desert, Forest, Swamp, Underdark",MM p.329,,
-Giant vulture,1    ,Beast,N/A,Large,NE,"Desert, Grassland",MM p.329,,
-Giant wolf spider, 1/4,Beast,N/A,Medium,Un,"Coastal, Desert, Forest, Grassland, Hill",MM p.330,,
-Gray thirster,2    ,Undead,N/A,Medium,NE,Desert,ToB p.238,,
-Greater basilisk,5    ,Monstrosity,N/A,Large,NE,Desert,FEF p.22,,
-Greater death dog,1    ,Monstrosity,N/A,Medium,NE,Desert,MM p.321,,
-Guardian naga,10    ,Monstrosity,N/A,Large,LG,"Desert, Forest, Special",MM p.234,,
-Gynosphinx,11    ,Monstrosity,N/A,Large,LN,Desert,MM p.282,,
-Gypsosphinx,14    ,Monstrosity,N/A,Large,NE,Desert,ToB p.359-360,,
-Hieroglyphicroc,3    ,Undead,N/A,Large,LE,"Desert, Special",FEF p.143,,
-Hobgoblin, 1/2,Humanoid,Goblinoid,Medium,LE,"Desert, Forest, Grassland, Hill, Underdark",MM p.186,,
-Hobgoblin captain,3    ,Humanoid,Goblinoid,Medium,LE,"Desert, Forest, Grassland, Hill, Underdark",MM p.186,,
-Hobgoblin devastator,4    ,Humanoid,Goblinoid,Medium,LE,"Desert, Forest, Grassland, Hill, Underdark",VGtM p.161,,
-Hobgoblin iron shadow,2    ,Humanoid,Goblinoid,Medium,LE,"Desert, Forest, Grassland, Hill, Underdark",VGtM p.162,,
-Hobgoblin warlord,6    ,Humanoid,Goblinoid,Medium,LE,"Desert, Forest, Grassland, Hill, Underdark",MM p.187,,
-Howling hatred initiate, 1/8,Humanoid,Human,Medium,NE,"Coastal, Desert, Grassland, Mountain",PotA p.190,,
-Howling hatred priest,2    ,Humanoid,Human,Medium,NE,"Coastal, Desert, Grassland, Mountain",PotA p.190-191,,
-Hurricane,2    ,Humanoid,Human,Medium,LE,"Coastal, Desert, Grassland, Mountain",PotA p.191,,
-Hyaenodon,1    ,Beast,N/A,Large,Un,"Desert, Grassland, Hill",FEF p.184,,
-Hyena,0    ,Beast,N/A,Medium,Un,"Desert, Forest, Grassland, Hill",MM p.331,,
-Idolic deity,8    ,Construct,N/A,Small,NE,"Desert, Special, Swamp, Underdark",ToB p.255,,
-Igniguana,1    ,Elemental,N/A,Medium,Un,"Desert, Special, Underdark",FEF p.148,,
-Imy-ut ushabti,3    ,Monstrosity,N/A,Medium,N,Desert,ToB p.256,,
-J'ba fofi spider,3    ,Beast,N/A,Large,Un,"Desert, Forest, Hill",ToB p.362,,
-Jackal,0    ,Beast,N/A,Small,Un,"Desert, Grassland",MM p.331,,
-Jackal of darkness,1    ,Undead,N/A,Small,NE,"Desert, Special",FEF p.149,,
-Jackalwere, 1/2,Humanoid,Shapechanger,Medium,CE,"Desert, Grassland",MM p.193,,
-Kamadan,3    ,Monstrosity,N/A,Large,Un,"Desert, Forest, Grassland, Hill, Swamp",FEF p.153,,
-Ki-rin,12    ,Celestial,N/A,Huge,LG,"Desert, Grassland, Mountain, Special",VGtM p.163-164,,
-Lamia,4    ,Monstrosity,N/A,Large,CE,Desert,MM p.201,,
-Lesser death dog, 1/2,Monstrosity,N/A,Medium,NE,Desert,FEF p.77,,
-Leucrotta,3    ,Monstrosity,N/A,Large,CE,"Desert, Forest, Grassland, Hill, Swamp",VGtM p.169,,
-"Leucrotta, adult",2    ,Monstrosity,N/A,Large,CE,"Desert, Forest, Grassland, Hill, Swamp",FEF p.164,,
-"Leucrotta, young", 1/4,Monstrosity,N/A,Medium,CE,"Desert, Forest, Grassland, Hill, Swamp",FEF p.164,,
-Lion,1    ,Beast,N/A,Large,Un,"Desert, Grassland, Hill, Mountain",MM p.331,,
-Lionwere,2    ,Monstrosity,Shapechanger,Large,CE,"Desert, Grassland, Underdark",FEF p.228,,
-Mallqui,8    ,Undead,N/A,Medium,LN,"Desert, Mountain",ToB p.282,,
-Mamura,6    ,Aberration,Fey,Small,NE,"Desert, Grassland, Special",ToB p.284,,
-Medusa,6    ,Monstrosity,N/A,Medium,LE,"Desert, Swamp",MM p.214,,
-Mirager,3    ,Fey,Shapechanger,Medium,NE,Desert,ToB p.291,,
-Mule, 1/8,Beast,N/A,Medium,Un,"Desert, Hill, Urban",MM p.333,,
-Mummy,3    ,Undead,N/A,Medium,LE,Desert,MM p.228,,
-Mummy lord (in lair),16    ,Undead,N/A,Medium,LE,Desert,MM p.228-229,,
-Mummy lord (not in lair),15    ,Undead,N/A,Medium,LE,Desert,MM p.229,,
-Night scorpion,3    ,Beast,N/A,Large,Un,"Desert, Underdark",ToB p.340,,
-Nkosi, 1/2,Humanoid,Nkosi/shapechanger,Medium,LN,"Desert, Grassland, Hill, Urban",ToB p.306-307,,
-Oozasis,9    ,Ooze,N/A,Gargantuan,Un,Desert,ToB p.310,,
-Phase spider,3    ,Monstrosity,N/A,Large,Un,"Desert, Forest, Grassland, Hill, Underdark, Urban",MM p.334,,
-Possessed pillar,7    ,Construct,N/A,Large,Un,"Desert, Swamp",ToB p.314,,
-Pseudodragon, 1/4,Dragon,N/A,Tiny,NG,"Coastal, Desert, Forest, Hill, Mountain, Urban",MM p.254,,
-Purple worm,15    ,Monstrosity,N/A,Gargantuan,Un,"Desert, Underdark",MM p.255,,
-Purple wormling,2    ,Monstrosity,N/A,Large,Un,"Desert, Underdark",SKT p.242,,
-Pyrolisk, 1/2,Monstrosity,N/A,Small,NE,"Desert, Grassland, Underdark",FEF p.188,,
-Ramag, 1/4,Humanoid,Ramag,Medium,N,"Desert, Special, Urban",ToB p.317,,
-Razerblast,5    ,Humanoid,Human,Medium,CE,"Desert, Forest, Grassland, Hill",PotA p.201,,
-Rotting wind,6    ,Undead,N/A,Large,NE,"Desert, Grassland, Hill",ToB p.330,,
-Sand hag,5    ,Monstrosity,N/A,Medium,CE,Desert,ToB p.245,,
-Sand silhouette,6    ,Undead,N/A,Medium,NE,Desert,ToB p.332,,
-Sand spider,7    ,Beast,N/A,Large,Un,"Desert, Underdark",ToB p.364,,
-Sandwyrm,6    ,Dragon,N/A,Large,Un,Desert,ToB p.334,,
-Sathaq worm,10    ,Elemental,N/A,Huge,NE,"Desert, Special, Underdark",ToB p.337,,
-Scorpion,0    ,Beast,N/A,Tiny,Un,Desert,MM p.337,,
-Serpopard,4    ,Beast,N/A,Large,Un,"Desert, Swamp",ToB p.342,,
-Shabti,8    ,Construct,N/A,Medium,Un,"Desert, Swamp",ToB p.343,,
-Skyweaver,3    ,Humanoid,Human,Medium,CE,"Coastal, Desert, Grassland, Mountain",PotA p.191,,
-Spawn of arbeyach,5    ,Aberration,N/A,Medium,LE,"Coastal, Desert, Forest, Hill, Mountain",ToB p.97,,
-Storm giant,13    ,Giant,N/A,Huge,CG,"Arctic, Coastal, Desert, Mountain, Underwater",MM p.156,,
-Storm giant quintessent,16    ,Giant,Storm giant,Huge,CG,"Arctic, Coastal, Desert, Mountain, Underwater",VGtM p.151,,
-Stygian fat-tailed scorpion,3    ,Beast,N/A,Tiny,Un,"Desert, Special, Underdark",ToB p.340,,
-Swarm of centipedes, 1/2,Beast,N/A,Medium (tiny),Un,"Desert, Forest, Grassland, Hill, Swamp, Urban",FEF p.52,,
-Swarm of manabane scarabs,4    ,Beast,N/A,Medium (tiny),Un,Desert,ToB p.374,,
-Thri-kreen,1    ,Humanoid,Thri-kreen,Medium,CN,"Desert, Grassland",MM p.288,,
-Tlincalli,5    ,Monstrosity,N/A,Large,NE,"Desert, Grassland, Hill",VGtM p.193,,
-Ushabti,9    ,Construct,N/A,Large,Un,"Desert, Special",ToB p.394,,
-Uthgardt shaman,2    ,Humanoid,Human,Medium,NE,"Arctic, Desert, Mountain",SKT p.243-244,,
-Vargouille,1    ,Fiend,N/A,Tiny,CE,"Desert, Special, Swamp, Underdark",VGtM p.195,,
-Venomous mummy,3    ,Undead,N/A,Medium,LE,"Desert, Swamp",ToB p.299,,
-Vesiculosa,11    ,Plant,N/A,Gargantuan,Un,Desert,ToB p.399,,
-Vulture,0    ,Beast,N/A,Medium,Un,"Desert, Grassland, Hill",MM p.339,,
-War ostrich, 1/2,Beast,N/A,Large,Un,"Desert, Grassland",ToB p.307,,
-Weretiger,4    ,Humanoid,Human/shapechanger,Medium,N,"Desert, Forest, Grassland",MM p.210,,
-Wight,3    ,Undead,N/A,Medium,NE,"Desert, Swamp, Underdark, Urban",MM p.300,,
-Yakfolk (yikaria) priest,4    ,Monstrosity,N/A,Large,NE,"Arctic, Desert, Mountain",SKT p.244-245,,
-Yakfolk (yikaria) warrior,3    ,Monstrosity,N/A,Large,NE,"Arctic, Desert, Mountain",SKT p.244-245,,
-Yuan-ti abomination,7    ,Monstrosity,Yuan-ti/shapechanger,Large,NE,"Desert, Forest, Swamp",MM p.308,,
-Yuan-ti anathema,12    ,Monstrosity,Yuan-ti/shapechanger,Huge,NE,"Desert, Forest, Swamp",VGtM p.202-203,,
-Yuan-ti broodguard,2    ,Humanoid,Yuan-ti,Medium,NE,"Desert, Forest, Swamp",VGtM p.203,,
-Yuan-ti malison,3    ,Monstrosity,Yuan-ti/Shapechanger,Medium,NE,"Desert, Forest, Swamp",MM p.309,,
-Yuan-ti mind whisperer,4    ,Monstrosity,Yuan-ti/shapechanger,Medium,NE,"Desert, Forest, Swamp",VGtM p.203-204,,
-Yuan-ti nightmare speaker,4    ,Monstrosity,Yuan-ti/shapechanger,Medium,NE,"Desert, Forest, Swamp",VGtM p.204-205,,
-Yuan-ti pitmaster,5    ,Monstrosity,Yuan-ti/shapechanger,Medium,NE,"Desert, Forest, Swamp",VGtM p.206,,
-Yuan-ti pureblood,1    ,Monstrosity,Yuan-ti,Medium,NE,"Desert, Forest, Swamp, Urban",MM p.310,,
-Zimwi,4    ,Giant,N/A,Medium,CE,"Desert, Grassland, Swamp",ToB p.415,,
+Accursed defiler,1100,Undead,Medium,NE
+Aerial servant,5000,Fiend,Medium,N
+Air elemental,1800,Elemental,Large,N
+Air elemental myrmidon,2900,Elemental,Medium,N
+Al-aeshma,5000,Elemental,Large,CE
+Androsphinx,18000,Monstrosity,Large,LN
+Angatra,2300,Undead,Medium,NE
+Ant lion,1100,Beast,Large,Un
+Anubian,450,Elemental,Medium,CE
+Black dracolisk,2900,Dragon,Large,Un
+"Blue dracolich, adult",18000,Undead,Huge,LE
+Blue dracolisk,2900,Dragon,Large,Un
+"Blue dragon, adult",15000,Dragon,Huge,LE
+"Blue dragon, ancient",50000,Dragon,Gargantuan,LE
+"Blue dragon, wyrmling",700,Dragon,Medium,LE
+"Blue dragon, young",5000,Dragon,Large,LE
+"Brass dragon, adult",10000,Dragon,Huge,CG
+"Brass dragon, ancient",25000,Dragon,Gargantuan,CG
+"Brass dragon, wyrmling",200,Dragon,Medium,CG
+"Brass dragon, young",2300,Dragon,Large,CG
+Cactid,700,Plant,Large,Un
+Camel,25,Beast,Large,Un
+Chelicerae,2900,Aberration,Large,NE
+Clamor,450,Aberration,Medium,Un
+Constrictor snake,50,Beast,Large,Un
+Corpse rook,1100,Monstrosity,Large,NE
+Couatl,1100,Celestial,Medium,LG
+Dau,1100,Fey,Small,CN
+Denizen of leng,1800,Aberration,Medium,CE
+Desert giant,5000,Giant,Huge,N
+Dorreq,1100,Aberration,Medium,NE
+Dune mimic,3900,Monstrosity,Huge,N
+Dust digger,700,Aberration,Large,Un
+Dust goblin,50,Humanoid,Small,NE
+Dust mephit,100,Elemental,Small,NE
+Edimmu,1100,Undead,Medium,CE
+Efreeti,7200,Elemental,Large,LE
+Encephalon gorger,1100,Aberration,Medium,CE
+Eternal flame guardian,450,Humanoid,Medium,CE
+Eternal flame priest,700,Humanoid,Medium,NE
+Feathergale knight,200,Humanoid,Medium,LE
+Fire drake,200,Dragon,Small,CE
+Fire elemental,1800,Elemental,Large,N
+Fire elemental myrmidon,2900,Elemental,Medium,N
+Flamewrath,2300,Humanoid,Medium,CE
+Flying snake,25,Beast,Tiny,Un
+Fungus gargoyle,700,Plant,Medium,NE
+Gbahali,2300,Beast,Huge,Un
+Giant ant exoskeleton,100,Construct,Large,Un
+Giant beetle exoskeleton,450,Construct,Large,Un
+Giant constrictor snake,450,Beast,Huge,Un
+Giant crab exoskeleton,700,Construct,Large,Un
+Giant hyena,200,Beast,Large,Un
+Giant lizard,50,Beast,Large,Un
+Giant scorpion,700,Beast,Large,Un
+Giant spider,200,Beast,Large,Un
+Giant toad,200,Beast,Large,Un
+Giant vulture,200,Beast,Large,NE
+Giant wolf spider,50,Beast,Medium,Un
+Gray thirster,450,Undead,Medium,NE
+Greater basilisk,1800,Monstrosity,Large,NE
+Greater death dog,200,Monstrosity,Medium,NE
+Guardian naga,5900,Monstrosity,Large,LG
+Gynosphinx,7200,Monstrosity,Large,LN
+Gypsosphinx,11500,Monstrosity,Large,NE
+Hieroglyphicroc,700,Undead,Large,LE
+Hobgoblin,100,Humanoid,Medium,LE
+Hobgoblin captain,700,Humanoid,Medium,LE
+Hobgoblin devastator,1100,Humanoid,Medium,LE
+Hobgoblin iron shadow,450,Humanoid,Medium,LE
+Hobgoblin warlord,2300,Humanoid,Medium,LE
+Howling hatred initiate,25,Humanoid,Medium,NE
+Howling hatred priest,450,Humanoid,Medium,NE
+Hurricane,450,Humanoid,Medium,LE
+Hyaenodon,200,Beast,Large,Un
+Idolic deity,3900,Construct,Small,NE
+Igniguana,200,Elemental,Medium,Un
+Imy-ut ushabti,700,Monstrosity,Medium,N
+J'ba fofi spider,700,Beast,Large,Un
+Jackal of darkness,200,Undead,Small,NE
+Jackalwere,100,Humanoid,Medium,CE
+Kamadan,700,Monstrosity,Large,Un
+Ki-rin,8400,Celestial,Huge,LG
+Lamia,1100,Monstrosity,Large,CE
+Lesser death dog,100,Monstrosity,Medium,NE
+Leucrotta,700,Monstrosity,Large,CE
+"Leucrotta, adult",450,Monstrosity,Large,CE
+"Leucrotta, young",50,Monstrosity,Medium,CE
+Lion,200,Beast,Large,Un
+Lionwere,450,Monstrosity,Large,CE
+Mallqui,3900,Undead,Medium,LN
+Mamura,2300,Aberration,Small,NE
+Medusa,2300,Monstrosity,Medium,LE
+Mirager,700,Fey,Medium,NE
+Mule,25,Beast,Medium,Un
+Mummy,700,Undead,Medium,LE
+Mummy lord (in lair),15000,Undead,Medium,LE
+Mummy lord (not in lair),13000,Undead,Medium,LE
+Night scorpion,700,Beast,Large,Un
+Nkosi,100,Humanoid,Medium,LN
+Oozasis,5000,Ooze,Gargantuan,Un
+Phase spider,700,Monstrosity,Large,Un
+Possessed pillar,2900,Construct,Large,Un
+Pseudodragon,50,Dragon,Tiny,NG
+Purple worm,13000,Monstrosity,Gargantuan,Un
+Purple wormling,450,Monstrosity,Large,Un
+Pyrolisk,100,Monstrosity,Small,NE
+Ramag,50,Humanoid,Medium,N
+Razerblast,1800,Humanoid,Medium,CE
+Rotting wind,2300,Undead,Large,NE
+Sand hag,1800,Monstrosity,Medium,CE
+Sand silhouette,2300,Undead,Medium,NE
+Sand spider,2900,Beast,Large,Un
+Sandwyrm,2300,Dragon,Large,Un
+Sathaq worm,5900,Elemental,Huge,NE
+Serpopard,1100,Beast,Large,Un
+Shabti,3900,Construct,Medium,Un
+Skyweaver,700,Humanoid,Medium,CE
+Spawn of arbeyach,1800,Aberration,Medium,LE
+Storm giant,10000,Giant,Huge,CG
+Storm giant quintessent,15000,Giant,Huge,CG
+Stygian fat-tailed scorpion,700,Beast,Tiny,Un
+Swarm of centipedes,100,Beast,Medium (tiny),Un
+Swarm of manabane scarabs,1100,Beast,Medium (tiny),Un
+Thri-kreen,200,Humanoid,Medium,CN
+Tlincalli,1800,Monstrosity,Large,NE
+Ushabti,5000,Construct,Large,Un
+Uthgardt shaman,450,Humanoid,Medium,NE
+Vargouille,200,Fiend,Tiny,CE
+Venomous mummy,700,Undead,Medium,LE
+Vesiculosa,7200,Plant,Gargantuan,Un
+War ostrich,100,Beast,Large,Un
+Weretiger,1100,Humanoid,Medium,N
+Wight,700,Undead,Medium,NE
+Yakfolk (yikaria) priest,1100,Monstrosity,Large,NE
+Yakfolk (yikaria) warrior,700,Monstrosity,Large,NE
+Yuan-ti abomination,2900,Monstrosity,Large,NE
+Yuan-ti anathema,8400,Monstrosity,Huge,NE
+Yuan-ti broodguard,450,Humanoid,Medium,NE
+Yuan-ti malison,700,Monstrosity,Medium,NE
+Yuan-ti mind whisperer,1100,Monstrosity,Medium,NE
+Yuan-ti nightmare speaker,1100,Monstrosity,Medium,NE
+Yuan-ti pitmaster,1800,Monstrosity,Medium,NE
+Yuan-ti pureblood,200,Monstrosity,Medium,NE
+Zimwi,1100,Giant,Medium,CE

@@ -11,7 +11,7 @@ package services.encounter;
  */
 public class Monster {
 	private String name;
-	private String CR;
+	private String XP;
 	private String type;
 	private String size;
 	private String Alignment;
@@ -24,12 +24,12 @@ public class Monster {
 		this.name = name;
 	}
 
-	public String getCR() {
-		return CR;
+	public String getXP() {
+		return XP;
 	}
 
-	public void setCR(String CR) {
-		this.CR = CR;
+	public void setXP(String CR) {
+		this.XP = CR;
 	}
 
 	public String getType() {

@@ -1,283 +1,272 @@
-﻿Monster,CR,Type,Subtype,Size,Align,Terrain,Sourcebook,,
-Aaztar-ghola,4    ,Humanoid,N/A,Medium,CE,Any,FEF p.5,,
-Abjurer,9    ,Humanoid,Any,Medium,Any,Any,VGtM p.209,,
-Acolyte, 1/4,Humanoid,Any,Medium,Any,Any,MM p.342,,
-Ambush drake, 1/2,Dragon,N/A,Medium,Un,Any,HotD p.88,,
-Amphoron of yothri juggernaut,6    ,Construct,N/A,Large,N,Any,FEF p.10,,
-Amphoron of yothri warrior,2    ,Construct,N/A,Medium,N,Any,FEF p.10,,
-Amphoron of yothri worker, 1/2,Construct,N/A,Small,N,Any,FEF p.9,,
-Animated armor,1    ,Construct,Animated object,Medium,Un,Any,MM p.19,,
-Apprentice wizard, 1/4,Humanoid,Any,Medium,Any,Any,VGtM p.209,,
-Arcanaloth,12    ,Fiend,Yugoloth,Medium,NE,Any,MM p.313,,
-Archdruid,12    ,Humanoid,Any,Medium,Any,Any,VGtM p.210,,
-Archer,3    ,Humanoid,Any,Medium,Any,Any,VGtM p.210,,
-Archmage,12    ,Humanoid,Any,Medium,Any,Any,MM p.342,,
-Artificer of yothri,5    ,Aberration,N/A,Medium,CE,Any,FEF p.15,,
-Assassin,8    ,Humanoid,Any,Medium,Non-G,Any,MM p.343,,
-Astral moth, 1/8,Monstrosity,N/A,Large,Any-N,Any,FEF p.18,,
-Aurochs,2    ,Beast,N/A,Large,Un,Any,VGtM p.207,,
-"Baba yaga's horsemen, base",11    ,Fey,N/A,Medium,LN,Any,ToB p.29-30,,
-Banderhobb,5    ,Monstrosity,N/A,Large,NE,Any,VGtM p.122,,
-Bandit, 1/8,Humanoid,Any,Medium,Non-L,Any,MM p.343,,
-Bandit captain,2    ,Humanoid,Any,Medium,Non-L,Any,MM p.344,,
-Bandit lord,4    ,Humanoid,Any,Medium,Any-C,Any,ToB p.418,,
-Bard,2    ,Humanoid,Any,Medium,Any,Any,VGtM p.211,,
-Barghest,4    ,Fiend,Shapechanger,Large,NE,Any,VGtM p.123,,
-Beholder zombie,5    ,Undead,N/A,Large,NE,Any,MM p.316,,
-Berserker,2    ,Humanoid,Any,Medium,Any-C,Any,MM p.344,,
-Black knight commander,5    ,Humanoid,Any,Medium,LE,Any,ToB p.418-419,,
-Blackguard,8    ,Humanoid,Any,Medium,Any-E,Any,VGtM p.211,,
-Blood hawk, 1/8,Beast,N/A,Small,Un,Any,MM p.319,,
-Blue slaad,7    ,Aberration,N/A,Large,CN,Any,MM p.276,,
-Bodak,6    ,Undead,N/A,Medium,CE,Any,VGtM p.127,,
-Bone collective,8    ,Undead,N/A,Small,CE,Any,ToB p.39,,
-Broodiken,1    ,Construct,N/A,Tiny,N,Any,ToB p.45,,
-Broom of animated attack, 1/4,Construct,N/A,Small,Un,Any,CoS p.226,,
-Brume,6    ,Aberration,N/A,Large,NE,Any,FEF p.38,,
-Cadaver, 1/2,Undead,N/A,Medium,CE,Any,FEF p.40,,
-Cadaver lord,3    ,Undead,N/A,Medium,CE,Any,FEF p.41,,
-Chained angel,8    ,Celestial,N/A,Medium,NE,Any,ToB p.20,,
-Champion,9    ,Humanoid,Any,Medium,Any,Any,VGtM p.212,,
-Cimota,2    ,Undead,N/A,Medium,LE,Any,FEF p.59,,
-Cimota guardian,4    ,Undead,N/A,Medium,LE,Any,FEF p.59,,
-City watch captain,4    ,Humanoid,Any,Medium,Any-L,Any,ToB p.419-420,,
-Clay golem,9    ,Construct,N/A,Large,Un,Any,MM p.168,,
-Clockwork abomination,5    ,Fiend,Devil/construct,Large,LE,Any,ToB p.59,,
-Clockwork beetle, 1/2,Construct,N/A,Tiny,Un,Any,ToB p.60,,
-Clockwork beetle swarm,3    ,Construct,N/A,Large (tiny),N,Any,ToB p.61,,
-Clockwork hound,2    ,Construct,N/A,Medium,Un,Any,ToB p.62,,
-Clockwork huntsman,3    ,Construct,N/A,Medium,Un,Any,ToB p.63,,
-Clockwork myrmidon,6    ,Construct,N/A,Large,Un,Any,ToB p.64,,
-Clockwork watchman, 1/2,Construct,N/A,Medium,Un,Any,ToB p.65,,
-Clockwork weaving spider,1    ,Construct,N/A,Tiny,Un,Any,ToB p.66,,
-Commoner,0    ,Humanoid,Any,Medium,Any,Any,MM p.345,,
-Conjurer,6    ,Humanoid,Any,Medium,Any,Any,VGtM p.212,,
-Corpse Mound,11    ,Undead,N/A,Huge,NE,Any,ToB p.69,,
-Corrupted ogre chieftain,6    ,Giant,N/A,Large,CE,Any,ToB p.423-424,,
-Cow (rothé), 1/4,Beast,N/A,Large,Un,Any,VGtM p.207,,
-Cranium rat,0    ,Beast,N/A,Tiny,LE,Any,VGtM p.133,,
-Crawling claw,0    ,Undead,N/A,Tiny,NE,Any,MM p.44,,
-Cult fanatic,2    ,Humanoid,Any,Medium,Non-G,Any,MM p.345,,
-Cultist, 1/8,Humanoid,Any,Medium,Non-G,Any,MM p.345,,
-Cyclops,6    ,Giant,N/A,Huge,CN,Any,MM p.45,,
-Darnoc,2    ,Undead,N/A,Medium,LE,Any,FEF p.76,,
-Death knight,17    ,Undead,N/A,Medium,CE,Any,MM p.47,,
-Death slaad,10    ,Aberration,Shapechanger,Medium,CE,Any,MM p.278,,
-Deathwisp,7    ,Undead,N/A,Medium,NE,Any,ToB p.72,,
-Deep scion,3    ,Humanoid,Shapechanger,Medium,NE,Any,VGtM p.135,,
-Demonic knight,5    ,Fiend,N/A,Medium,CE,Any,FEF p.82,,
-Deva,10    ,Celestial,Angel,Medium,LG,Any,MM p.16,,
-Devilbound gnomish prince,9    ,Humanoid,Gnome,Small,Any-E,Any,ToB p.420,,
-Diviner,8    ,Humanoid,Any,Medium,Any,Any,VGtM p.213,,
-Dragonclaw,1    ,Humanoid,Human,Medium,NE,Any,RoT p.89,,
-Dragonfang,5    ,Humanoid,Human,Medium,NE,Any,RoT p.89,,
-Dragonsoul,7    ,Humanoid,Human,Medium,NE,Any,RoT p.89,,
-Dragonwing,2    ,Humanoid,Human,Medium,NE,Any,RoT p.90,,
-Druid,2    ,Humanoid,Any,Medium,Any,Any,MM p.346,,
-Dwarven ringmage,7    ,Humanoid,Dwarf,Medium,Any,Any,ToB p.420-421,,
-Ectoplasm,2    ,Ooze,N/A,Large,Un,Any,FEF p.90,,
-Elemental locus,17    ,Elemental,N/A,Gargantuan,N,Any,ToB p.169,,
-Elvish veteran archer,3    ,Humanoid,Elf,Medium,CG/CN,Any,ToB p.422,,
-Emerald order cult leader,8    ,Humanoid,Any,Medium,Any-E,Any,ToB p.421-422,,
-Empyrean,23    ,Celestial,Titan,Huge,CG/NE,Any,MM p.130,,
-Enchanter,5    ,Humanoid,Any,Medium,Any,Any,VGtM p.213,,
-Evoker,9    ,Humanoid,Any,Medium,Any,Any,VGtM p.214,,
-Eye golem,11    ,Construct,N/A,Large,Un,Any,ToB p.233,,
-Fellforged,5    ,Construct,Undead,Medium,LE,Any,ToB p.182,,
-Fext,6    ,Undead,N/A,Medium,Any,Any,ToB p.183,,
-Fidele angel,5    ,Celestial,N/A,Medium,LG,Any,ToB p.21,,
-Firenewt warlock of imix,1    ,Humanoid,Firenewt,Medium,NE,Any,VGtM p.143,,
-Firenewt warrior, 1/2,Humanoid,Firenewt,Medium,NE,Any,VGtM p.142,,
-Flagstone golem,7    ,Construct,N/A,Large,Un,Any,FEF p.126,,
-Flesh golem,5    ,Construct,N/A,Medium,Un,Any,MM p.169,,
-Flind,9    ,Humanoid,Gnoll,Medium,CE,Any,VGtM p.153,,
-Flutterflesh,12    ,Undead,N/A,Large,CE,Any,ToB p.203,,
-Flying sword, 1/4,Construct,Animated object,Small,Un,Any,MM p.20,,
-Four-armed gargoyle,4    ,Monstrosity,N/A,Medium,CE,Any,FEF p.113,,
-Furnace golem,9    ,Construct,N/A,Large,Un,Any,FEF p.127,,
-Gearforged templar,6    ,Humanoid,Gearforged,Medium,LN,Any,ToB p.210,,
-Ghost knight,6    ,Undead,N/A,Medium,LE,Any,ToB p.423,,
-Giant ant,2    ,Beast,N/A,Large,Un,Any,ToB p.23,,
-Giant ant queen,4    ,Beast,N/A,Large,Un,Any,ToB p.23,,
-Giant horsefly, 1/2,Beast,N/A,Large,Un,Any,FEF p.146,,
-Giant poisonous snake, 1/4,Beast,N/A,Medium,Un,Any,MM p.327,,
-Giant strider,1    ,Monstrosity,N/A,Large,NE,Any,VGtM p.143,,
-Githyanki knight,8    ,Humanoid,Gith,Medium,LE,Any,MM p.160,,
-Githyanki warrior,3    ,Humanoid,Gith,Medium,LE,Any,MM p.160,,
-Githzerai monk,2    ,Humanoid,Gith,Medium,LN,Any,MM p.161,,
-Githzerai zerth,6    ,Humanoid,Gith,Medium,LN,Any,MM p.161,,
-Gladiator,5    ,Humanoid,Any,Medium,Any,Any,MM p.346,,
-Gnarljak,6    ,Construct,N/A,Small,Un,Any,ToB p.229,,
-Gnoll, 1/2,Humanoid,Gnoll,Medium,CE,Any,MM p.163,,
-Gnoll fang of yeenoghu,4    ,Fiend,Gnoll,Medium,CE,Any,MM p.163,,
-Gnoll flesh gnawer,1    ,Humanoid,Gnoll,Medium,CE,Any,VGtM p.154,,
-Gnoll havoc runner,3    ,Humanoid,Gnoll,Medium,CE,Any,ToB p.230,,
-Gnoll hunter, 1/2,Humanoid,Gnoll,Medium,CE,Any,VGtM p.154,,
-Gnoll pack lord,2    ,Humanoid,Gnoll,Medium,CE,Any,MM p.163,,
-Gnoll witherling, 1/4,Undead,N/A,Medium,CE,Any,VGtM p.155,,
-Goat-man,3    ,Monstrosity,N/A,Medium,CE,Any,ToB p.231,,
-Gray slaad,9    ,Aberration,Shapechanger,Medium,CN,Any,MM p.277,,
-Green guardian gargoyle,1    ,Monstrosity,N/A,Medium,CE,Any,FEF p.115,,
-Green slaad,8    ,Aberration,Shapechanger,Large,CN,Any,MM p.277,,
-Grim jester,11    ,Undead,N/A,Medium,CE,Any,ToB p.240,,
-Guard, 1/8,Humanoid,Any,Medium,Any,Any,MM p.347,,
-Guard drake,2    ,Dragon,N/A,Medium,Un,Any,RoT p.90; VGtM p.158,,
-Guardian portrait,1    ,Construct,N/A,Medium,Un,Any,CoS p.227,,
-Half-black dragon veteran,5    ,Humanoid,Any,Medium,Any,Any,MM p.180,,
-Half-blue dragon veteran,5    ,Humanoid,Any,Medium,Any,Any,MM p.180,,
-Half-brass dragon veteran,5    ,Humanoid,Any,Medium,Any,Any,MM p.180,,
-Half-bronze dragon veteran,5    ,Humanoid,Any,Medium,Any,Any,MM p.180,,
-Half-copper dragon veteran,5    ,Humanoid,Any,Medium,Any,Any,MM p.180,,
-Half-gold dragon veteran,5    ,Humanoid,Any,Medium,Any,Any,MM p.180,,
-Half-green dragon veteran,5    ,Humanoid,Any,Medium,Any,Any,MM p.180,,
-Half-ogre (ogrillon),1    ,Giant,N/A,Large,CE,Any,MM p.238,,
-Half-red dragon veteran,5    ,Humanoid,Any,Medium,Any,Any,MM p.180,,
-Half-silver dragon veteran,5    ,Humanoid,Any,Medium,Any,Any,MM p.180,,
-Half-white dragon veteran,5    ,Humanoid,Any,Medium,Any,Any,MM p.180,,
-Hanged man, 1/2,Undead,N/A,Medium,CE,Any,FEF p.139,,
-Hawk,0    ,Beast,N/A,Tiny,Un,Any,MM p.330,,
-Helmed horror,4    ,Construct,N/A,Medium,N,Any,MM p.183,,
-Herald of blood,12    ,Fiend,N/A,Huge,NE,Any,ToB p.248,,
-Herald of darkness,7    ,Fiend,N/A,Large,NE,Any,ToB p.249,,
-High cimota,6    ,Undead,N/A,Medium,LE,Any,FEF p.60,,
-Hoard golem,12    ,Construct,N/A,Huge,Un,Any,ToB p.234,,
-Homunculus,0    ,Construct,N/A,Tiny,N,Any,MM p.188,,
-Hulking whelp,5    ,Fey,Shapechanger,Huge (small),CN,Any,ToB p.252,,
-Illusionist,3    ,Humanoid,Any,Medium,Any,Any,VGtM p.214,,
-Iron golem,16    ,Construct,N/A,Large,Un,Any,MM p.170,,
-Knight,3    ,Humanoid,Any,Medium,Any,Any,MM p.347,,
-Kobold, 1/8,Humanoid,Kobold,Small,LE,Any,MM p.195,,
-Kobold alchemist,2    ,Humanoid,Kobold,Small,LE,Any,ToB p.261-262,,
-Kobold chieftain,4    ,Humanoid,Kobold,Small,LE,Any,ToB p.262-263,,
-Kobold dragonshield,1    ,Humanoid,Kobold,Small,LE,Any,VGtM p.165,,
-Kobold inventor, 1/4,Humanoid,Kobold,Small,LE,Any,VGtM p.166,,
-Kobold scale sorcerer,1    ,Humanoid,Kobold,Small,LE,Any,VGtM p.167,,
-Kobold trapsmith,1    ,Humanoid,Kobold,Small,LE,Any,ToB p.263-264,,
-"Kobold, winged", 1/4,Humanoid,Kobold,Small,LE,Any,MM p.195,,
-Koschei,17    ,Fiend,N/A,Medium,NE,Any,ToB p.266-267,,
-Kraken priest,5    ,Humanoid,Any,Medium,Any-E,Any,VGtM p.215,,
-Kurok-spirit,1    ,Fiend,N/A,Large,CN,Any,FEF p.159,,
-Leng spider,6    ,Aberration,N/A,Huge,CE,Any,FEF p.162,,
-Lesser shadow, 1/8,Undead,N/A,Medium,CE,Any,FEF p.208,,
-Lich hound,4    ,Undead,N/A,Medium,NE,Any,ToB p.274,,
-Likho,6    ,Monstrosity,N/A,Medium,CE,Any,ToB p.275,,
-Liosalfar,8    ,Elemental,N/A,Large,N,Any,ToB p.277,,
-Lizard,0    ,Beast,N/A,Tiny,Un,Any,MM p.332,,
-Mage,6    ,Humanoid,Any,Medium,Any,Any,MM p.347,,
-Map mimic, 1/4,Aberration,Shapechanger,Tiny,N,Any,ToB p.289,,
-Margoyle,5    ,Monstrosity,N/A,Medium,CE,Any,FEF p.116,,
-Martial arts adept,3    ,Humanoid,Any,Medium,Any,Any,VGtM p.216,,
-Mask wight,13    ,Undead,N/A,Medium,NE,Any,ToB p.285,,
-Master thief,5    ,Humanoid,Any,Medium,Any,Any,VGtM p.216,,
-Mavka,12    ,Undead,Fey,Medium,CE,Any,ToB p.286,,
-Mezzoloth,5    ,Fiend,Yugoloth,Medium,NE,Any,MM p.313,,
-Midnight Peddler, 1/2,Fey,N/A,Medium,N,Any,FEF p.170,,
-Mindrot thrall,3    ,Plant,N/A,Medium,N,Any,ToB p.290,,
-Monolith champion,8    ,Construct,N/A,Large,Un,Any,ToB p.294,,
-Monolith footman,3    ,Construct,N/A,Large,Un,Any,ToB p.295,,
-Mordant snare,15    ,Aberration,N/A,Gargantuan,CE,Any,ToB p.296,,
-Necromancer,9    ,Humanoid,Any,Medium,Any,Any,VGtM p.217,,
-Nihilethic zombie,1    ,Undead,N/A,Medium,NE,Any,ToB p.9-10,,
-Noble, 1/8,Humanoid,Any,Medium,Any,Any,MM p.348,,
-Noctiny,2    ,Humanoid,Noctiny,Medium,NE,Any,ToB p.308,,
-Nycaloth,9    ,Fiend,Yugoloth,Large,NE,Any,MM p.314,,
-Oculo swarm,4    ,Aberration,N/A,Large (tiny),NE,Any,ToB p.309,,
-Ogre,2    ,Giant,N/A,Large,CE,Any,MM p.237,,
-Ogre zombie,2    ,Undead,N/A,Large,NE,Any,MM p.316,,
-Orc, 1/2,Humanoid,Orc,Medium,CE,Any,MM p.246,,
-Orc blade of ilneval,4    ,Humanoid,Orc,Medium,CE,Any,VGtM p.183,,
-Orc claw of luthic,2    ,Humanoid,Orc,Medium,CE,Any,VGtM p.183,,
-Orc eye of gruumsh,2    ,Humanoid,Orc,Medium,CE,Any,MM p.247,,
-Orc hand of yurtrus,2    ,Humanoid,Orc,Medium,CE,Any,VGtM p.184,,
-Orc nurtured one of yurtrus, 1/2,Humanoid,Orc,Medium,CE,Any,VGtM p.184,,
-Orc red fang of shargaas,3    ,Humanoid,Orc,Medium,CE,Any,VGtM p.185,,
-Orc war chief,4    ,Humanoid,Orc,Medium,CE,Any,MM p.246,,
-Origami warrior, 1/8,Construct,N/A,Medium,Un,Any,FEF p.180,,
-Orog,2    ,Humanoid,Orc,Medium,CE,Any,MM p.247,,
-Ostinato,4    ,Aberration,N/A,Medium,CN,Any,ToB p.312,,
-Paper drake,2    ,Dragon,N/A,Small,N,Any,ToB p.154,,
-Phantom warrior,3    ,Undead,N/A,Medium,Any,Any,CoS p.235,,
-Planetar,16    ,Celestial,Angel,Large,LG,Any,MM p.17,,
-Poisonous snake, 1/8,Beast,N/A,Tiny,Un,Any,MM p.334,,
-Poltergeist (specter variant),2    ,Undead,N/A,Medium,CE,Any,MM p.279,,
-Priest,2    ,Humanoid,Any,Medium,Any,Any,MM p.348,,
-Ratfolk, 1/4,Humanoid,Ratfolk,Small,N,Any,ToB p.320,,
-Ratfolk rogue,1    ,Humanoid,Ratfolk,Small,N,Any,"ToB p.320, 424",,
-Ravenfolk doom croaker,5    ,Humanoid,Kenku,Medium,N,Any,ToB p.324,,
-Ravenfolk scout, 1/2,Humanoid,Kenku,Medium,N,Any,ToB p.322-323,,
-Ravenfolk warrior,3    ,Humanoid,Kenku,Medium,N,Any,ToB p.323-324,,
-Red jester,5    ,Undead,N/A,Medium,CN,Any,FEF p.192,,
-Red slaad,5    ,Aberration,N/A,Large,CN,Any,MM p.276,,
-Revenant,5    ,Undead,N/A,Medium,N,Any,MM p.259,,
-Rift swine,5    ,Aberration,N/A,Large,CN,Any,ToB p.326,,
-Roc,11    ,Monstrosity,N/A,Gargantuan,Un,Any,MM p.260,,
-Rug of smothering,2    ,Construct,Animated object,Large,Un,Any,MM p.20,,
-Rust drake,8    ,Dragon,N/A,Medium,CE,Any,ToB p.155,,
-Salt golem,10    ,Construct,N/A,Large,Un,Any,ToB p.235,,
-Sandman,5    ,Celestial,N/A,Medium,CN,Any,ToB p.333,,
-Scorpion cultist, 1/2,Humanoid,Any,Medium,N,Any,ToB p.425,,
-Scout, 1/2,Humanoid,Any,Medium,Any,Any,MM p.349,,
-Screaming devilkin, 1/4,Fiend,N/A,Small,LE,Any,FEF p.197,,
-Sepulchral guardian,3    ,Construct,N/A,Medium,Un,Any,FEF p.206,,
-Shadow fey, 1/4,Humanoid,Elf,Medium,LE,Any,ToB p.170-171,,
-Shadow fey duelist,6    ,Humanoid,Elf,Medium,LE,Any,ToB p.170-172,,
-Shadow fey enchantress,7    ,Humanoid,Elf,Medium,LE,Any,"ToB p.170, 172-173",,
-Shadow fey forest hunter,5    ,Humanoid,Elf,Medium,LE,Any,"ToB p.170, 173",,
-Shadow fey hunter,4    ,Humanoid,Elf,Large,NE,Any,"ToB p.170, 174",,
-Shadow rat,0    ,Undead,N/A,Tiny,Un,Any,FEF p.191,,
-Shoggoth,19    ,Aberration,N/A,Huge,CN,Any,ToB p.347,,
-Shoosuva,8    ,Fiend,Demon,Large,CE,Any,VGtM p.137,,
-Shroud, 1/8,Undead,N/A,Medium,NE,Any,ToB p.348,,
-Skeleton, 1/4,Undead,N/A,Medium,LE,Any,MM p.272,,
-Skeleton warrior,14    ,Undead,N/A,Medium,NE,Any,FEF p.210,,
-Skelzi,1    ,Humanoid,N/A,Medium,CE,Any,FEF p.213,,
-Skitterhaunt,4    ,Ooze,N/A,Large,Un,Any,ToB p.352,,
-Skulk, 1/2,Humanoid,N/A,Medium,CN,Any,FEF p.214,,
-Slaad tadpole, 1/8,Aberration,N/A,Tiny,CN,Any,MM p.276,,
-Slow storm,15    ,Elemental,N/A,Huge,CN,Any,ToB p.353,,
-Smaragdine golem,14    ,Construct,N/A,Large,Un,Any,ToB p.236,,
-Solar,21    ,Celestial,Angel,Large,LG,Any,MM p.18,,
-Soul reaper,16    ,Undead,N/A,Large,NE,Any,FEF p.216,,
-Spawn of kyuss,5    ,Undead,N/A,Medium,CE,Any,VGtM p.192,,
-Specter,1    ,Undead,N/A,Medium,CE,Any,MM p.279,,
-Spectral guardian,6    ,Undead,N/A,Medium,NE,Any,ToB p.358,,
-Spectral troll,4    ,Undead,N/A,Large,CE,Any,FEF p.234,,
-Spider,0    ,Beast,N/A,Tiny,Any,Any,MM p.337,,
-Spider thief,2    ,Construct,N/A,Small,Un,Any,ToB p.366,,
-Spy,1    ,Humanoid,Any,Medium,Any,Any,MM p.349,,
-Steam golem,13    ,Construct,N/A,Large,Un,Any,ToB p.237,,
-Stirge, 1/8,Beast,N/A,Tiny,Un,Any,MM p.284,,
-Stone golem,10    ,Construct,N/A,Large,Un,Any,MM p.170,,
-Stone guardian golem,2    ,Construct,N/A,Medium,Un,Any,FEF p.128,,
-Strahd's animated armor,6    ,Construct,N/A,Medium,LE,Any,CoS p.227,,
-Swarm of cranium rats,5    ,Beast,N/A,Medium (tiny),LE,Any,VGtM p.133,,
-Swarm of insects, 1/2,Beast,N/A,Medium (tiny),Un,Any,MM p.338,,
-Swarm of rot grubs, 1/2,Beast,N/A,Medium (tiny),Un,Any,VGtM p.208,,
-Swashbuckler,3    ,Humanoid,Any,Medium,Any-C,Any,VGtM p.217,,
-Tanarukk,5    ,Fiend,Demon/orc,Medium,CE,Any,VGtM p.186,,
-Temporal crawler,2    ,Aberration,N/A,Medium,NE,Any,FEF p.223,,
-Thug, 1/2,Humanoid,Any,Medium,Non-G,Any,MM p.350,,
-Tosculi drone, 1/2,Monstrosity,N/A,Small,LE,Any,"ToB p.384, 386",,
-Tosculi elite bow raider,5    ,Humanoid,Tosculi,Medium,LE,Any,"ToB p.384, 386",,
-Tosculi hive-queen,12    ,Monstrosity,N/A,Large,LE,Any,ToB p.384-385,,
-Tosculi warrior,2    ,Monstrosity,N/A,Small,LE,Any,"ToB p.384, 386",,
-Transmuter,5    ,Humanoid,Any,Medium,Any,Any,VGtM p.218,,
-Treacle, 1/4,Ooze,N/A,Tiny,Un,Any,ToB p.387,,
-Tressym,0    ,Beast,N/A,Tiny,CN,Any,SKT p.242-243,,
-Ultraloth,13    ,Fiend,Yugoloth,Medium,NE,Any,MM p.314,,
-Veteran,3    ,Humanoid,Any,Medium,Any,Any,MM p.350,,
-Vicious blood hawk, 1/4,Monstrosity,N/A,Small,Un,Any,FEF p.27,,
-War priest,9    ,Humanoid,Any,Medium,Any,Any,VGtM p.218,,
-Warhorse skeleton, 1/2,Undead,N/A,Large,LE,Any,MM p.273,,
-Warlock of the archfey,4    ,Humanoid,Any,Medium,Any,Any,VGtM p.219,,
-Warlock of the fiend,7    ,Humanoid,Any,Medium,Any,Any,VGtM p.219,,
-Warlock of the great old one,6    ,Humanoid,Any,Medium,Any,Any,VGtM p.220,,
-Warlord,12    ,Humanoid,Any,Medium,Any,Any,VGtM p.220,,
-Were-mist,2    ,Aberration,N/A,Large,CE,Any,FEF p.245,,
-Witchlight, 1/4,Construct,N/A,Tiny,N,Any,ToB p.409,,
-Wolf reaver dwarf,3    ,Humanoid,Dwarf,Medium,Any-C,Any,ToB p.426,,
-Wooden golem,3    ,Construct,N/A,Medium,Un,Any,FEF p.129,,
-Wormhearted suffragan,5    ,Undead,N/A,Medium,CE,Any,ToB p.410,,
-Ychen bannog,11    ,Beast,N/A,Gargantuan,Un,Any,ToB p.413,,
-Zombie, 1/4,Undead,N/A,Medium,NE,Any,MM p.316,,
-Zombie raven,0    ,Undead,N/A,Tiny,CE,Any,FEF p.252,,
+Aaztar-ghola,1100,Humanoid,Medium,CE
+Abjurer,5000,Humanoid,Medium,Any
+Acolyte,50,Humanoid,Medium,Any
+Ambush drake,100,Dragon,Medium,Un
+Amphoron of yothri juggernaut,2300,Construct,Large,N
+Amphoron of yothri warrior,450,Construct,Medium,N
+Amphoron of yothri worker,100,Construct,Small,N
+Animated armor,200,Construct,Medium,Un
+Apprentice wizard,50,Humanoid,Medium,Any
+Arcanaloth,8400,Fiend,Medium,NE
+Archdruid,8400,Humanoid,Medium,Any
+Archer,700,Humanoid,Medium,Any
+Archmage,8400,Humanoid,Medium,Any
+Artificer of yothri,1800,Aberration,Medium,CE
+Assassin,3900,Humanoid,Medium,Non-G
+Astral moth,25,Monstrosity,Large,Any-N
+Aurochs,450,Beast,Large,Un
+"Baba yaga's horsemen, base",7200,Fey,Medium,LN
+Banderhobb,1800,Monstrosity,Large,NE
+Bandit,25,Humanoid,Medium,Non-L
+Bandit captain,450,Humanoid,Medium,Non-L
+Bandit lord,1100,Humanoid,Medium,Any-C
+Bard,450,Humanoid,Medium,Any
+Barghest,1100,Fiend,Large,NE
+Beholder zombie,1800,Undead,Large,NE
+Berserker,450,Humanoid,Medium,Any-C
+Black knight commander,1800,Humanoid,Medium,LE
+Blackguard,3900,Humanoid,Medium,Any-E
+Blood hawk,25,Beast,Small,Un
+Blue slaad,2900,Aberration,Large,CN
+Bodak,2300,Undead,Medium,CE
+Bone collective,3900,Undead,Small,CE
+Broodiken,200,Construct,Tiny,N
+Broom of animated attack,50,Construct,Small,Un
+Brume,2300,Aberration,Large,NE
+Cadaver,100,Undead,Medium,CE
+Cadaver lord,700,Undead,Medium,CE
+Chained angel,3900,Celestial,Medium,NE
+Champion,5000,Humanoid,Medium,Any
+Cimota,450,Undead,Medium,LE
+Cimota guardian,1100,Undead,Medium,LE
+City watch captain,1100,Humanoid,Medium,Any-L
+Clay golem,5000,Construct,Large,Un
+Clockwork abomination,1800,Fiend,Large,LE
+Clockwork beetle,100,Construct,Tiny,Un
+Clockwork beetle swarm,700,Construct,Large (tiny),N
+Clockwork hound,450,Construct,Medium,Un
+Clockwork huntsman,700,Construct,Medium,Un
+Clockwork myrmidon,2300,Construct,Large,Un
+Clockwork watchman,100,Construct,Medium,Un
+Clockwork weaving spider,200,Construct,Tiny,Un
+Conjurer,2300,Humanoid,Medium,Any
+Corpse Mound,7200,Undead,Huge,NE
+Corrupted ogre chieftain,2300,Giant,Large,CE
+Cow (rothé),50,Beast,Large,Un
+Cult fanatic,450,Humanoid,Medium,Non-G
+Cultist,25,Humanoid,Medium,Non-G
+Cyclops,2300,Giant,Huge,CN
+Darnoc,450,Undead,Medium,LE
+Death knight,18000,Undead,Medium,CE
+Death slaad,5900,Aberration,Medium,CE
+Deathwisp,2900,Undead,Medium,NE
+Deep scion,700,Humanoid,Medium,NE
+Demonic knight,1800,Fiend,Medium,CE
+Deva,5900,Celestial,Medium,LG
+Devilbound gnomish prince,5000,Humanoid,Small,Any-E
+Diviner,3900,Humanoid,Medium,Any
+Dragonclaw,200,Humanoid,Medium,NE
+Dragonfang,1800,Humanoid,Medium,NE
+Dragonsoul,2900,Humanoid,Medium,NE
+Dragonwing,450,Humanoid,Medium,NE
+Druid,450,Humanoid,Medium,Any
+Dwarven ringmage,2900,Humanoid,Medium,Any
+Ectoplasm,450,Ooze,Large,Un
+Elemental locus,18000,Elemental,Gargantuan,N
+Elvish veteran archer,700,Humanoid,Medium,CG/CN
+Emerald order cult leader,3900,Humanoid,Medium,Any-E
+Empyrean,50000,Celestial,Huge,CG/NE
+Enchanter,1800,Humanoid,Medium,Any
+Evoker,5000,Humanoid,Medium,Any
+Eye golem,7200,Construct,Large,Un
+Fellforged,1800,Construct,Medium,LE
+Fext,2300,Undead,Medium,Any
+Fidele angel,1800,Celestial,Medium,LG
+Firenewt warlock of imix,200,Humanoid,Medium,NE
+Firenewt warrior,100,Humanoid,Medium,NE
+Flagstone golem,2900,Construct,Large,Un
+Flesh golem,1800,Construct,Medium,Un
+Flind,5000,Humanoid,Medium,CE
+Flutterflesh,8400,Undead,Large,CE
+Flying sword,50,Construct,Small,Un
+Four-armed gargoyle,1100,Monstrosity,Medium,CE
+Furnace golem,5000,Construct,Large,Un
+Gearforged templar,2300,Humanoid,Medium,LN
+Ghost knight,2300,Undead,Medium,LE
+Giant ant,450,Beast,Large,Un
+Giant ant queen,1100,Beast,Large,Un
+Giant horsefly,100,Beast,Large,Un
+Giant poisonous snake,50,Beast,Medium,Un
+Giant strider,200,Monstrosity,Large,NE
+Githyanki knight,3900,Humanoid,Medium,LE
+Githyanki warrior,700,Humanoid,Medium,LE
+Githzerai monk,450,Humanoid,Medium,LN
+Githzerai zerth,2300,Humanoid,Medium,LN
+Gladiator,1800,Humanoid,Medium,Any
+Gnarljak,2300,Construct,Small,Un
+Gnoll,100,Humanoid,Medium,CE
+Gnoll fang of yeenoghu,1100,Fiend,Medium,CE
+Gnoll flesh gnawer,200,Humanoid,Medium,CE
+Gnoll havoc runner,700,Humanoid,Medium,CE
+Gnoll hunter,100,Humanoid,Medium,CE
+Gnoll pack lord,450,Humanoid,Medium,CE
+Gnoll witherling,50,Undead,Medium,CE
+Goat-man,700,Monstrosity,Medium,CE
+Gray slaad,5000,Aberration,Medium,CN
+Green guardian gargoyle,200,Monstrosity,Medium,CE
+Green slaad,3900,Aberration,Large,CN
+Grim jester,7200,Undead,Medium,CE
+Guard,25,Humanoid,Medium,Any
+Guard drake,450,Dragon,Medium,Un
+Guardian portrait,200,Construct,Medium,Un
+Half-black dragon veteran,1800,Humanoid,Medium,Any
+Half-blue dragon veteran,1800,Humanoid,Medium,Any
+Half-brass dragon veteran,1800,Humanoid,Medium,Any
+Half-bronze dragon veteran,1800,Humanoid,Medium,Any
+Half-copper dragon veteran,1800,Humanoid,Medium,Any
+Half-gold dragon veteran,1800,Humanoid,Medium,Any
+Half-green dragon veteran,1800,Humanoid,Medium,Any
+Half-ogre (ogrillon),200,Giant,Large,CE
+Half-red dragon veteran,1800,Humanoid,Medium,Any
+Half-silver dragon veteran,1800,Humanoid,Medium,Any
+Half-white dragon veteran,1800,Humanoid,Medium,Any
+Hanged man,100,Undead,Medium,CE
+Helmed horror,1100,Construct,Medium,N
+Herald of blood,8400,Fiend,Huge,NE
+Herald of darkness,2900,Fiend,Large,NE
+High cimota,2300,Undead,Medium,LE
+Hoard golem,8400,Construct,Huge,Un
+Hulking whelp,1800,Fey,Huge (small),CN
+Illusionist,700,Humanoid,Medium,Any
+Iron golem,15000,Construct,Large,Un
+Knight,700,Humanoid,Medium,Any
+Kobold,25,Humanoid,Small,LE
+Kobold alchemist,450,Humanoid,Small,LE
+Kobold chieftain,1100,Humanoid,Small,LE
+Kobold dragonshield,200,Humanoid,Small,LE
+Kobold inventor,50,Humanoid,Small,LE
+Kobold scale sorcerer,200,Humanoid,Small,LE
+Kobold trapsmith,200,Humanoid,Small,LE
+"Kobold, winged",50,Humanoid,Small,LE
+Koschei,18000,Fiend,Medium,NE
+Kraken priest,1800,Humanoid,Medium,Any-E
+Kurok-spirit,200,Fiend,Large,CN
+Leng spider,2300,Aberration,Huge,CE
+Lesser shadow,25,Undead,Medium,CE
+Lich hound,1100,Undead,Medium,NE
+Likho,2300,Monstrosity,Medium,CE
+Liosalfar,3900,Elemental,Large,N
+Mage,2300,Humanoid,Medium,Any
+Map mimic,50,Aberration,Tiny,N
+Margoyle,1800,Monstrosity,Medium,CE
+Martial arts adept,700,Humanoid,Medium,Any
+Mask wight,10000,Undead,Medium,NE
+Master thief,1800,Humanoid,Medium,Any
+Mavka,8400,Undead,Medium,CE
+Mezzoloth,1800,Fiend,Medium,NE
+Midnight Peddler,100,Fey,Medium,N
+Mindrot thrall,700,Plant,Medium,N
+Monolith champion,3900,Construct,Large,Un
+Monolith footman,700,Construct,Large,Un
+Mordant snare,13000,Aberration,Gargantuan,CE
+Necromancer,5000,Humanoid,Medium,Any
+Nihilethic zombie,200,Undead,Medium,NE
+Noble,25,Humanoid,Medium,Any
+Noctiny,450,Humanoid,Medium,NE
+Nycaloth,5000,Fiend,Large,NE
+Oculo swarm,1100,Aberration,Large (tiny),NE
+Ogre,450,Giant,Large,CE
+Ogre zombie,450,Undead,Large,NE
+Orc,100,Humanoid,Medium,CE
+Orc blade of ilneval,1100,Humanoid,Medium,CE
+Orc claw of luthic,450,Humanoid,Medium,CE
+Orc eye of gruumsh,450,Humanoid,Medium,CE
+Orc hand of yurtrus,450,Humanoid,Medium,CE
+Orc nurtured one of yurtrus,100,Humanoid,Medium,CE
+Orc red fang of shargaas,700,Humanoid,Medium,CE
+Orc war chief,1100,Humanoid,Medium,CE
+Origami warrior,25,Construct,Medium,Un
+Orog,450,Humanoid,Medium,CE
+Ostinato,1100,Aberration,Medium,CN
+Paper drake,450,Dragon,Small,N
+Phantom warrior,700,Undead,Medium,Any
+Planetar,15000,Celestial,Large,LG
+Poisonous snake,25,Beast,Tiny,Un
+Poltergeist (specter variant),450,Undead,Medium,CE
+Priest,450,Humanoid,Medium,Any
+Ratfolk,50,Humanoid,Small,N
+Ratfolk rogue,200,Humanoid,Small,N
+Ravenfolk doom croaker,1800,Humanoid,Medium,N
+Ravenfolk scout,100,Humanoid,Medium,N
+Ravenfolk warrior,700,Humanoid,Medium,N
+Red jester,1800,Undead,Medium,CN
+Red slaad,1800,Aberration,Large,CN
+Revenant,1800,Undead,Medium,N
+Rift swine,1800,Aberration,Large,CN
+Roc,7200,Monstrosity,Gargantuan,Un
+Rug of smothering,450,Construct,Large,Un
+Rust drake,3900,Dragon,Medium,CE
+Salt golem,5900,Construct,Large,Un
+Sandman,1800,Celestial,Medium,CN
+Scorpion cultist,100,Humanoid,Medium,N
+Scout,100,Humanoid,Medium,Any
+Screaming devilkin,50,Fiend,Small,LE
+Sepulchral guardian,700,Construct,Medium,Un
+Shadow fey,50,Humanoid,Medium,LE
+Shadow fey duelist,2300,Humanoid,Medium,LE
+Shadow fey enchantress,2900,Humanoid,Medium,LE
+Shadow fey forest hunter,1800,Humanoid,Medium,LE
+Shadow fey hunter,1100,Humanoid,Large,NE
+Shoggoth,22000,Aberration,Huge,CN
+Shoosuva,3900,Fiend,Large,CE
+Shroud,25,Undead,Medium,NE
+Skeleton,50,Undead,Medium,LE
+Skeleton warrior,11500,Undead,Medium,NE
+Skelzi,200,Humanoid,Medium,CE
+Skitterhaunt,1100,Ooze,Large,Un
+Skulk,100,Humanoid,Medium,CN
+Slaad tadpole,25,Aberration,Tiny,CN
+Slow storm,13000,Elemental,Huge,CN
+Smaragdine golem,11500,Construct,Large,Un
+Solar,33000,Celestial,Large,LG
+Soul reaper,15000,Undead,Large,NE
+Spawn of kyuss,1800,Undead,Medium,CE
+Specter,200,Undead,Medium,CE
+Spectral guardian,2300,Undead,Medium,NE
+Spectral troll,1100,Undead,Large,CE
+Spider thief,450,Construct,Small,Un
+Spy,200,Humanoid,Medium,Any
+Steam golem,10000,Construct,Large,Un
+Stirge,25,Beast,Tiny,Un
+Stone golem,5900,Construct,Large,Un
+Stone guardian golem,450,Construct,Medium,Un
+Strahd's animated armor,2300,Construct,Medium,LE
+Swarm of cranium rats,1800,Beast,Medium (tiny),LE
+Swarm of insects,100,Beast,Medium (tiny),Un
+Swarm of rot grubs,100,Beast,Medium (tiny),Un
+Swashbuckler,700,Humanoid,Medium,Any-C
+Tanarukk,1800,Fiend,Medium,CE
+Temporal crawler,450,Aberration,Medium,NE
+Thug,100,Humanoid,Medium,Non-G
+Tosculi drone,100,Monstrosity,Small,LE
+Tosculi elite bow raider,1800,Humanoid,Medium,LE
+Tosculi hive-queen,8400,Monstrosity,Large,LE
+Tosculi warrior,450,Monstrosity,Small,LE
+Transmuter,1800,Humanoid,Medium,Any
+Treacle,50,Ooze,Tiny,Un
+Ultraloth,10000,Fiend,Medium,NE
+Veteran,700,Humanoid,Medium,Any
+Vicious blood hawk,50,Monstrosity,Small,Un
+War priest,5000,Humanoid,Medium,Any
+Warhorse skeleton,100,Undead,Large,LE
+Warlock of the archfey,1100,Humanoid,Medium,Any
+Warlock of the fiend,2900,Humanoid,Medium,Any
+Warlock of the great old one,2300,Humanoid,Medium,Any
+Warlord,8400,Humanoid,Medium,Any
+Were-mist,450,Aberration,Large,CE
+Witchlight,50,Construct,Tiny,N
+Wolf reaver dwarf,700,Humanoid,Medium,Any-C
+Wooden golem,700,Construct,Medium,Un
+Wormhearted suffragan,1800,Undead,Medium,CE
+Ychen bannog,7200,Beast,Gargantuan,Un
+Zombie,50,Undead,Medium,NE

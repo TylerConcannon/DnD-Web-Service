@@ -1,193 +1,187 @@
-﻿Monster,CR,Type,Subtype,Size,Align,Terrain,Sourcebook,,
-Adherer,2    ,Aberration,N/A,Medium,LE,"Forest, Swamp, Underdark",FEF p.6,,
-Algoid,3    ,Plant,N/A,Medium,N,"Forest, Swamp",FEF p.8,,
-Amphiptere,3    ,Beast,N/A,Medium,Un,"Forest, Hill, Mountain, Swamp",ToB p.16,,
-Andrenjinyi,15    ,Celestial,N/A,Gargantuan,N,"Coastal, Special, Swamp, Underwater",ToB p.17-18,,
-Angatra,6    ,Undead,N/A,Medium,NE,"Desert, Special, Swamp, Underdark",ToB p.19,,
-Aranea,3    ,Monstrosity,N/A,Large,CE,"Forest, Mountain, Swamp, Underdark",FEF p.13,,
-Arboreal grappler,3    ,Aberration,N/A,Medium,NE,"Forest, Swamp",ToB p.25,,
-Aridni,5    ,Fey,N/A,Small,NE,"Forest, Hill, Swamp",ToB p.26,,
-Asanbosam,5    ,Aberration,N/A,Large,CE,"Coastal, Forest, Hill, Swamp",ToB p.27,,
-Assassin bug,5    ,Beast,N/A,Medium,Un,"Forest, Hill, Swamp",FEF p.17,,
-Baba lysaga,11    ,Humanoid,Human/shapechanger,Medium,CE,"Special, Swamp",CoS p.228,,
-Baba lysaga's creeping hut,11    ,Construct,N/A,Gargantuan,Un,"Special, Swamp",CoS p.226,,
-Bagiennik,3    ,Aberration,N/A,Medium,N,"Forest, Swamp",ToB p.31,,
-Barovian witch, 1/2,Humanoid,Human,Medium,CE,"Forest, Hill, Swamp",CoS p.229,,
-Behtu,2    ,Humanoid,N/A,Small,CE,"Mountain, Special, Swamp",ToB p.34,,
-Berstuc,11    ,Fiend,Demon,Large,CE,"Forest, Special, Swamp",ToB p.76,,
-Black dracolisk,7    ,Dragon,N/A,Large,Un,"Desert, Swamp, Underdark",FEF p.85,,
-"Black dragon, adult",14    ,Dragon,N/A,Huge,CE,Swamp,MM p.88,,
-"Black dragon, ancient",21    ,Dragon,N/A,Gargantuan,CE,Swamp,MM p.87,,
-"Black dragon, wyrmling",2    ,Dragon,N/A,Medium,CE,Swamp,MM p.88,,
-"Black dragon, young",7    ,Dragon,N/A,Large,CE,Swamp,MM p.88,,
-Black earth guard,2    ,Humanoid,Human,Medium,NE,"Forest, Hill, Mountain, Swamp",PotA p.195,,
-Black earth priest,3    ,Humanoid,Human,Medium,NE,"Forest, Hill, Mountain, Swamp",PotA p.195-196,,
-Blood hag,11    ,Fey,N/A,Medium,CE,"Forest, Special, Swamp",ToB p.242,,
-Blood pudding,2    ,Ooze,N/A,Medium,Un,"Swamp, Underdark",FEF p.187,,
-Boalisk,1    ,Beast,N/A,Large,Un,"Coastal, Forest, Swamp",FEF p.32,,
-Boloti,1    ,Fey,N/A,Tiny,NE,"Coastal, Swamp, Underwater",ToB p.38,,
-Bonesucker,4    ,Aberration,N/A,Large,NE,"Forest, Grassland, Hill, Swamp, Underdark",FEF p.35,,
-Bukavac,9    ,Monstrosity,N/A,Large,NE,"Forest, Swamp, Underwater",ToB p.47,,
-Bullywug, 1/4,Humanoid,Bullywug,Medium,NE,Swamp,MM p.35,,
-Burrowshark,4    ,Humanoid,Human,Medium,NE,"Forest, Hill, Mountain, Swamp",PotA p.196,,
-Carrion crawler,2    ,Monstrosity,N/A,Large,Un,"Special, Swamp, Underdark",MM p.37,,
-Catoblepas,5    ,Monstrosity,N/A,Large,Un,Swamp,FEF p.47; VGtM p.129,,
-Chain worm,12    ,Beast,N/A,Large,Un,"Forest, Grassland, Hill, Swamp, Underdark",FEF p.54,,
-Chupacabra,1    ,Humanoid,N/A,Small,CN,"Forest, Hill, Swamp, Urban",FEF p.56,,
-Churr,4    ,Monstrosity,N/A,Large,NE,"Forest, Swamp",FEF p.58,,
-Coffer corpse,2    ,Undead,N/A,Medium,CE,"Forest, Grassland, Hill, Swamp, Underdark",FEF p.64,,
-Constrictor snake, 1/4,Beast,N/A,Large,Un,"Desert, Forest, Swamp, Underwater",MM p.320,,
-Corrupting ooze,5    ,Ooze,N/A,Large,NE,"Swamp, Urban",ToB p.311,,
-Crabman,1    ,Monstrosity,N/A,Large,N,"Coastal, Swamp, Underwater",FEF p.69,,
-Crimson mist,7    ,Aberration,N/A,Medium,NE,"Swamp, Underdark",FEF p.71,,
-Crocodile, 1/2,Beast,N/A,Large,Un,"Swamp, Urban",MM p.320,,
-Crushing wave priest,2    ,Humanoid,Human,Medium,NE,"Arctic, Coastal, Forest, Swamp",PotA p.205,,
-Crushing wave reaver, 1/2,Humanoid,Human,Medium,NE,"Arctic, Coastal, Forest, Swamp",PotA p.205,,
-Dagon,20    ,Fiend,Aquatic,Large,CE,"Coastal, Swamp, Underwater, Special",FEF p.73,,
-Dark tide knight,3    ,Humanoid,Human,Medium,LE,"Arctic, Coastal, Forest, Swamp",PotA p.205-206,,
-Darkling, 1/2,Fey,N/A,Small,CN,"Forest, Special, Swamp, Underdark, Urban",VGtM p.134,,
-Darkling elder,2    ,Fey,N/A,Medium,CN,"Forest, Special, Swamp, Underdark, Urban",VGtM p.134,,
-Dimetrodon, 1/4,Beast,N/A,Medium,Un,"Coastal, Swamp",VGtM p.139,,
-Dipsa, 1/4,Ooze,N/A,Tiny,Un,"Swamp, Underdark",ToB p.118,,
-Dorreq,4    ,Aberration,N/A,Medium,NE,"Coastal, Desert, Mountain, Swamp, Underdark",ToB p.124,,
-Eblis, 1/2,Monstrosity,N/A,Medium,NE,"Forest, Swamp",FEF p.89,,
-Eel hound,2    ,Fey,N/A,Medium,N,"Coastal, Forest, Swamp, Underwater",ToB p.166,,
-Eleinomae,5    ,Fey,N/A,Medium,CE,Swamp,ToB p.168,,
-Fathomer,2    ,Humanoid,Human,Medium,NE,"Arctic, Coastal, Forest, Swamp",PotA p.207,,
-Fen witch,2    ,Monstrosity,N/A,Medium,CE,Swamp,FEF p.99,,
-Feyward tree,8    ,Construct,N/A,Huge,Un,"Forest, Special, Swamp",ToB p.200,,
-Flab giant,4    ,Giant,N/A,Large,CE,"Forest, Grassland, Hill, Mountain, Swamp",ToB p.223,,
-Flowershroud,1    ,Plant,N/A,Large,Un,"Forest, Grassland, Hill, Swamp",FEF p.104,,
-Forest marauder,4    ,Giant,N/A,Large,CE,"Forest, Hill, Swamp",ToB p.205,,
-Frog,0    ,Beast,N/A,Tiny,Un,"Forest, Swamp",MM p.322,,
-Fungoid,2    ,Plant,Fungus,Medium,NE,Swamp,FEF p.108,,
-Gallows tree,13    ,Plant,N/A,Huge,Un,"Forest, Grassland, Hill, Swamp",FEF p.111,,
-Gallows tree zombie,2    ,Plant,N/A,Medium,Un,"Forest, Grassland, Hill, Swamp",FEF p.112,,
-Gerridae,1    ,Fey,N/A,Large,N,"Coastal, Forest, Swamp",ToB p.212,,
-Ghast,2    ,Undead,N/A,Medium,CE,"Swamp, Underdark, Urban",MM p.148,,
-Ghoul,1    ,Undead,N/A,Medium,CE,"Swamp, Underdark, Urban",MM p.148,,
-Giant constrictor snake,2    ,Beast,N/A,Huge,Un,"Desert, Forest, Swamp, Underdark, Underwater",MM p.324,,
-Giant crocodile,5    ,Beast,N/A,Huge,Un,"Swamp, Urban",MM p.324,,
-Giant electric catfish,3    ,Beast,Aquatic,Large,Un,"Coastal, Swamp, Underwater",FEF p.46,,
-Giant frog, 1/4,Beast,N/A,Medium,Un,"Forest, Swamp",MM p.325,,
-Giant lizard, 1/4,Beast,N/A,Large,Un,"Coastal, Desert, Forest, Swamp, Underdark",MM p.326,,
-Giant moray eel,2    ,Beast,Aquatic,Medium,Un,"Coastal, Swamp, Underwater",FEF p.91,,
-Giant rat, 1/8,Beast,N/A,Small,Un,"Forest, Swamp, Underdark, Urban",MM p.327,,
-Giant slug of p'nahk,4    ,Fiend,N/A,Large,CE,"Special, Swamp, Underdark",FEF p.119,,
-Giant spider,1    ,Beast,N/A,Large,Un,"Desert, Forest, Swamp, Underdark, Urban",MM p.328,,
-Giant toad,1    ,Beast,N/A,Large,Un,"Coastal, Desert, Forest, Swamp, Underdark",MM p.329,,
-Giant water beetle, 1/2,Beast,Aquatic,Medium,Un,"Coastal, Swamp, Underwater",FEF p.25,,
-Girallon,4    ,Monstrosity,N/A,Large,Un,"Forest, Hill, Swamp, Special",VGtM p.152,,
-Glass gator,1    ,Beast,N/A,Large,Un,"Coastal, Swamp, Underdark, Underwater",ToB p.228,,
-Gorbel, 1/4,Aberration,N/A,Small,N,"Forest, Swamp",FEF p.130,,
-Gorilla bear,1    ,Monstrosity,N/A,Medium,Un,"Forest, Swamp",FEF p.132,,
-Gray nisp,6    ,Fey,N/A,Large,CN,"Coastal, Swamp, Underwater",FEF p.133,,
-Green hag,3    ,Fey,N/A,Medium,NE,"Forest, Hill, Swamp",MM p.177,,
-Green hag (in coven),5    ,Fey,N/A,Medium,NE,"Forest, Hill, Swamp","MM p.176, 179",,
-Grippli, 1/4,Humanoid,N/A,Small,N,"Forest, Swamp",FEF p.136,,
-Grung, 1/4,Humanoid,Grung,Small,LE,"Coastal, Forest, Swamp",VGtM p.156,,
-Grung elite warrior,2    ,Humanoid,Grung,Small,LE,"Coastal, Forest, Swamp",VGtM p.157,,
-Grung wildling,1    ,Humanoid,Grung,Small,LE,"Coastal, Forest, Swamp",VGtM p.157,,
-Hadrosaurus, 1/4,Beast,N/A,Large,Un,"Forest, Grassland, Hill, Swamp",VGtM p.140,,
-Hangman tree,7    ,Plant,N/A,Huge,NE,"Forest, Swamp",FEF p.140,,
-Hanu-naga,2    ,Monstrosity,N/A,Large,CE,"Forest, Mountain, Swamp, Special",FEF p.175,,
-Hawktoad, 1/4,Monstrosity,N/A,Small,Un,"Forest, Swamp",FEF p.141,,
-Horakh,9    ,Monstrosity,N/A,Medium,N,"Forest, Swamp, Underdark",ToB p.250,,
-Hydra,8    ,Monstrosity,N/A,Huge,Un,"Coastal, Swamp",MM p.190,,
-Idolic deity,8    ,Construct,N/A,Small,NE,"Desert, Special, Swamp, Underdark",ToB p.255,,
-Jaculus,3    ,Dragon,N/A,Small,NE,"Forest, Swamp",ToB p.258,,
-Kamadan,3    ,Monstrosity,N/A,Large,Un,"Desert, Forest, Grassland, Hill, Swamp",FEF p.153,,
-Kech, 1/2,Monstrosity,N/A,Medium,NE,"Forest, Swamp",FEF p.155,,
-Kelpie,1    ,Plant,N/A,Medium,NE,"Coastal, Swamp, Underwater",FEF p.156,,
-Lemurfolk (kaguani), 1/4,Humanoid,Lemurfolk,Small,N,"Forest, Swamp",ToB p.271,,
-Lemurfolk (kaguani) greyfur,4    ,Humanoid,Lemurfolk,Small,N,"Forest, Swamp",ToB p.271,,
-Leucrotta,3    ,Monstrosity,N/A,Large,CE,"Desert, Forest, Grassland, Hill, Swamp",VGtM p.169,,
-"Leucrotta, adult",2    ,Monstrosity,N/A,Large,CE,"Desert, Forest, Grassland, Hill, Swamp",FEF p.164,,
-"Leucrotta, young", 1/4,Monstrosity,N/A,Medium,CE,"Desert, Forest, Grassland, Hill, Swamp",FEF p.164,,
-Lightning treant,6    ,Plant,N/A,Huge,NE,"Forest, Swamp",FEF p.231,,
-Lithonnite,4    ,Monstrosity,N/A,Large,Un,"Coastal, Swamp, Underdark, Underwater",FEF p.165,,
-Lizard king/queen,4    ,Humanoid,Lizardfolk,Medium,CE,"Forest, Swamp",MM p.205,,
-Lizardfolk, 1/2,Humanoid,Lizardfolk,Medium,N,"Forest, Swamp",MM p.204,,
-Lizardfolk shaman,2    ,Humanoid,Lizardfolk,Medium,N,"Forest, Swamp",MM p.205,,
-Mandrill, 1/8,Beast,N/A,Small,Un,"Forest, Swamp",FEF p.168,,
-Mbielu,3    ,Beast,N/A,Huge,Un,"Coastal, Swamp, Underwater",ToB p.114,,
-Medusa,6    ,Monstrosity,N/A,Medium,LE,"Desert, Swamp",MM p.214,,
-Meenlock,2    ,Fey,N/A,Small,NE,"Forest, Swamp, Underdark, Urban",VGtM p.170,,
-Millitaur,3    ,Monstrosity,N/A,Large,N,"Forest, Swamp",ToB p.288,,
-Miremal, 1/2,Fey,N/A,Small,CE,"Forest, Swamp",ToB p.292,,
-Mirror hag,6    ,Fey,N/A,Medium,CN,"Forest, Mountain, Special, Swamp",ToB p.243,,
-Mongrelfolk, 1/4,Humanoid,Mongrelfolk,Medium,Any,"Forest, Hills, Special, Swamp, Urban",CoS p.234,,
-Monstrous crayfish,2    ,Beast,Aquatic,Large,Un,"Coastal, Swamp, Underwater",FEF p.70,,
-Moss lurker,1    ,Humanoid,N/A,Small,CN,"Forest, Hill, Swamp",ToB p.298,,
-Mud mephit, 1/4,Elemental,N/A,Small,NE,"Special, Swamp",MM p.216,,
-Mummy of the deep,2    ,Undead,Aquatic,Medium,NE,"Coastal, Swamp, Underwater",FEF p.173,,
-Mustard jelly,5    ,Ooze,N/A,Large,Un,Swamp,FEF p.151,,
-Nichny,6    ,Fey,N/A,Medium,NE,"Forest, Swamp",ToB p.303,,
-One-eyed shiver,3    ,Humanoid,Human,Medium,CE,"Arctic, Coastal, Forest, Swamp",PotA p.207,,
-Possessed pillar,7    ,Construct,N/A,Large,Un,"Desert, Swamp",ToB p.314,,
-Putrid haunt,2    ,Undead,N/A,Medium,NE,Swamp,ToB p.315,,
-Quickling,1    ,Fey,N/A,Tiny,CE,"Forest, Special, Swamp",VGtM p.187,,
-Qwyllion,8    ,Aberration,Fey,Medium,NE,"Forest, Swamp",ToB p.316,,
-Rat,0    ,Beast,N/A,Tiny,Un,"Swamp, Underdark, Urban",MM p.335,,
-Raven,0    ,Beast,N/A,Tiny,Un,"Hill, Swamp, Urban",MM p.335,,
-Ravenala,5    ,Plant,N/A,Large,Un,"Coastal, Swamp",ToB p.321,,
-Red-banded line spider, 1/4,Beast,N/A,Tiny,Un,"Forest, Swamp, Urban",ToB p.363,,
-Roachling lord,2    ,Humanoid,Roachling,Small,CN,"Swamp, Underdark, Urban",ToB p.329,,
-Roachling skirmisher, 1/4,Humanoid,Roachling,Small,CN,"Swamp, Underdark, Urban",ToB p.329,,
-Sacred stone monk, 1/2,Humanoid,Human,Medium,LE,"Forest, Hill, Mountain, Swamp",PotA p.196,,
-Sap demon,4    ,Ooze,N/A,Small,CE,"Forest, Swamp",ToB p.335,,
-Serpopard,4    ,Beast,N/A,Large,Un,"Desert, Swamp",ToB p.342,,
-Shabti,8    ,Construct,N/A,Medium,Un,"Desert, Swamp",ToB p.343,,
-Shambling mound,5    ,Plant,N/A,Large,Un,"Forest, Swamp",MM p.270,,
-Shellycoat,2    ,Fey,N/A,Medium,NE,"Arctic, Coastal, Forest, Swamp, Underdark",ToB p.346,,
-Shroom,4    ,Plant,Fungus,Small,CE,"Forest, Swamp, Underdark",FEF p.209,,
-Skin bat, 1/2,Undead,N/A,Small,NE,"Mountain, Special, Swamp, Underdark",ToB p.87,,
-Spinosaurus,13    ,Beast,N/A,Gargantuan,Un,"Coastal, Forest, Swamp",ToB p.116-117,,
-Stonemelder,4    ,Humanoid,Human,Medium,NE,"Forest, Hill, Mountain, Swamp",PotA p.197,,
-Strangle weed,2    ,Plant,Aquatic,Large,Un,"Coastal, Swamp, Underdark, Underwater",FEF p.218,,
-Subek,5    ,Humanoid,Subek,Large,LN,"Forest, Swamp",ToB p.371,,
-Suturefly, 1/4,Beast,N/A,Tiny,Un,"Forest, Swamp",ToB p.372,,
-Swamp adder, 1/4,Beast,N/A,Small,Un,Swamp,ToB p.354,,
-Swarm of centipedes, 1/2,Beast,N/A,Medium (tiny),Un,"Desert, Forest, Grassland, Hill, Swamp, Urban",FEF p.52,,
-Swarm of poisonous snakes,2    ,Beast,N/A,Medium (tiny),Un,"Forest, Swamp",MM p.338,,
-Swarm of prismatic beetles,3    ,Beast,N/A,Medium (tiny),Un,Swamp,ToB p.375,,
-Swarm of rats, 1/4,Beast,N/A,Medium (tiny),Un,"Swamp, Underdark, Urban",MM p.339,,
-Swarm of ravens, 1/4,Beast,N/A,Medium (tiny),Un,"Hill, Swamp, Urban",MM p.339,,
-Tabaxi, 1/2,Humanoid,N/A,Medium,CN,"Forest, Swamp",FEF p.219,,
-Tendril puppet,2    ,Plant,N/A,Medium,LN,"Forest, Swamp",ToB p.403,,
-Thalasskoptis,10    ,Fiend,Demon,Large,CE,"Coastal, Swamp, Underwater, Special",FEF p.81,,
-Thorny,1    ,Plant,N/A,Medium,N,"Forest, Swamp, Underdark",VGtM p.197,,
-Titanoboa,12    ,Beast,N/A,Gargantuan,Un,Swamp,ToB p.382,,
-Tri-flower frond, 1/2,Plant,N/A,Medium,Un,"Forest, Hill, Swamp",FEF p.232,,
-Troll,5    ,Giant,N/A,Large,CE,"Arctic, Forest, Hill, Mountain, Swamp, Underdark",MM p.291,,
-Vargouille,1    ,Fiend,N/A,Tiny,CE,"Desert, Special, Swamp, Underdark",VGtM p.195,,
-Vegepygmy, 1/4,Plant,N/A,Small,N,"Forest, Swamp, Underdark",VGtM p.196,,
-Vegepygmy commoner/worker, 1/8,Plant,Fungus,Small,Un,"Forest, Swamp, Underdark",FEF p.239,,
-Vegepygmy guard, 1/2,Plant,Fungus,Small,Un,"Forest, Swamp, Underdark",FEF p.239,,
-Venomous mummy,3    ,Undead,N/A,Medium,LE,"Desert, Swamp",ToB p.299,,
-Vine lord,7    ,Plant,N/A,Medium,LN,"Forest, Swamp",ToB p.402-403,,
-Vine troll skeleton,9    ,Plant,N/A,Large,Un,"Forest, Swamp",ToB p.351,,
-Vorin,9    ,Monstrosity,Aquatic,Huge,CE,Swamp,FEF p.242,,
-Water elemental,5    ,Elemental,N/A,Large,N,"Coastal, Special, Swamp, Underwater",MM p.125,,
-Water elemental myrmidon,7    ,Elemental,Water,Medium,N,"Coastal, Special, Swamp, Underwater",PotA p.213,,
-Weasel,0    ,Beast,N/A,Tiny,Un,"Arctic, Coastal, Forest, Hill, Swamp",MM p.340,,
-Weeping treant,6    ,Plant,N/A,Huge,N,"Forest, Swamp",ToB p.388,,
-Wight,3    ,Undead,N/A,Medium,NE,"Desert, Swamp, Underdark, Urban",MM p.300,,
-Will-o'-wisp,2    ,Undead,N/A,Tiny,CE,"Forest, Swamp, Urban",MM p.301,,
-Witch grass,0    ,Plant,N/A,Small,Un,"Forest, Grassland, Hill, Swamp",FEF p.248,,
-Wood woad,5    ,Plant,N/A,Medium,LN,"Forest, Swamp",VGtM p.198,,
-Woolly rhinoceros,6    ,Beast,N/A,Large,Un,"Arctic, Forest, Grassland, Swamp",FEF p.186,,
-Wyvern,6    ,Dragon,N/A,Large,Un,"Forest, Hill, Mountain, Swamp",MM p.303,,
-Yellow musk creeper,1    ,Plant,N/A,Large,Un,"Forest, Swamp, Underdark",FEF p.250,,
-Yellow musk zombie, 1/4,Plant,N/A,Medium,NE,"Forest, Swamp, Underdark",FEF p.251,,
-Yuan-ti abomination,7    ,Monstrosity,Yuan-ti/shapechanger,Large,NE,"Desert, Forest, Swamp",MM p.308,,
-Yuan-ti anathema,12    ,Monstrosity,Yuan-ti/shapechanger,Huge,NE,"Desert, Forest, Swamp",VGtM p.202-203,,
-Yuan-ti broodguard,2    ,Humanoid,Yuan-ti,Medium,NE,"Desert, Forest, Swamp",VGtM p.203,,
-Yuan-ti malison,3    ,Monstrosity,Yuan-ti/Shapechanger,Medium,NE,"Desert, Forest, Swamp",MM p.309,,
-Yuan-ti mind whisperer,4    ,Monstrosity,Yuan-ti/shapechanger,Medium,NE,"Desert, Forest, Swamp",VGtM p.203-204,,
-Yuan-ti nightmare speaker,4    ,Monstrosity,Yuan-ti/shapechanger,Medium,NE,"Desert, Forest, Swamp",VGtM p.204-205,,
-Yuan-ti pitmaster,5    ,Monstrosity,Yuan-ti/shapechanger,Medium,NE,"Desert, Forest, Swamp",VGtM p.206,,
-Yuan-ti pureblood,1    ,Monstrosity,Yuan-ti,Medium,NE,"Desert, Forest, Swamp, Urban",MM p.310,,
-Zanskaran viper,1    ,Beast,N/A,Large,Un,"Grassland, Swamp",ToB p.354,,
-Zimwi,4    ,Giant,N/A,Medium,CE,"Desert, Grassland, Swamp",ToB p.415,,
-Zmey,14    ,Dragon,N/A,Huge,CE,"Forest, Swamp, Underdark, Underwater",ToB p.416-417,,
+Adherer,450,Aberration,Medium,LE
+Algoid,700,Plant,Medium,N
+Amphiptere,700,Beast,Medium,Un
+Andrenjinyi,13000,Celestial,Gargantuan,N
+Angatra,2300,Undead,Medium,NE
+Aranea,700,Monstrosity,Large,CE
+Arboreal grappler,700,Aberration,Medium,NE
+Aridni,1800,Fey,Small,NE
+Asanbosam,1800,Aberration,Large,CE
+Assassin bug,1800,Beast,Medium,Un
+Baba lysaga,7200,Humanoid,Medium,CE
+Baba lysaga's creeping hut,7200,Construct,Gargantuan,Un
+Bagiennik,700,Aberration,Medium,N
+Barovian witch,100,Humanoid,Medium,CE
+Behtu,450,Humanoid,Small,CE
+Berstuc,7200,Fiend,Large,CE
+Black dracolisk,2900,Dragon,Large,Un
+"Black dragon, adult",11500,Dragon,Huge,CE
+"Black dragon, ancient",33000,Dragon,Gargantuan,CE
+"Black dragon, wyrmling",450,Dragon,Medium,CE
+"Black dragon, young",2900,Dragon,Large,CE
+Black earth guard,450,Humanoid,Medium,NE
+Black earth priest,700,Humanoid,Medium,NE
+Blood hag,7200,Fey,Medium,CE
+Blood pudding,450,Ooze,Medium,Un
+Boalisk,200,Beast,Large,Un
+Boloti,200,Fey,Tiny,NE
+Bonesucker,1100,Aberration,Large,NE
+Bukavac,5000,Monstrosity,Large,NE
+Bullywug,50,Humanoid,Medium,NE
+Burrowshark,1100,Humanoid,Medium,NE
+Carrion crawler,450,Monstrosity,Large,Un
+Catoblepas,1800,Monstrosity,Large,Un
+Chain worm,8400,Beast,Large,Un
+Chupacabra,200,Humanoid,Small,CN
+Churr,1100,Monstrosity,Large,NE
+Coffer corpse,450,Undead,Medium,CE
+Constrictor snake,50,Beast,Large,Un
+Corrupting ooze,1800,Ooze,Large,NE
+Crabman,200,Monstrosity,Large,N
+Crimson mist,2900,Aberration,Medium,NE
+Crocodile,100,Beast,Large,Un
+Crushing wave priest,450,Humanoid,Medium,NE
+Crushing wave reaver,100,Humanoid,Medium,NE
+Dagon,25000,Fiend,Large,CE
+Dark tide knight,700,Humanoid,Medium,LE
+Darkling,100,Fey,Small,CN
+Darkling elder,450,Fey,Medium,CN
+Dimetrodon,50,Beast,Medium,Un
+Dipsa,50,Ooze,Tiny,Un
+Dorreq,1100,Aberration,Medium,NE
+Eblis,100,Monstrosity,Medium,NE
+Eel hound,450,Fey,Medium,N
+Eleinomae,1800,Fey,Medium,CE
+Fathomer,450,Humanoid,Medium,NE
+Fen witch,450,Monstrosity,Medium,CE
+Feyward tree,3900,Construct,Huge,Un
+Flab giant,1100,Giant,Large,CE
+Flowershroud,200,Plant,Large,Un
+Forest marauder,1100,Giant,Large,CE
+Fungoid,450,Plant,Medium,NE
+Gallows tree,10000,Plant,Huge,Un
+Gallows tree zombie,450,Plant,Medium,Un
+Gerridae,200,Fey,Large,N
+Ghast,450,Undead,Medium,CE
+Ghoul,200,Undead,Medium,CE
+Giant constrictor snake,450,Beast,Huge,Un
+Giant crocodile,1800,Beast,Huge,Un
+Giant electric catfish,700,Beast,Large,Un
+Giant frog,50,Beast,Medium,Un
+Giant lizard,50,Beast,Large,Un
+Giant moray eel,450,Beast,Medium,Un
+Giant rat,25,Beast,Small,Un
+Giant slug of p'nahk,1100,Fiend,Large,CE
+Giant spider,200,Beast,Large,Un
+Giant toad,200,Beast,Large,Un
+Giant water beetle,100,Beast,Medium,Un
+Girallon,1100,Monstrosity,Large,Un
+Glass gator,200,Beast,Large,Un
+Gorbel,50,Aberration,Small,N
+Gorilla bear,200,Monstrosity,Medium,Un
+Gray nisp,2300,Fey,Large,CN
+Green hag,700,Fey,Medium,NE
+Green hag (in coven),1800,Fey,Medium,NE
+Grippli,50,Humanoid,Small,N
+Grung,50,Humanoid,Small,LE
+Grung elite warrior,450,Humanoid,Small,LE
+Grung wildling,200,Humanoid,Small,LE
+Hadrosaurus,50,Beast,Large,Un
+Hangman tree,2900,Plant,Huge,NE
+Hanu-naga,450,Monstrosity,Large,CE
+Hawktoad,50,Monstrosity,Small,Un
+Horakh,5000,Monstrosity,Medium,N
+Hydra,3900,Monstrosity,Huge,Un
+Idolic deity,3900,Construct,Small,NE
+Jaculus,700,Dragon,Small,NE
+Kamadan,700,Monstrosity,Large,Un
+Kech,100,Monstrosity,Medium,NE
+Kelpie,200,Plant,Medium,NE
+Lemurfolk (kaguani),50,Humanoid,Small,N
+Lemurfolk (kaguani) greyfur,1100,Humanoid,Small,N
+Leucrotta,700,Monstrosity,Large,CE
+"Leucrotta, adult",450,Monstrosity,Large,CE
+"Leucrotta, young",50,Monstrosity,Medium,CE
+Lightning treant,2300,Plant,Huge,NE
+Lithonnite,1100,Monstrosity,Large,Un
+Lizard king/queen,1100,Humanoid,Medium,CE
+Lizardfolk,100,Humanoid,Medium,N
+Lizardfolk shaman,450,Humanoid,Medium,N
+Mandrill,25,Beast,Small,Un
+Mbielu,700,Beast,Huge,Un
+Medusa,2300,Monstrosity,Medium,LE
+Meenlock,450,Fey,Small,NE
+Millitaur,700,Monstrosity,Large,N
+Miremal,100,Fey,Small,CE
+Mirror hag,2300,Fey,Medium,CN
+Mongrelfolk,50,Humanoid,Medium,Any
+Monstrous crayfish,450,Beast,Large,Un
+Moss lurker,200,Humanoid,Small,CN
+Mud mephit,50,Elemental,Small,NE
+Mummy of the deep,450,Undead,Medium,NE
+Mustard jelly,1800,Ooze,Large,Un
+Nichny,2300,Fey,Medium,NE
+One-eyed shiver,700,Humanoid,Medium,CE
+Possessed pillar,2900,Construct,Large,Un
+Putrid haunt,450,Undead,Medium,NE
+Quickling,200,Fey,Tiny,CE
+Qwyllion,3900,Aberration,Medium,NE
+Ravenala,1800,Plant,Large,Un
+Red-banded line spider,50,Beast,Tiny,Un
+Roachling lord,450,Humanoid,Small,CN
+Roachling skirmisher,50,Humanoid,Small,CN
+Sacred stone monk,100,Humanoid,Medium,LE
+Sap demon,1100,Ooze,Small,CE
+Serpopard,1100,Beast,Large,Un
+Shabti,3900,Construct,Medium,Un
+Shambling mound,1800,Plant,Large,Un
+Shellycoat,450,Fey,Medium,NE
+Shroom,1100,Plant,Small,CE
+Skin bat,100,Undead,Small,NE
+Spinosaurus,10000,Beast,Gargantuan,Un
+Stonemelder,1100,Humanoid,Medium,NE
+Strangle weed,450,Plant,Large,Un
+Subek,1800,Humanoid,Large,LN
+Suturefly,50,Beast,Tiny,Un
+Swamp adder,50,Beast,Small,Un
+Swarm of centipedes,100,Beast,Medium (tiny),Un
+Swarm of poisonous snakes,450,Beast,Medium (tiny),Un
+Swarm of prismatic beetles,700,Beast,Medium (tiny),Un
+Swarm of rats,50,Beast,Medium (tiny),Un
+Swarm of ravens,50,Beast,Medium (tiny),Un
+Tabaxi,100,Humanoid,Medium,CN
+Tendril puppet,450,Plant,Medium,LN
+Thalasskoptis,5900,Fiend,Large,CE
+Thorny,200,Plant,Medium,N
+Titanoboa,8400,Beast,Gargantuan,Un
+Tri-flower frond,100,Plant,Medium,Un
+Troll,1800,Giant,Large,CE
+Vargouille,200,Fiend,Tiny,CE
+Vegepygmy,50,Plant,Small,N
+Vegepygmy commoner/worker,25,Plant,Small,Un
+Vegepygmy guard,100,Plant,Small,Un
+Venomous mummy,700,Undead,Medium,LE
+Vine lord,2900,Plant,Medium,LN
+Vine troll skeleton,5000,Plant,Large,Un
+Vorin,5000,Monstrosity,Huge,CE
+Water elemental,1800,Elemental,Large,N
+Water elemental myrmidon,2900,Elemental,Medium,N
+Weeping treant,2300,Plant,Huge,N
+Wight,700,Undead,Medium,NE
+Will-o'-wisp,450,Undead,Tiny,CE
+Wood woad,1800,Plant,Medium,LN
+Woolly rhinoceros,2300,Beast,Large,Un
+Wyvern,2300,Dragon,Large,Un
+Yellow musk creeper,200,Plant,Large,Un
+Yellow musk zombie,50,Plant,Medium,NE
+Yuan-ti abomination,2900,Monstrosity,Large,NE
+Yuan-ti anathema,8400,Monstrosity,Huge,NE
+Yuan-ti broodguard,450,Humanoid,Medium,NE
+Yuan-ti malison,700,Monstrosity,Medium,NE
+Yuan-ti mind whisperer,1100,Monstrosity,Medium,NE
+Yuan-ti nightmare speaker,1100,Monstrosity,Medium,NE
+Yuan-ti pitmaster,1800,Monstrosity,Medium,NE
+Yuan-ti pureblood,200,Monstrosity,Medium,NE
+Zanskaran viper,200,Beast,Large,Un
+Zimwi,1100,Giant,Medium,CE
+Zmey,11500,Dragon,Huge,CE

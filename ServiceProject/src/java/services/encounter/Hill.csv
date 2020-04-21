@@ -1,188 +1,176 @@
-﻿Monster,CR,Type,Subtype,Size,Align,Terrain,Sourcebook,,
-Amphiptere,3    ,Beast,N/A,Medium,Un,"Forest, Hill, Mountain, Swamp",ToB p.16,,
-Angler worm,4    ,Monstrosity,N/A,Huge,Un,"Hill, Mountain, Underdark",ToB p.22,,
-Annis hag,6    ,Fey,N/A,Large,CE,"Hill, Mountain",VGtM p.159,,
-Aridni,5    ,Fey,N/A,Small,NE,"Forest, Hill, Swamp",ToB p.26,,
-Asanbosam,5    ,Aberration,N/A,Large,CE,"Coastal, Forest, Hill, Swamp",ToB p.27,,
-Assassin bug,5    ,Beast,N/A,Medium,Un,"Forest, Hill, Swamp",FEF p.17,,
-Aurumvorax,5    ,Monstrosity,N/A,Small,Un,"Coastal, Forest, Grassland, Hill",FEF p.20,,
-Axe beak, 1/4,Beast,N/A,Large,Un,"Grassland, Hill",MM p.317,,
-Baboon,0    ,Beast,N/A,Small,Un,"Forest, Hill",MM p.318,,
-Barovian witch, 1/2,Humanoid,Human,Medium,CE,"Forest, Hill, Swamp",CoS p.229,,
-Bat,0    ,Beast,N/A,Tiny,Un,"Forest, Hill, Mountain, Underdark",MM p.318,,
-Bearfolk,3    ,Humanoid,Bearfolk,Medium,CG,"Arctic, Forest, Hill",ToB p.33,,
-Bereginyas,4    ,Fey,N/A,Tiny,NE,"Forest, Hill, Mountain",ToB p.36,,
-Biclops,6    ,Giant,N/A,Huge,N,"Hill, Mountain",FEF p.26,,
-Black earth guard,2    ,Humanoid,Human,Medium,NE,"Forest, Hill, Mountain, Swamp",PotA p.195,,
-Black earth priest,3    ,Humanoid,Human,Medium,NE,"Forest, Hill, Mountain, Swamp",PotA p.195-196,,
-Blemmyes,8    ,Monstrosity,N/A,Large,CE,"Forest, Grassland, Hill, Mountain",ToB p.37,,
-Bloodsuckle,3    ,Plant,N/A,Large,Un,"Forest, Grassland, Hill",FEF p.30,,
-Boar, 1/4,Beast,N/A,Medium,Un,"Forest, Grassland, Hill",MM p.319,,
-Boggle, 1/8,Fey,N/A,Small,CN,"Forest, Hill, Special, Underdark, Urban",VGtM p.128,,
-Bone swarm,10    ,Undead,N/A,Large (tiny),CE,"Hill, Mountain",ToB p.41,,
-Bonesucker,4    ,Aberration,N/A,Large,NE,"Forest, Grassland, Hill, Swamp, Underdark",FEF p.35,,
-Borsin (ape centaur),3    ,Monstrosity,N/A,Large,CE,"Forest, Grassland, Hill",FEF p.36,,
-Brontosaurus,5    ,Beast,N/A,Gargantuan,Un,"Forest, Grassland, Hill",VGtM p.139,,
-Brontotherium,6    ,Beast,N/A,Huge,Un,"Forest, Grassland, Hill",FEF p.183,,
-Brown bear,1    ,Beast,N/A,Large,Un,"Arctic, Forest, Hill",MM p.319,,
-Bulette,5    ,Monstrosity,N/A,Large,Un,"Grassland, Hill, Mountain",MM p.34,,
-Burrowling, 1/2,Humanoid,Burrowling,Small,LN,"Forest, Grassland, Hill",ToB p.49,,
-Burrowshark,4    ,Humanoid,Human,Medium,NE,"Forest, Hill, Mountain, Swamp",PotA p.196,,
-Carytid column,1    ,Construct,N/A,Medium,Un,"Forest, Grassland, Hill",FEF p.43,,
-Cerebral stalker,5    ,Aberration,N/A,Medium,CE,"Coastal, Forest, Grassland, Hill, Mountain",FEF p.53,,
-Chain worm,12    ,Beast,N/A,Large,Un,"Forest, Grassland, Hill, Swamp, Underdark",FEF p.54,,
-Chaos knight,4    ,Fiend,N/A,Medium,CE,"Forest, Grassland, Hill",FEF p.55,,
-Child of the briar,1    ,Plant,N/A,Tiny,NE,"Forest, Hill, Special",ToB p.56,,
-Chimera,6    ,Monstrosity,N/A,Large,CE,"Grassland, Hill, Mountain, Underdark",MM p.39,,
-Chupacabra,1    ,Humanoid,N/A,Small,CN,"Forest, Hill, Swamp, Urban",FEF p.56,,
-Clamor,2    ,Aberration,Extraplanar/incorporeal,Medium,Un,"Desert, Forest, Grassland, Hill, Mountain",FEF p.62,,
-Coffer corpse,2    ,Undead,N/A,Medium,CE,"Forest, Grassland, Hill, Swamp, Underdark",FEF p.64,,
-"Copper dragon, adult",14    ,Dragon,N/A,Huge,CG,Hill,MM p.111,,
-"Copper dragon, ancient",21    ,Dragon,N/A,Gargantuan,CG,Hill,MM p.110,,
-"Copper dragon, wyrmling",1    ,Dragon,N/A,Medium,CG,Hill,MM p.112,,
-"Copper dragon, young",7    ,Dragon,N/A,Large,CG,Hill,MM p.111,,
-Corpse rook,4    ,Monstrosity,N/A,Large,NE,"Desert, Grassland, Hill",FEF p.66,,
-Crimson drake,1    ,Dragon,N/A,Tiny,CE,"Forest, Hill, Mountain",ToB p.151,,
-Death worm,3    ,Monstrosity,N/A,Large,Un,"Forest, Grassland, Hill",FEF p.78,,
-Deinonychus,1    ,Beast,N/A,Medium,Un,"Forest, Grassland, Hill",VGtM p.139,,
-Denizen of leng,5    ,Aberration,N/A,Medium,CE,"Desert, Forest, Grassland, Hill, Mountain",FEF p.83,,
-Dire wolf,1    ,Beast,N/A,Large,Un,"Forest, Hill",MM p.321,,
-Eagle,0    ,Beast,N/A,Small,Un,"Coastal, Grassland, Hill, Mountain",MM p.322,,
-Elk, 1/4,Beast,N/A,Large,Un,"Forest, Grassland, Hill",MM p.322,,
-Elusa hound,1    ,Monstrosity,N/A,Medium,Un,"Forest, Grassland, Hill",FEF p.93,,
-Encephalon gorger,4    ,Aberration,N/A,Medium,CE,"Desert, Forest, Grassland, Hill, Mountain",FEF p.94,,
-Erina defender,1    ,Humanoid,Erina,Small,N,"Forest, Grassland, Hill, Mountain, Urban",ToB p.178,,
-Erina scrounger, 1/4,Humanoid,Erina,Small,N,"Forest, Grassland, Hill, Mountain, Urban",ToB p.178,,
-Eternal flame guardian,2    ,Humanoid,Human,Medium,CE,"Desert, Forest, Grassland, Hill",PotA p.200,,
-Eternal flame priest,3    ,Humanoid,Human,Medium,NE,"Desert, Forest, Grassland, Hill",PotA p.200-201,,
-Ettin,4    ,Giant,N/A,Large,CE,"Hill, Mountain, Underdark",MM p.132,,
-Fetch,1    ,Undead,N/A,Medium,LE,"Arctic, Hill, Mountain",FEF p.100,,
-Fire drake,1    ,Dragon,N/A,Small,CE,"Desert, Hill, Mountain",FEF p.86,,
-Flab giant,4    ,Giant,N/A,Large,CE,"Forest, Grassland, Hill, Mountain, Swamp",ToB p.223,,
-"Flame dragon, adult",16    ,Dragon,N/A,Huge,CE,"Hill, Mountain","ToB p.128, 129-130, 131",,
-"Flame dragon, ancient",24    ,Dragon,N/A,Gargantuan,CE,"Hill, Mountain","ToB p.128-129, 131",,
-"Flame dragon, wyrmling",3    ,Dragon,N/A,Medium,CE,"Hill, Mountain","ToB p.128, 131",,
-"Flame dragon, young",9    ,Dragon,N/A,Large,CE,"Hill, Mountain","ToB p.128, 130-131",,
-Flamewrath,6    ,Humanoid,Human,Medium,CE,"Desert, Forest, Grassland, Hill",PotA p.201,,
-Flowershroud,1    ,Plant,N/A,Large,Un,"Forest, Grassland, Hill, Swamp",FEF p.104,,
-Flying ape,2    ,Monstrosity,N/A,Large,CN,"Forest, Grassland, Hill",FEF p.12,,
-Forest marauder,4    ,Giant,N/A,Large,CE,"Forest, Hill, Swamp",ToB p.205,,
-Foxwere, 1/2,Monstrosity,Shapechanger,Small,LE,"Arctic, Forest, Hill, Underdark",FEF p.227,,
-Fungus gargoyle,3    ,Plant,Fungus,Medium,NE,"Desert, Forest, Grassland, Hill, Underdark",FEF p.114,,
-Galeb duhr,6    ,Elemental,N/A,Medium,N,"Hill, Mountain, Special",MM p.139,,
-Gallows tree,13    ,Plant,N/A,Huge,Un,"Forest, Grassland, Hill, Swamp",FEF p.111,,
-Gallows tree zombie,2    ,Plant,N/A,Medium,Un,"Forest, Grassland, Hill, Swamp",FEF p.112,,
-Gbahali,6    ,Beast,N/A,Huge,Un,"Desert, Grassland, Hill, Mountain",ToB p.209,,
-Giant beetle exoskeleton,2    ,Construct,N/A,Large,Un,"Desert, Forest, Grassland, Hill, Mountain",FEF p.96,,
-Giant boar,2    ,Beast,N/A,Large,Un,"Forest, Grassland, Hill",MM p.323,,
-Giant crab exoskeleton,3    ,Construct,N/A,Large,Un,"Desert, Forest, Grassland, Hill, Mountain",FEF p.97,,
-Giant eagle,1    ,Beast,N/A,Large,NG,"Coastal, Grassland, Hill, Mountain",MM p.324,,
-Giant elk,2    ,Beast,N/A,Huge,Un,"Forest, Grassland, Hill, Mountain",MM p.325,,
-Giant goat, 1/2,Beast,N/A,Large,Un,"Grassland, Hill, Mountain",MM p.326,,
-Giant hyena,1    ,Beast,N/A,Large,Un,"Desert, Forest, Grassland, Hill",MM p.326,,
-Giant owl, 1/4,Beast,N/A,Large,N,"Arctic, Forest, Hill",MM p.327,,
-Giant rhinoceros beetle,4    ,Beast,N/A,Large,Un,"Forest, Grassland, Hill",FEF p.24,,
-Giant slicer beetle,3    ,Beast,N/A,Large,Un,"Forest, Grassland, Hill",FEF p.24,,
-Giant weasel, 1/8,Beast,N/A,Medium,Un,"Forest, Grassland, Hill",MM p.329,,
-Giant wolf spider, 1/4,Beast,N/A,Medium,Un,"Coastal, Desert, Forest, Grassland, Hill",MM p.330,,
-Girallon,4    ,Monstrosity,N/A,Large,Un,"Forest, Hill, Swamp, Special",VGtM p.152,,
-Gloom crawler,10    ,Monstrosity,N/A,Huge,N,"Forest, Grassland, Hill, Underdark",FEF p.122,,
-Goat,0    ,Beast,N/A,Medium,Un,"Grassland, Hill, Mountain, Urban",MM p.330,,
-Goblin, 1/4,Humanoid,Goblinoid,Small,NE,"Forest, Grassland, Hill, Underdark",MM p.166,,
-Goblin boss,1    ,Humanoid,Goblinoid,Small,NE,"Forest, Grassland, Hill, Underdark",MM p.166,,
-Golden cat,0    ,Beast,N/A,Tiny,Un,"Coastal, Forest, Grassland, Hill, Urban",FEF p.125,,
-Gorgimera,7    ,Monstrosity,N/A,Large,Un,"Hill, Mountain",FEF p.131,,
-Gorgon,5    ,Monstrosity,N/A,Large,Un,"Forest, Grassland, Hill",MM p.171,,
-Green hag,3    ,Fey,N/A,Medium,NE,"Forest, Hill, Swamp",MM p.177,,
-Green hag (in coven),5    ,Fey,N/A,Medium,NE,"Forest, Hill, Swamp","MM p.176, 179",,
-Grue (type 2),2    ,Aberration,N/A,Medium,CE,"Forest, Grassland, Hill, Underdark",FEF p.138,,
-Hadrosaurus, 1/4,Beast,N/A,Large,Un,"Forest, Grassland, Hill, Swamp",VGtM p.140,,
-Harpy,1    ,Monstrosity,N/A,Medium,CE,"Coastal, Forest, Hill, Mountain",MM p.181,,
-Hill giant,5    ,Giant,N/A,Huge,CE,"Forest, Hill, Mountain",MM p.155,,
-Hippogriff,1    ,Monstrosity,N/A,Large,Un,"Grassland, Hill, Mountain",MM p.184,,
-Hoar fox,1    ,Monstrosity,N/A,Small,Un,"Arctic, Forest, Hill",FEF p.145,,
-Hobgoblin, 1/2,Humanoid,Goblinoid,Medium,LE,"Desert, Forest, Grassland, Hill, Underdark",MM p.186,,
-Hobgoblin captain,3    ,Humanoid,Goblinoid,Medium,LE,"Desert, Forest, Grassland, Hill, Underdark",MM p.186,,
-Hobgoblin devastator,4    ,Humanoid,Goblinoid,Medium,LE,"Desert, Forest, Grassland, Hill, Underdark",VGtM p.161,,
-Hobgoblin iron shadow,2    ,Humanoid,Goblinoid,Medium,LE,"Desert, Forest, Grassland, Hill, Underdark",VGtM p.162,,
-Hobgoblin warlord,6    ,Humanoid,Goblinoid,Medium,LE,"Desert, Forest, Grassland, Hill, Underdark",MM p.187,,
-Hyaenodon,1    ,Beast,N/A,Large,Un,"Desert, Grassland, Hill",FEF p.184,,
-Hyena,0    ,Beast,N/A,Medium,Un,"Desert, Forest, Grassland, Hill",MM p.331,,
-J'ba fofi spider,3    ,Beast,N/A,Large,Un,"Desert, Forest, Hill",ToB p.362,,
-Jaculi, 1/8,Monstrosity,N/A,Medium,Un,"Forest, Grassland, Hill",FEF p.150,,
-Kamadan,3    ,Monstrosity,N/A,Large,Un,"Desert, Forest, Grassland, Hill, Swamp",FEF p.153,,
-Land lamprey, 1/4,Beast,N/A,Small,Un,"Forest, Grassland, Hill, Underdark",FEF p.160,,
-Leucrotta,3    ,Monstrosity,N/A,Large,CE,"Desert, Forest, Grassland, Hill, Swamp",VGtM p.169,,
-"Leucrotta, adult",2    ,Monstrosity,N/A,Large,CE,"Desert, Forest, Grassland, Hill, Swamp",FEF p.164,,
-"Leucrotta, young", 1/4,Monstrosity,N/A,Medium,CE,"Desert, Forest, Grassland, Hill, Swamp",FEF p.164,,
-Lion,1    ,Beast,N/A,Large,Un,"Desert, Grassland, Hill, Mountain",MM p.331,,
-Loxoda,6    ,Monstrosity,N/A,Huge,NE,"Grassland, Hill",ToB p.280,,
-Manticore,3    ,Monstrosity,N/A,Large,LE,"Arctic, Coastal, Grassland, Hill, Mountain",MM p.213,,
-Mastiff, 1/8,Beast,N/A,Medium,Un,"Forest, Hill, Urban",MM p.332,,
-Mastodon,4    ,Beast,N/A,Huge,Un,"Arctic, Forest, Hill, Grassland",FEF p.185,,
-Mngwa,4    ,Aberration,N/A,Medium,NE,"Hill, Mountain",ToB p.293,,
-Mongrelfolk, 1/4,Humanoid,Mongrelfolk,Medium,Any,"Forest, Hills, Special, Swamp, Urban",CoS p.234,,
-Moss lurker,1    ,Humanoid,N/A,Small,CN,"Forest, Hill, Swamp",ToB p.298,,
-Mouth of grolantor,6    ,Giant,Hill giant,Huge,CE,"Forest, Hill, Mountain",VGtM p.149,,
-Mule, 1/8,Beast,N/A,Medium,Un,"Desert, Hill, Urban",MM p.333,,
-Murder crow,3    ,Undead,N/A,Medium,CE,"Forest, Grassland, Hill",FEF p.174,,
-Neogi,3    ,Aberration,N/A,Small,LE,"Hill, Special, Underdark",VGtM p.180,,
-Neogi hatchling, 1/8,Aberration,N/A,Tiny,LE,"Hill, Special, Underdark",VGtM p.179,,
-Neogi master,4    ,Aberration,N/A,Medium,LE,"Hill, Special, Underdark",VGtM p.180,,
-Ngobou,5    ,Beast,N/A,Large,Un,"Grassland, Hill",ToB p.115,,
-Nightgarm,6    ,Monstrosity,N/A,Large,CE,"Arctic, Forest, Hill",ToB p.304-305,,
-Nilbog,1    ,Humanoid,Goblinoid,Small,CE,"Forest, Grassland, Hill, Underdark",VGtM p.182,,
-Nkosi, 1/2,Humanoid,Nkosi/shapechanger,Medium,LN,"Desert, Grassland, Hill, Urban",ToB p.306-307,,
-Owl harpy,5    ,Monstrosity,N/A,Medium,NE,"Coastal, Forest, Hill, Mountain",ToB p.246,,
-Owlwere, 1/2,Monstrosity,Shapechanger,Small,CE,"Forest, Grassland, Hill, Underdark",FEF p.229,,
-Panther, 1/4,Beast,N/A,Medium,Un,"Forest, Grassland, Hill",MM p.333,,
-Pegasus,2    ,Celestial,N/A,Large,CG,"Forest, Grassland, Hill",MM p.250,,
-Peryton,2    ,Monstrosity,N/A,Large,CE,"Hill, Mountain",MM p.251,,
-Phase spider,3    ,Monstrosity,N/A,Large,Un,"Desert, Forest, Grassland, Hill, Underdark, Urban",MM p.334,,
-Pony, 1/8,Beast,N/A,Medium,Un,"Hill, Urban",MM p.335,,
-Pseudodragon, 1/4,Dragon,N/A,Tiny,NG,"Coastal, Desert, Forest, Hill, Mountain, Urban",MM p.254,,
-Quadricorn,4    ,Monstrosity,N/A,Large,NE,"Grassland, Hill",FEF p.189,,
-Quetzalcoatlus,2    ,Beast,N/A,Huge,Un,"Coastal, Grassland, Hill, Mountain",VGtM p.140,,
-Quickwood,8    ,Plant,N/A,Huge,N,"Forest, Hill, Mountain",FEF p.190,,
-Raven,0    ,Beast,N/A,Tiny,Un,"Hill, Swamp, Urban",MM p.335,,
-Razerblast,5    ,Humanoid,Human,Medium,CE,"Desert, Forest, Grassland, Hill",PotA p.201,,
-"Red dragon, adult",17    ,Dragon,N/A,Huge,CE,"Hill, Mountain",MM p.98,,
-"Red dragon, ancient",24    ,Dragon,N/A,Gargantuan,CE,"Hill, Mountain",MM p.97,,
-"Red dragon, wyrmling",4    ,Dragon,N/A,Medium,CE,"Hill, Mountain",MM p.98,,
-"Red dragon, young",10    ,Dragon,N/A,Large,CE,"Hill, Mountain",MM p.98,,
-Rotting wind,6    ,Undead,N/A,Large,NE,"Desert, Grassland, Hill",ToB p.330,,
-Sacred stone monk, 1/2,Humanoid,Human,Medium,LE,"Forest, Hill, Mountain, Swamp",PotA p.196,,
-Spawn of arbeyach,5    ,Aberration,N/A,Medium,LE,"Coastal, Desert, Forest, Hill, Mountain",ToB p.97,,
-Stegosaurus,4    ,Beast,N/A,Huge,Un,"Forest, Grassland, Hill",VGtM p.140,,
-Stone giant,7    ,Giant,N/A,Huge,N,"Coastal, Hill, Mountain, Underdark",MM p.156,,
-Stone giant dreamwalker,10    ,Giant,Stone giant,Huge,CN,"Coastal, Hill, Mountain, Underdark",VGtM p.150,,
-Stonemelder,4    ,Humanoid,Human,Medium,NE,"Forest, Hill, Mountain, Swamp",PotA p.197,,
-Stuhac,13    ,Fiend,N/A,Medium,NE,"Arctic, Coastal, Hill, Mountain",ToB p.370,,
-Swarm of bats, 1/4,Beast,N/A,Medium (tiny),Un,"Hill, Mountain, Underdark, Urban",MM p.337,,
-Swarm of centipedes, 1/2,Beast,N/A,Medium (tiny),Un,"Desert, Forest, Grassland, Hill, Swamp, Urban",FEF p.52,,
-Swarm of ravens, 1/4,Beast,N/A,Medium (tiny),Un,"Hill, Swamp, Urban",MM p.339,,
-Tazelwurm,2    ,Monstrosity,N/A,Large,Un,"Hill, Mountain",FEF p.222,,
-Tendriculos,4    ,Plant,N/A,Large,Un,"Forest, Grassland, Hill",FEF p.224,,
-Tlincalli,5    ,Monstrosity,N/A,Large,NE,"Desert, Grassland, Hill",VGtM p.193,,
-Tri-flower frond, 1/2,Plant,N/A,Medium,Un,"Forest, Hill, Swamp",FEF p.232,,
-Troll,5    ,Giant,N/A,Large,CE,"Arctic, Forest, Hill, Mountain, Swamp, Underdark",MM p.291,,
-Two-headed troll,6    ,Giant,N/A,Large,CE,"Hill, Mountain, Underdark",FEF p.235,,
-Vampire rose, 1/4,Plant,N/A,Small,Un,"Forest, Grassland, Hill",FEF p.238,,
-Velociraptor, 1/4,Beast,N/A,Tiny,Un,"Forest, Grassland, Hill",VGtM p.140,,
-Vulture,0    ,Beast,N/A,Medium,Un,"Desert, Grassland, Hill",MM p.339,,
-Weasel,0    ,Beast,N/A,Tiny,Un,"Arctic, Coastal, Forest, Hill, Swamp",MM p.340,,
-Werebear,5    ,Humanoid,Human/shapechanger,Medium,NG,"Arctic, Forest, Hill",MM p.208,,
-Wereboar,4    ,Humanoid,Human/shapechanger,Medium,NE,"Forest, Grassland, Hill",MM p.209,,
-Weredactyl,2    ,Humanoid,Shapechanger,Medium,NE,"Forest, Grassland, Hill",FEF p.246,,
-Wereraven,2    ,Humanoid,Human/shapechanger,Medium,LG,"Forest, Hill",CoS p.242,,
-Werewolf,3    ,Humanoid,Human/shapechanger,Medium,CE,"Forest, Hill",MM p.211,,
-White ape,6    ,Monstrosity,N/A,Large,N,"Forest, Grassland, Hill",ToB p.408,,
-Witch grass,0    ,Plant,N/A,Small,Un,"Forest, Grassland, Hill, Swamp",FEF p.248,,
-Witherstench,0    ,Monstrosity,N/A,Small,Un,"Forest, Grassland, Hill",FEF p.249,,
-Wolf, 1/4,Beast,N/A,Medium,Un,"Grassland, Hill",MM p.341,,
-Wolfwere,1    ,Monstrosity,Shapechanger,Medium,CE,"Arctic, Forest, Grassland, Hill, Underdark",FEF p.230,,
-Worg, 1/2,Monstrosity,N/A,Large,NE,"Grassland, Hill",MM p.341,,
-Wyvern,6    ,Dragon,N/A,Large,Un,"Forest, Hill, Mountain, Swamp",MM p.303,,
-Xvart, 1/8,Humanoid,Xvart,Small,CE,"Forest, Hill, Mountain, Underdark",VGtM p.199-200,,
-Xvart warlock of raxivort,1    ,Humanoid,Xvart,Small,CE,"Forest, Hill, Mountain, Underdark",VGtM p.199-200,,
-Yeth hound,4    ,Fey,N/A,Large,NE,"Forest, Grassland, Hill, Special",VGtM p.201,,
+Amphiptere,700,Beast,Medium,Un
+Angler worm,1100,Monstrosity,Huge,Un
+Annis hag,2300,Fey,Large,CE
+Aridni,1800,Fey,Small,NE
+Asanbosam,1800,Aberration,Large,CE
+Assassin bug,1800,Beast,Medium,Un
+Aurumvorax,1800,Monstrosity,Small,Un
+Axe beak,50,Beast,Large,Un
+Barovian witch,100,Humanoid,Medium,CE
+Bearfolk,700,Humanoid,Medium,CG
+Bereginyas,1100,Fey,Tiny,NE
+Biclops,2300,Giant,Huge,N
+Black earth guard,450,Humanoid,Medium,NE
+Black earth priest,700,Humanoid,Medium,NE
+Blemmyes,3900,Monstrosity,Large,CE
+Bloodsuckle,700,Plant,Large,Un
+Boar,50,Beast,Medium,Un
+Boggle,25,Fey,Small,CN
+Bone swarm,5900,Undead,Large (tiny),CE
+Bonesucker,1100,Aberration,Large,NE
+Borsin (ape centaur),700,Monstrosity,Large,CE
+Brontosaurus,1800,Beast,Gargantuan,Un
+Brontotherium,2300,Beast,Huge,Un
+Brown bear,200,Beast,Large,Un
+Bulette,1800,Monstrosity,Large,Un
+Burrowling,100,Humanoid,Small,LN
+Burrowshark,1100,Humanoid,Medium,NE
+Carytid column,200,Construct,Medium,Un
+Cerebral stalker,1800,Aberration,Medium,CE
+Chain worm,8400,Beast,Large,Un
+Chaos knight,1100,Fiend,Medium,CE
+Child of the briar,200,Plant,Tiny,NE
+Chimera,2300,Monstrosity,Large,CE
+Chupacabra,200,Humanoid,Small,CN
+Clamor,450,Aberration,Medium,Un
+Coffer corpse,450,Undead,Medium,CE
+"Copper dragon, adult",11500,Dragon,Huge,CG
+"Copper dragon, ancient",33000,Dragon,Gargantuan,CG
+"Copper dragon, wyrmling",200,Dragon,Medium,CG
+"Copper dragon, young",2900,Dragon,Large,CG
+Corpse rook,1100,Monstrosity,Large,NE
+Crimson drake,200,Dragon,Tiny,CE
+Death worm,700,Monstrosity,Large,Un
+Deinonychus,200,Beast,Medium,Un
+Denizen of leng,1800,Aberration,Medium,CE
+Dire wolf,200,Beast,Large,Un
+Elk,50,Beast,Large,Un
+Elusa hound,200,Monstrosity,Medium,Un
+Encephalon gorger,1100,Aberration,Medium,CE
+Erina defender,200,Humanoid,Small,N
+Erina scrounger,50,Humanoid,Small,N
+Eternal flame guardian,450,Humanoid,Medium,CE
+Eternal flame priest,700,Humanoid,Medium,NE
+Ettin,1100,Giant,Large,CE
+Fetch,200,Undead,Medium,LE
+Fire drake,200,Dragon,Small,CE
+Flab giant,1100,Giant,Large,CE
+"Flame dragon, adult",15000,Dragon,Huge,CE
+"Flame dragon, ancient",62000,Dragon,Gargantuan,CE
+"Flame dragon, wyrmling",700,Dragon,Medium,CE
+"Flame dragon, young",5000,Dragon,Large,CE
+Flamewrath,2300,Humanoid,Medium,CE
+Flowershroud,200,Plant,Large,Un
+Flying ape,450,Monstrosity,Large,CN
+Forest marauder,1100,Giant,Large,CE
+Foxwere,100,Monstrosity,Small,LE
+Fungus gargoyle,700,Plant,Medium,NE
+Galeb duhr,2300,Elemental,Medium,N
+Gallows tree,10000,Plant,Huge,Un
+Gallows tree zombie,450,Plant,Medium,Un
+Gbahali,2300,Beast,Huge,Un
+Giant beetle exoskeleton,450,Construct,Large,Un
+Giant boar,450,Beast,Large,Un
+Giant crab exoskeleton,700,Construct,Large,Un
+Giant eagle,200,Beast,Large,NG
+Giant elk,450,Beast,Huge,Un
+Giant goat,100,Beast,Large,Un
+Giant hyena,200,Beast,Large,Un
+Giant owl,50,Beast,Large,N
+Giant rhinoceros beetle,1100,Beast,Large,Un
+Giant slicer beetle,700,Beast,Large,Un
+Giant weasel,25,Beast,Medium,Un
+Giant wolf spider,50,Beast,Medium,Un
+Girallon,1100,Monstrosity,Large,Un
+Gloom crawler,5900,Monstrosity,Huge,N
+Goblin,50,Humanoid,Small,NE
+Goblin boss,200,Humanoid,Small,NE
+Gorgimera,2900,Monstrosity,Large,Un
+Gorgon,1800,Monstrosity,Large,Un
+Green hag,700,Fey,Medium,NE
+Green hag (in coven),1800,Fey,Medium,NE
+Grue (type 2),450,Aberration,Medium,CE
+Hadrosaurus,50,Beast,Large,Un
+Harpy,200,Monstrosity,Medium,CE
+Hill giant,1800,Giant,Huge,CE
+Hippogriff,200,Monstrosity,Large,Un
+Hoar fox,200,Monstrosity,Small,Un
+Hobgoblin,100,Humanoid,Medium,LE
+Hobgoblin captain,700,Humanoid,Medium,LE
+Hobgoblin devastator,1100,Humanoid,Medium,LE
+Hobgoblin iron shadow,450,Humanoid,Medium,LE
+Hobgoblin warlord,2300,Humanoid,Medium,LE
+Hyaenodon,200,Beast,Large,Un
+J'ba fofi spider,700,Beast,Large,Un
+Jaculi,25,Monstrosity,Medium,Un
+Kamadan,700,Monstrosity,Large,Un
+Land lamprey,50,Beast,Small,Un
+Leucrotta,700,Monstrosity,Large,CE
+"Leucrotta, adult",450,Monstrosity,Large,CE
+"Leucrotta, young",50,Monstrosity,Medium,CE
+Lion,200,Beast,Large,Un
+Loxoda,2300,Monstrosity,Huge,NE
+Manticore,700,Monstrosity,Large,LE
+Mastiff,25,Beast,Medium,Un
+Mastodon,1100,Beast,Huge,Un
+Mngwa,1100,Aberration,Medium,NE
+Mongrelfolk,50,Humanoid,Medium,Any
+Moss lurker,200,Humanoid,Small,CN
+Mouth of grolantor,2300,Giant,Huge,CE
+Mule,25,Beast,Medium,Un
+Murder crow,700,Undead,Medium,CE
+Neogi,700,Aberration,Small,LE
+Neogi hatchling,25,Aberration,Tiny,LE
+Neogi master,1100,Aberration,Medium,LE
+Ngobou,1800,Beast,Large,Un
+Nightgarm,2300,Monstrosity,Large,CE
+Nilbog,200,Humanoid,Small,CE
+Nkosi,100,Humanoid,Medium,LN
+Owl harpy,1800,Monstrosity,Medium,NE
+Owlwere,100,Monstrosity,Small,CE
+Panther,50,Beast,Medium,Un
+Pegasus,450,Celestial,Large,CG
+Peryton,450,Monstrosity,Large,CE
+Phase spider,700,Monstrosity,Large,Un
+Pony,25,Beast,Medium,Un
+Pseudodragon,50,Dragon,Tiny,NG
+Quadricorn,1100,Monstrosity,Large,NE
+Quetzalcoatlus,450,Beast,Huge,Un
+Quickwood,3900,Plant,Huge,N
+Razerblast,1800,Humanoid,Medium,CE
+"Red dragon, adult",18000,Dragon,Huge,CE
+"Red dragon, ancient",62000,Dragon,Gargantuan,CE
+"Red dragon, wyrmling",1100,Dragon,Medium,CE
+"Red dragon, young",5900,Dragon,Large,CE
+Rotting wind,2300,Undead,Large,NE
+Sacred stone monk,100,Humanoid,Medium,LE
+Spawn of arbeyach,1800,Aberration,Medium,LE
+Stegosaurus,1100,Beast,Huge,Un
+Stone giant,2900,Giant,Huge,N
+Stone giant dreamwalker,5900,Giant,Huge,CN
+Stonemelder,1100,Humanoid,Medium,NE
+Stuhac,10000,Fiend,Medium,NE
+Swarm of bats,50,Beast,Medium (tiny),Un
+Swarm of centipedes,100,Beast,Medium (tiny),Un
+Swarm of ravens,50,Beast,Medium (tiny),Un
+Tazelwurm,450,Monstrosity,Large,Un
+Tendriculos,1100,Plant,Large,Un
+Tlincalli,1800,Monstrosity,Large,NE
+Tri-flower frond,100,Plant,Medium,Un
+Troll,1800,Giant,Large,CE
+Two-headed troll,2300,Giant,Large,CE
+Vampire rose,50,Plant,Small,Un
+Velociraptor,50,Beast,Tiny,Un
+Werebear,1800,Humanoid,Medium,NG
+Wereboar,1100,Humanoid,Medium,NE
+Weredactyl,450,Humanoid,Medium,NE
+Wereraven,450,Humanoid,Medium,LG
+Werewolf,700,Humanoid,Medium,CE
+White ape,2300,Monstrosity,Large,N
+Wolf,50,Beast,Medium,Un
+Wolfwere,200,Monstrosity,Medium,CE
+Worg,100,Monstrosity,Large,NE
+Wyvern,2300,Dragon,Large,Un
+Xvart,25,Humanoid,Small,CE
+Xvart warlock of raxivort,200,Humanoid,Small,CE
+Yeth hound,1100,Fey,Large,NE

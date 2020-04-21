@@ -1,72 +1,69 @@
-﻿Monster,CR,Type,Subtype,Size,Align,Terrain,Sourcebook,,
-Abominable yeti,9    ,Monstrosity,N/A,Huge,CE,Arctic,MM p.306,,
-Bearfolk,3    ,Humanoid,Bearfolk,Medium,CG,"Arctic, Forest, Hill",ToB p.33,,
-Beli,2    ,Fey,N/A,Small,NE,"Arctic, Mountain",ToB p.35,,
-Bheur hag,7    ,Fey,N/A,Medium,CE,"Arctic, Mountain",VGtM p.160,,
-Boreas,17    ,Elemental,N/A,Medium,CE,"Arctic, Mountain",ToB p.42-43,,
-Brown bear,1    ,Beast,N/A,Large,Un,"Arctic, Forest, Hill",MM p.319,,
-Cobra flower,2    ,Plant,N/A,Large,Un,"Arctic, Forest, Mountain",FEF p.63,,
-Crag cat,1    ,Beast,N/A,Large,Un,"Arctic, Forest, Mountain",SKT p.240,,
-Crushing wave priest,2    ,Humanoid,Human,Medium,NE,"Arctic, Coastal, Forest, Swamp",PotA p.205,,
-Crushing wave reaver, 1/2,Humanoid,Human,Medium,NE,"Arctic, Coastal, Forest, Swamp",PotA p.205,,
-Dark tide knight,3    ,Humanoid,Human,Medium,LE,"Arctic, Coastal, Forest, Swamp",PotA p.205-206,,
-Far darrig,3    ,Fey,N/A,Small,N,"Arctic, Forest, Special",ToB p.179,,
-Fathomer,2    ,Humanoid,Human,Medium,NE,"Arctic, Coastal, Forest, Swamp",PotA p.207,,
-Fetch,1    ,Undead,N/A,Medium,LE,"Arctic, Hill, Mountain",FEF p.100,,
-Foxwere, 1/2,Monstrosity,Shapechanger,Small,LE,"Arctic, Forest, Hill, Underdark",FEF p.227,,
-Fraughashar, 1/2,Fey,N/A,Small,NE,"Arctic, Mountain",ToB p.206,,
-Frost giant,8    ,Giant,N/A,Huge,NE,"Arctic, Coastal, Mountain",MM p.155,,
-Frost giant everlasting one,12    ,Giant,Frost giant,Huge,CE,"Arctic, Coastal, Mountain",VGtM p.148,,
-Frostveil,4    ,Plant,N/A,Medium,Un,Arctic,ToB p.207,,
-Giant owl, 1/4,Beast,N/A,Large,N,"Arctic, Forest, Hill",MM p.327,,
-Glacial ooze,1    ,Ooze,N/A,Large,Un,"Arctic, Mountain",FEF p.178,,
-Griffon,2    ,Monstrosity,N/A,Large,Un,"Arctic, Coastal, Grassland, Mountain",MM p.174,,
-Hoar fox,1    ,Monstrosity,N/A,Small,Un,"Arctic, Forest, Hill",FEF p.145,,
-Hound of the night,5    ,Monstrosity,N/A,Large,Un,"Arctic, Forest, Special",ToB p.251,,
-Ice drake,1    ,Dragon,N/A,Small,CE,"Arctic, Mountain",FEF p.87,,
-Ice maiden,6    ,Fey,N/A,Medium,LE,"Arctic, Special",ToB p.254,,
-Ice mephit, 1/2,Elemental,N/A,Small,NE,"Arctic, Special",MM p.215,,
-Ice toad,1    ,Monstrosity,N/A,Medium,N,Arctic,RoT p.90,,
-Krake spawn,9    ,Monstrosity,N/A,Huge,NE,"Arctic, Coastal, Special, Underwater",ToB p.269,,
-Lindwurm,5    ,Dragon,N/A,Large,NE,"Arctic, Coastal",ToB p.276,,
-Mahoru,3    ,Monstrosity,N/A,Large,Un,"Arctic, Coastal, Underwater",ToB p.281,,
-Mammoth,6    ,Beast,N/A,Huge,Un,Arctic,MM p.332,,
-Manticore,3    ,Monstrosity,N/A,Large,LE,"Arctic, Coastal, Grassland, Hill, Mountain",MM p.213,,
-Mastodon,4    ,Beast,N/A,Huge,Un,"Arctic, Forest, Hill, Grassland",FEF p.185,,
-Myling,2    ,Undead,N/A,Small,CE,"Arctic, Forest",ToB p.301,,
-Nightgarm,6    ,Monstrosity,N/A,Large,CE,"Arctic, Forest, Hill",ToB p.304-305,,
-One-eyed shiver,3    ,Humanoid,Human,Medium,CE,"Arctic, Coastal, Forest, Swamp",PotA p.207,,
-Owl,0    ,Beast,N/A,Tiny,Un,"Arctic, Forest",MM p.333,,
-Polar bear,2    ,Beast,N/A,Large,Un,Arctic,MM p.334,,
-Remorhaz,11    ,Monstrosity,N/A,Huge,Un,Arctic,MM p.258,,
-"Remorhaz, young",5    ,Monstrosity,N/A,Large,Un,Arctic,MM p.258,,
-Rime worm,6    ,Elemental,N/A,Large,N,Arctic,ToB p.327,,
-Saber-toothed tiger,2    ,Beast,N/A,Large,Un,"Arctic, Mountain",MM p.336,,
-Shellycoat,2    ,Fey,N/A,Medium,NE,"Arctic, Coastal, Forest, Swamp, Underdark",ToB p.346,,
-Snow leopard, 1/4,Beast,N/A,Medium,Un,"Arctic, Forest, Grassland, Mountain",FEF p.163,,
-Storm giant,13    ,Giant,N/A,Huge,CG,"Arctic, Coastal, Desert, Mountain, Underwater",MM p.156,,
-Storm giant quintessent,16    ,Giant,Storm giant,Huge,CG,"Arctic, Coastal, Desert, Mountain, Underwater",VGtM p.151,,
-Stuhac,13    ,Fiend,N/A,Medium,NE,"Arctic, Coastal, Hill, Mountain",ToB p.370,,
-Swarm of sluagh,3    ,Fey,N/A,Medium (tiny),CE,"Arctic, Underdark",ToB p.376,,
-Swarm of wolf spirits,6    ,Undead,N/A,Large (medium),NE,"Arctic, Forest, Special",ToB p.377,,
-Taer,1    ,Humanoid,N/A,Medium,N,"Arctic, Mountain",FEF p.220,,
-Theullai,10    ,Elemental,N/A,Huge,CN,"Arctic, Mountain",ToB p.379,,
-Thursir giant,3    ,Giant,N/A,Large,NE/LE,"Arctic, Mountain, Underdark",ToB p.227,,
-Tribal warrior, 1/8,Humanoid,Any,Medium,Any,Arctic,MM p.350,,
-Troll,5    ,Giant,N/A,Large,CE,"Arctic, Forest, Hill, Mountain, Swamp, Underdark",MM p.291,,
-Trollkin reaver,4    ,Humanoid,Trollkin,Medium,N,"Arctic, Forest, Mountain",ToB p.390,,
-Uthgardt shaman,2    ,Humanoid,Human,Medium,NE,"Arctic, Desert, Mountain",SKT p.243-244,,
-Vaettir,4    ,Undead,N/A,Medium,LE,"Arctic, Coastal, Mountain, Special, Underwater",ToB p.395,,
-Weasel,0    ,Beast,N/A,Tiny,Un,"Arctic, Coastal, Forest, Hill, Swamp",MM p.340,,
-Werebear,5    ,Humanoid,Human/shapechanger,Medium,NG,"Arctic, Forest, Hill",MM p.208,,
-White dracolisk,7    ,Dragon,N/A,Large,Un,"Arctic, Mountain, Underdark",FEF p.85,,
-"White dragon, adult",13    ,Dragon,N/A,Huge,CE,Arctic,MM p.101,,
-"White dragon, ancient",20    ,Dragon,N/A,Gargantuan,CE,Arctic,MM p.100,,
-"White dragon, wyrmling",2    ,Dragon,N/A,Medium,CE,Arctic,MM p.102,,
-"White dragon, young",6    ,Dragon,N/A,Large,CE,Arctic,MM p.101,,
-Winter wolf,3    ,Monstrosity,N/A,Large,NE,Arctic,MM p.340,,
-Wolfwere,1    ,Monstrosity,Shapechanger,Medium,CE,"Arctic, Forest, Grassland, Hill, Underdark",FEF p.230,,
-Woolly rhinoceros,6    ,Beast,N/A,Large,Un,"Arctic, Forest, Grassland, Swamp",FEF p.186,,
-Yakfolk (yikaria) priest,4    ,Monstrosity,N/A,Large,NE,"Arctic, Desert, Mountain",SKT p.244-245,,
-Yakfolk (yikaria) warrior,3    ,Monstrosity,N/A,Large,NE,"Arctic, Desert, Mountain",SKT p.244-245,,
-Yeti,3    ,Monstrosity,N/A,Large,CE,Arctic,MM p.305,,
+Abominable yeti,5000,Monstrosity,Huge,CE
+Bearfolk,700,Humanoid,Medium,CG
+Beli,450,Fey,Small,NE
+Bheur hag,2900,Fey,Medium,CE
+Boreas,18000,Elemental,Medium,CE
+Brown bear,200,Beast,Large,Un
+Cobra flower,450,Plant,Large,Un
+Crag cat,200,Beast,Large,Un
+Crushing wave priest,450,Humanoid,Medium,NE
+Crushing wave reaver,100,Humanoid,Medium,NE
+Dark tide knight,700,Humanoid,Medium,LE
+Far darrig,700,Fey,Small,N
+Fathomer,450,Humanoid,Medium,NE
+Fetch,200,Undead,Medium,LE
+Foxwere,100,Monstrosity,Small,LE
+Fraughashar,100,Fey,Small,NE
+Frost giant,3900,Giant,Huge,NE
+Frost giant everlasting one,8400,Giant,Huge,CE
+Frostveil,1100,Plant,Medium,Un
+Giant owl,50,Beast,Large,N
+Glacial ooze,200,Ooze,Large,Un
+Griffon,450,Monstrosity,Large,Un
+Hoar fox,200,Monstrosity,Small,Un
+Hound of the night,1800,Monstrosity,Large,Un
+Ice drake,200,Dragon,Small,CE
+Ice maiden,2300,Fey,Medium,LE
+Ice mephit,100,Elemental,Small,NE
+Ice toad,200,Monstrosity,Medium,N
+Krake spawn,5000,Monstrosity,Huge,NE
+Lindwurm,1800,Dragon,Large,NE
+Mahoru,700,Monstrosity,Large,Un
+Mammoth,2300,Beast,Huge,Un
+Manticore,700,Monstrosity,Large,LE
+Mastodon,1100,Beast,Huge,Un
+Myling,450,Undead,Small,CE
+Nightgarm,2300,Monstrosity,Large,CE
+One-eyed shiver,700,Humanoid,Medium,CE
+Polar bear,450,Beast,Large,Un
+Remorhaz,7200,Monstrosity,Huge,Un
+"Remorhaz, young",1800,Monstrosity,Large,Un
+Rime worm,2300,Elemental,Large,N
+Saber-toothed tiger,450,Beast,Large,Un
+Shellycoat,450,Fey,Medium,NE
+Snow leopard,50,Beast,Medium,Un
+Storm giant,10000,Giant,Huge,CG
+Storm giant quintessent,15000,Giant,Huge,CG
+Stuhac,10000,Fiend,Medium,NE
+Swarm of sluagh,700,Fey,Medium (tiny),CE
+Swarm of wolf spirits,2300,Undead,Large (medium),NE
+Taer,200,Humanoid,Medium,N
+Theullai,5900,Elemental,Huge,CN
+Thursir giant,700,Giant,Large,NE/LE
+Tribal warrior,25,Humanoid,Medium,Any
+Troll,1800,Giant,Large,CE
+Trollkin reaver,1100,Humanoid,Medium,N
+Uthgardt shaman,450,Humanoid,Medium,NE
+Vaettir,1100,Undead,Medium,LE
+Werebear,1800,Humanoid,Medium,NG
+White dracolisk,2900,Dragon,Large,Un
+"White dragon, adult",10000,Dragon,Huge,CE
+"White dragon, ancient",25000,Dragon,Gargantuan,CE
+"White dragon, wyrmling",450,Dragon,Medium,CE
+"White dragon, young",2300,Dragon,Large,CE
+Winter wolf,700,Monstrosity,Large,NE
+Wolfwere,200,Monstrosity,Medium,CE
+Woolly rhinoceros,2300,Beast,Large,Un
+Yakfolk (yikaria) priest,1100,Monstrosity,Large,NE
+Yakfolk (yikaria) warrior,700,Monstrosity,Large,NE
+Yeti,700,Monstrosity,Large,CE
