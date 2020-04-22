@@ -247,9 +247,7 @@
              
              <div class="dice-button">
                       <div class="dice-button">
-                            <form action="#">
-                                <button type="submit" class="btn btn-primary btn-lg">Generate Character</button>
-                            </form>
+                                <button type="submit" class="btn btn-primary btn-lg" onclick="createCharacter()">Generate Character</button>
                         </div>
                  </div>
              <div class="results">
@@ -309,6 +307,38 @@
               },
               error: function(result){
                   document.getElementById("diceResults").textContent = result.toString() + " Failure";
+              }
+          })
+      }
+      
+    function createCharacter()
+      {
+          var name = document.getElementById("name").value;
+          var classType = document.getElementById("classType").value;
+          var raceType = document.getElementById("raceType").value;
+          var level = document.getElementById("level").value;
+          
+          var json = {
+              "name": name,
+              "classType": classType,
+              "raceType": raceType,
+              "level": level
+          }
+          
+          console.log(json)
+          
+           $.ajax({
+              type:"POST",
+              url:"http://localhost:8084/ClientProject/character",
+              contentType: "application/json; charset=utf-8",
+              dataType: "json",
+              data: JSON.stringify(json),
+              success: function(result){
+                  console.log(result);
+              },
+              error: function(result){
+                  console.log(result);
+
               }
           })
       }
