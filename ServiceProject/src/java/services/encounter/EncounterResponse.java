@@ -5,6 +5,7 @@
  */
 package services.encounter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,7 +13,7 @@ import java.util.List;
  * @author larry
  */
 public class EncounterResponse {
-    private List<Encounter> encounters;
+    private List<Encounter> encounters = new ArrayList<>();
 
     public List<Encounter> getEncounters() {
         return encounters;
@@ -21,6 +22,10 @@ public class EncounterResponse {
     public void setEncounters(List<Encounter> encounters) {
         this.encounters = encounters;
     }
+	
+	public void addEncounter(Encounter e){
+		encounters.add(e);
+	}
     
     
 }
