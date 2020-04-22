@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package services.encounter;
+package client.models;
 
 import java.util.List;
 
@@ -12,19 +12,10 @@ import java.util.List;
  * @author hanli
  */
 public class Encounter {
-    private Monster monster;
+    private List<Monster> monsters;
     private int numMonsters;
     private String terrain;
     private int totalXp;
-    private String difficulty;
-
-    public String getDifficulty() {
-        return difficulty;
-    }
-
-    public void setDifficulty(String difficulty) {
-        this.difficulty = difficulty;
-    }
 
     public int getTotalXp() {
         return totalXp;
@@ -34,12 +25,12 @@ public class Encounter {
         this.totalXp = totalXp;
     }
 
-    public Monster getMonster() {
-        return monster;
+    public List<Monster> getMonsters() {
+        return monsters;
     }
 
-    public void setMonster(Monster monster) {
-        this.monster = monster;
+    public void setMonsters(List<Monster> monsters) {
+        this.monsters = monsters;
     }
 
     public int getNumMonsters() {

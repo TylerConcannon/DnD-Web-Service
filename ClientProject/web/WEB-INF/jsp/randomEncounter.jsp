@@ -185,16 +185,35 @@
              
              <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-sides-text" id="inputGroup-sizing-default">Group CR:</span>
+                        <span class="input-sides-text" id="inputGroup-sizing-default">Player Level:</span>
                     </div>
-                    <input type="text" id="groupCR" class="side-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    <input type="text" id="playerLevel" class="side-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
              </div>
              <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-sides-text" id="inputGroup-sizing-default">Number of Enemies:</span>
+                        <span class="input-sides-text" id="inputGroup-sizing-default">Number of Players:</span>
                     </div>
-                    <input type="text" id="numEnemies" class="side-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    <input type="text" id="numPlayers" class="side-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
              </div>
+             
+            <div class="monster-number-selection">
+                 <span class="input-sides-text" id="inputGroup-sizing-default">Max number of Monsters:</span>
+                    <select id="numMonsters" class="browser-default custom-select">
+                        <option selected>Select max number of Monsters</option>
+                        <option value="0">Any</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+             </div>
+             <br>
              <div class="loot-rarity-selection">
                  <span class="input-sides-text" id="inputGroup-sizing-default">Terrain Selection:</span>
                     <select id="terrain" class="browser-default custom-select">
@@ -211,9 +230,7 @@
              
              <div class="dice-button">
                       <div class="dice-button">
-                            <form action="#">
-                                <button type="submit" class="btn btn-primary btn-lg">Generate Encounter</button>
-                            </form>
+                            <button type="submit" class="btn btn-primary btn-lg" onclick="getEncounters()">Generate Encounter</button>
                         </div>
                  </div>
              <div class="results">
@@ -242,36 +259,56 @@
     function getEncounters()
       {
           var terrain = document.getElementById("terrain").value;
-          var numEnemies = document.getElementById("numEnemies").value;
-          var groupCR = document.getElementById("groupCR").value;
+          var numPlayers = document.getElementById("numPlayers").value;
+          var playerLevel = document.getElementById("playerLevel").value;
+          var numMonsters = document.getElementById("numMonsters").value;
           
-          $.ajax({
-              type:"GET",
-              url:"http://localhost:8084/ClientProject/encounter?terrain=" + terrain + "&numEnemies=" + numEnemies + "&groupCR=" + groupCR,
+//          var json = {
+//              "terrain": terrain,
+//              "numPlayers": numPlayers,
+//              "playerLevel": playerLevel,
+//              "numMonsters": numMonsters
+//          }
+          
+          //console.log(json)
+          var params = "?terrain=" + terrain + "&numPlayers=" + numPlayers + "&playerLevel=" + playerLevel + "&numMonsters=" + numMonsters
+          
+//           $.ajax({
+//              type:"GET",
+//              url:"http://localhost:8084/ClientProject/encounter" + params,
+////              contentType: "application/json; charset=utf-8",
+////              dataType: "json",
+////              data: JSON.stringify(json),
+//              success: function(result){
+//                  //alert(result)
+//                  console.log(result);
+//              },
+//              error: function(result){
+//                  console.log(result);
+//              }
+//          })
+          
+          var json = {
+              "terrain": terrain,
+              "numPlayers": numPlayers,
+              "playerLevel": playerLevel,
+              "numMonsters": numMonsters
+          }
+          
+          console.log(json)
+          
+           $.ajax({
+              type:"POST",
+              url:"http://localhost:8084/ClientProject/encounter",
+              contentType: "application/json; charset=utf-8",
+              dataType: "json",
+              data: JSON.stringify(json),
               success: function(result){
-                  
-                  console.log(result)
-                  var content
-                  
-                  if (result.name === undefined){
-                      content = "Please fill out all the fields for a random encounter!"
-                  }
-                  else {
-                    content = "You encountered: ";
-
-                    if (result.description != ""){
-                      content += "Description: ";
-                    }
-                    if (result.value != ""){
-                        content += "Enemy CR: ";
-                    }
-                  }
-
-                  
-                  document.getElementById("contentResults").textContent = content;
+                  console.log(result);
               },
               error: function(result){
-                  document.getElementById("diceResults").textContent = result.toString() + " Failure";
+                  console.log(result);
+
               }
           })
       }

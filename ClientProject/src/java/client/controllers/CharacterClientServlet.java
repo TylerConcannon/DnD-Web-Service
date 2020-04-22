@@ -5,23 +5,21 @@
  */
 package client.controllers;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import client.models.*;
-import com.google.gson.Gson;
-import java.io.BufferedReader;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
  * @author larry
  */
-public class EncounterClientServlet extends HttpServlet {
+public class CharacterClientServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -40,10 +38,10 @@ public class EncounterClientServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet EncounterClientServlet</title>");            
+            out.println("<title>Servlet CharacterClientServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet EncounterClientServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet CharacterClientServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -61,12 +59,7 @@ public class EncounterClientServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //String content = getBody(request);
-        String terrain = request.getParameter("terrain");
-        String numPlayers = request.getParameter("numPlayers");
-        String playerLevel = request.getParameter("playerLevel");
-        String numMonsters = request.getParameter("numMonsters");
-        //EncounterRequest encounter = getBody(request);
+        String content = getBody(request);
         int i = 0;
     }
 
@@ -81,8 +74,8 @@ public class EncounterClientServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        EncounterRequest encounter = getBody(request);
-        sendCharacterRequest(encounter);
+        String content = getBody(request);
+        int i = 0;
     }
 
     /**
@@ -95,36 +88,35 @@ public class EncounterClientServlet extends HttpServlet {
         return "Short description";
     }// </editor-fold>
     
-//    private EncounterRequest getBody(HttpServletRequest request){
-//        
-//        EncounterRequest encounter = new EncounterRequest();
+    private String getBody(HttpServletRequest request)
+    {
+        StringBuilder buffer = new StringBuilder();
+        BufferedReader reader;
+        String content = "";
+        try {
+            reader = request.getReader();
+            String line;
+            while ((line = reader.readLine()) != null)
+            {
+                buffer.append(line);
+            }
+            content = buffer.toString();
+            
+        } catch (IOException ex) {
+            Logger.getLogger(ContentClientServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return content;
+        
+//        Loot loot = new Loot(); 
 //        try{
 //            BufferedReader reader = request.getReader();
 //            Gson gson = new Gson();
-//            encounter = gson.fromJson(reader, EncounterRequest.class);
+//            loot = gson.fromJson(reader, Loot.class);
 //        }
 //        catch (Exception e){
 //            
 //        }
-//        return encounter;
-//    }
-    
-    private EncounterRequest getBody(HttpServletRequest request)
-    {    
-        EncounterRequest encounter = new EncounterRequest(); 
-        try{
-            BufferedReader reader = request.getReader();
-            Gson gson = new Gson();
-            encounter = gson.fromJson(reader, EncounterRequest.class);
-        }
-        catch (Exception e){
-            
-        }
-        return encounter;
-    }
-    
-    private void sendCharacterRequest(EncounterRequest encounter){
-        
+//        return loot;
     }
 
 }
