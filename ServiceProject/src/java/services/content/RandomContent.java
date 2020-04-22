@@ -44,21 +44,12 @@ import services.diceRoller.Roll;
 
 public class RandomContent 
 {
-	List<Loot> mundaneItems;
-	List<Loot> commonItems;
-	List<Loot> rareItems;
-	List<Loot> veryRareItems;
-	List<Loot> legendaryItems;
+	List<Loot> mundaneItems = new ArrayList<>();
+	List<Loot> commonItems = new ArrayList<>();
+	List<Loot> rareItems = new ArrayList<>();
+	List<Loot> veryRareItems = new ArrayList<>();
+	List<Loot> legendaryItems = new ArrayList<>();
         
-        public RandomContent() throws IOException {
-            mundaneItems = new ArrayList<>();
-            commonItems = new ArrayList<>();
-            rareItems = new ArrayList<>();
-            veryRareItems = new ArrayList<>();
-            legendaryItems = new ArrayList<>();
-            
-            setLoot();
-        }
     
     List<List<String>> simpleMelee = asList
     ( 
@@ -345,6 +336,7 @@ public class RandomContent
                         legendaryItems.add(loot);
                 }			
             }
+            int i = 0;
 	}
         
         public boolean postContent(Loot loot) throws URISyntaxException, IOException
@@ -355,7 +347,7 @@ public class RandomContent
                 URI uri = url.toURI();
                 BufferedWriter writer = Files.newBufferedWriter(Paths.get(uri), StandardOpenOption.APPEND);
                 CSVPrinter printer = new CSVPrinter(writer, CSVFormat.DEFAULT);
-                printer.printRecord(loot.getName(), loot.getDescription(), loot.getValue(), loot.getRarity(), "", loot.getType());
+                printer.printRecord(loot.getName(), loot.getDescription(), loot.getValue(), loot.getRarity(), "", loot.getType(), "", "", "", "");
                 printer.close();
                 writer.close();
                 return true;
