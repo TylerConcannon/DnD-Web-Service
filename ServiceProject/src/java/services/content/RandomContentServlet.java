@@ -9,6 +9,7 @@ import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
@@ -43,8 +44,9 @@ public class RandomContentServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        String content = getBody(request);
-        postNewContent(content);
+        Loot content = getBody(request);
+        String status = postNewContent(content) ? "Successfully posted your Loot!" : "Error posting your loot";
+        sendResponse(response, status);
     }
 
 
@@ -60,31 +62,34 @@ public class RandomContentServlet extends HttpServlet {
         return loot;
     }
     
-    private String getBody(HttpServletRequest request)
+    private Loot getBody(HttpServletRequest request)
     {
-        StringBuilder buffer = new StringBuilder();
-        BufferedReader reader;
-        String content = "";
-        try {
-            reader = request.getReader();
-            String line;
-            while ((line = reader.readLine()) != null)
-            {
-                buffer.append(line);
-            }
-            content = buffer.toString();
-            
-        } catch (IOException ex) {
-            Logger.getLogger(DiceRollerServlet.class.getName()).log(Level.SEVERE, null, ex);
+
+        Loot loot = new Loot(); 
+        try{
+            BufferedReader reader = request.getReader();
+            Gson gson = new Gson();
+            loot = gson.fromJson(reader, Loot.class);
         }
-        return content;
+        catch (Exception e){
+            
+        }
+        return loot;
+        
     }
     
-    private void postNewContent(String content){
-        Gson gson = new Gson();
-        Loot loot = gson.fromJson(content, Loot.class);
-        RandomContent randomContent = new RandomContent();
-        randomContent.postContent(loot);
+    private boolean postNewContent(Loot loot){
+        boolean success;
+        try {
+            RandomContent randomContent = new RandomContent();
+            success = randomContent.postContent(loot);
+            return success;
+        }
+        catch(Exception e)
+        {
+            Logger.getLogger(RandomContentServlet.class.getName()).log(Level.SEVERE, null, e);
+            return false;
+        } 
     }
     
     private void sendContentJson(HttpServletResponse response, List<Loot> loot)
@@ -100,6 +105,19 @@ public class RandomContentServlet extends HttpServlet {
                           
         } catch (IOException ex) {
             Logger.getLogger(DiceRollerServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    private void sendResponse(HttpServletResponse response, String message)
+    {
+        try {
+            PrintWriter out = response.getWriter();
+            response.setContentType("text/plain");
+            response.setCharacterEncoding("UTF-8");
+            out.print(message);
+            out.flush();
+        } catch (IOException ex) {
+            Logger.getLogger(RandomContentServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }
