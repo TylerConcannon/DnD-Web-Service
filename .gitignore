@@ -13,8 +13,6 @@
 # Local project config
 private/
 
-# build directories -- populated when built locally
-build/
 
 # Package Files #
 *.war

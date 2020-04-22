@@ -366,28 +366,32 @@
       {
           var lootName = document.getElementById("nameLoot").value;
           var lootRarity = document.getElementById("rarityCreation").value;
-          var lootCatagory = document.getElementById("createCatagory").value;
+          var lootCategory = document.getElementById("createCatagory").value;
           var lootDescription = document.getElementById("description").value;
           var lootValue = document.getElementById("valueLoot").value;
           
           var json = {
               "name": lootName,
               "description": lootDescription,
-              "type": lootRarity,
+              "type": lootCategory,
               "rarity": lootRarity,
               "value": lootValue
           }
           
+          
            $.ajax({
               type:"POST",
               url:"http://localhost:8084/ClientProject/content",
-              data:json,
+              contentType: "application/json; charset=utf-8",
+              dataType: "json",
+              data: JSON.stringify(json),
               success: function(result){
-                  
-                 
+                  alert(result)
+                  console.log(result);
               },
               error: function(result){
-                  
+                  console.log(result);
+
               }
           })
       }

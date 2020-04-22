@@ -9,7 +9,10 @@ import client.models.Loot;
 import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -72,7 +75,8 @@ public class ContentClientServlet extends HttpServlet {
         
         try {
             String body = getBody(request);
-            sendPostRequest(body); 
+            String res = sendPostRequest(body); 
+            sendPostResponse(response, res);
         }  
         catch (Exception e)
         {
@@ -104,6 +108,17 @@ public class ContentClientServlet extends HttpServlet {
             Logger.getLogger(ContentClientServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
         return content;
+        
+//        Loot loot = new Loot(); 
+//        try{
+//            BufferedReader reader = request.getReader();
+//            Gson gson = new Gson();
+//            loot = gson.fromJson(reader, Loot.class);
+//        }
+//        catch (Exception e){
+//            
+//        }
+//        return loot;
     }
 
     
@@ -129,26 +144,53 @@ public class ContentClientServlet extends HttpServlet {
        return loot;
     }
     
-    private void sendPostRequest(String body) throws ParseException{
+    private String sendPostRequest(String body) throws ParseException{
         try{
             HttpClient client = HttpClientBuilder.create().build();
             
             HttpPost post = new HttpPost(contentUrl);
-                                    
             HttpEntity payload = new StringEntity(body);
             post.setHeader("Content-type", "application/json");
             post.setEntity(payload);
 
             ClassicHttpResponse res = (ClassicHttpResponse) client.execute(post);
-            HttpEntity ent = res.getEntity();
-            String str = EntityUtils.toString(ent, "UTF-8");
+            return parseResponse(res);
         }
         catch (IOException e){
-            
+            e.printStackTrace();
+            return "Error";
         }
     }
     
+    private void sendPostResponse(HttpServletResponse response, String message)
+    {
+        try {
+            PrintWriter out = response.getWriter();
+            response.setContentType("application/json");
+            response.setCharacterEncoding("UTF-8");
+            Gson gson = new Gson();
+            String json = gson.toJson(message);
+            out.print(json);
+            out.flush();
+        } catch (IOException ex) {
+            Logger.getLogger(DiceClientServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     
+    private String parseResponse(ClassicHttpResponse res) throws IOException{
+        HttpEntity ent = res.getEntity();
+        InputStream in = ent.getContent();
+        String str;
+        InputStreamReader reader = new InputStreamReader(in, StandardCharsets.UTF_8);
+        BufferedReader br = new BufferedReader(reader);
+        StringBuilder buffer = new StringBuilder();
+        while ((str = br.readLine()) != null)
+        {
+            buffer.append(str);
+        }
+        String message = buffer.toString();
+        return message;
+    }
     
     private void sendJsonResponse(HttpServletResponse response, Loot loot) throws IOException
     {

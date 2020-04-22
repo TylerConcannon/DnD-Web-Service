@@ -6,15 +6,26 @@
 package services.content;
 
 
+import java.io.BufferedWriter;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.Reader;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 import static java.util.Arrays.*;
+import org.apache.commons.csv.CSVPrinter;
 import services.diceRoller.DiceRoller;
 import services.diceRoller.Roll;
 
@@ -33,11 +44,21 @@ import services.diceRoller.Roll;
 
 public class RandomContent 
 {
-	List<Loot> mundaneItems = new ArrayList<>();
-	List<Loot> commonItems = new ArrayList<>();
-	List<Loot> rareItems = new ArrayList<>();
-	List<Loot> veryRareItems = new ArrayList<>();
-	List<Loot> legendaryItems = new ArrayList<>();
+	List<Loot> mundaneItems;
+	List<Loot> commonItems;
+	List<Loot> rareItems;
+	List<Loot> veryRareItems;
+	List<Loot> legendaryItems;
+        
+        public RandomContent() throws IOException {
+            mundaneItems = new ArrayList<>();
+            commonItems = new ArrayList<>();
+            rareItems = new ArrayList<>();
+            veryRareItems = new ArrayList<>();
+            legendaryItems = new ArrayList<>();
+            
+            setLoot();
+        }
     
     List<List<String>> simpleMelee = asList
     ( 
@@ -291,42 +312,59 @@ public class RandomContent
 	
 	public void setLoot() throws IOException {
 
-		String file = "resource/LootTable.csv";
-		
-		
-		Reader in = new FileReader(file);
-		Iterable<CSVRecord> records = CSVFormat.EXCEL.parse(in);
-		
-		for (CSVRecord record : records) {
-			Loot loot = new Loot();
-			loot.setName( record.get(0));			
-			loot.setDescription(record.get(1)+ record.get(6)); //description and properties
-			loot.setValue(record.get(2)); //value
-                        String type = record.get(5);
-                        type = type.replaceAll(" ", "");
-			loot.setType(type);
-			String rarity = record.get(3);
-			
-			if(rarity.equals("Mundane")){
-				mundaneItems.add(loot);
-			}else
-			if(rarity.equals("Common")){
-				commonItems.add(loot);
-			}else
-			if(rarity.equals("Rare")){
-				rareItems.add(loot);
-			}else
-			if(rarity.equals("Very Rare")){
-				veryRareItems.add(loot);
-			}else
-			if(rarity.equals("Legendary")){
-				legendaryItems.add(loot);
-			}			
-		}
+            InputStream inFile = this.getClass().getResourceAsStream("LootTable.csv");
+            //String file = "resource/LootTable.csv";
+
+            InputStreamReader reader = new InputStreamReader(inFile);
+            //Reader in = new FileReader(file);
+            Iterable<CSVRecord> records = CSVFormat.EXCEL.parse(reader);
+
+            for (CSVRecord record : records) {
+                Loot loot = new Loot();
+                loot.setName( record.get(0));			
+                loot.setDescription(record.get(1)+ record.get(6)); //description and properties
+                loot.setValue(record.get(2)); //value
+                String type = record.get(5);
+                type = type.replaceAll(" ", "");
+                loot.setType(type);
+                String rarity = record.get(3);
+
+                if(rarity.equals("Mundane")){
+                        mundaneItems.add(loot);
+                }else
+                if(rarity.equals("Common")){
+                        commonItems.add(loot);
+                }else
+                if(rarity.equals("Rare")){
+                        rareItems.add(loot);
+                }else
+                if(rarity.equals("Very Rare")){
+                        veryRareItems.add(loot);
+                }else
+                if(rarity.equals("Legendary")){
+                        legendaryItems.add(loot);
+                }			
+            }
 	}
         
-        public void postContent(Loot l)
+        public boolean postContent(Loot loot) throws URISyntaxException, IOException
         {
-            //add loot object to csv
+            try {
+                //add loot object to csv
+                URL url = this.getClass().getResource("LootTable.csv");
+                URI uri = url.toURI();
+                BufferedWriter writer = Files.newBufferedWriter(Paths.get(uri), StandardOpenOption.APPEND);
+                CSVPrinter printer = new CSVPrinter(writer, CSVFormat.DEFAULT);
+                printer.printRecord(loot.getName(), loot.getDescription(), loot.getValue(), loot.getRarity(), "", loot.getType());
+                printer.close();
+                writer.close();
+                return true;
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+                return false;
+            }
+
         }
 }
