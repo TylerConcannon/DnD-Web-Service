@@ -5,6 +5,9 @@
  */
 package client.controllers;
 
+import client.models.CharacterRequest;
+import client.models.Loot;
+import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -59,7 +62,7 @@ public class CharacterClientServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String content = getBody(request);
+        //String content = getBody(request);
         int i = 0;
     }
 
@@ -74,7 +77,7 @@ public class CharacterClientServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String content = getBody(request);
+        CharacterRequest character = getBody(request);
         int i = 0;
     }
 
@@ -88,35 +91,18 @@ public class CharacterClientServlet extends HttpServlet {
         return "Short description";
     }// </editor-fold>
     
-    private String getBody(HttpServletRequest request)
-    {
-        StringBuilder buffer = new StringBuilder();
-        BufferedReader reader;
-        String content = "";
-        try {
-            reader = request.getReader();
-            String line;
-            while ((line = reader.readLine()) != null)
-            {
-                buffer.append(line);
-            }
-            content = buffer.toString();
-            
-        } catch (IOException ex) {
-            Logger.getLogger(ContentClientServlet.class.getName()).log(Level.SEVERE, null, ex);
+    private CharacterRequest getBody(HttpServletRequest request)
+    {  
+        CharacterRequest character = new CharacterRequest(); 
+        try{
+            BufferedReader reader = request.getReader();
+            Gson gson = new Gson();
+            character = gson.fromJson(reader, CharacterRequest.class);
         }
-        return content;
-        
-//        Loot loot = new Loot(); 
-//        try{
-//            BufferedReader reader = request.getReader();
-//            Gson gson = new Gson();
-//            loot = gson.fromJson(reader, Loot.class);
-//        }
-//        catch (Exception e){
-//            
-//        }
-//        return loot;
+        catch (Exception e){
+
+        }
+        return character;
     }
 
 }

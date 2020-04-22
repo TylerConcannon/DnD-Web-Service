@@ -314,14 +314,14 @@
     function createCharacter()
       {
           var name = document.getElementById("name").value;
-          var classType = document.getElementById("classType").value;
-          var raceType = document.getElementById("raceType").value;
+          var playerClass = document.getElementById("classType").value;
+          var race = document.getElementById("raceType").value;
           var level = document.getElementById("level").value;
           
           var json = {
               "name": name,
-              "classType": classType,
-              "raceType": raceType,
+              "playerClass": playerClass,
+              "race": race,
               "level": level
           }
           
