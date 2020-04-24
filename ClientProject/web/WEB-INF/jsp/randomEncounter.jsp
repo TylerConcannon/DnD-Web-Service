@@ -146,6 +146,10 @@
       }
       .row.content {height:auto;} 
     }
+    
+    textarea.form-control {
+        height: 515px;
+    }
   </style>
 </head>
 <body>
@@ -290,7 +294,72 @@
               dataType: "json",
               data: JSON.stringify(json),
               success: function(result){
-                  console.log(result);
+                  console.log(result.encounters)
+                  var content
+                  var i
+
+                  content = "";
+
+                      for(i = 0; i < 4; i++)
+                      {
+                          if(result.encounters[i].difficulty == "Easy")
+                          {
+                              content += "Difficulty: " + result.encounters[i].difficulty + "\n";
+                              content += "You encounter: " + result.encounters[i].monster.name + "\n";
+                              content += "Alignment: " + result.encounters[i].monster.alignment + "\n";
+                              content += "Size: " + result.encounters[i].monster.size + "\n";
+                              content += "Type: " + result.encounters[i].monster.type + "\n";
+                              content += "XP: " + result.encounters[i].monster.xp + "\n";
+                              content += "Number of Monsters: " + result.encounters[i].numMonsters + "\n";
+                              content += "Terrain: " + result.encounters[i].Terrain + "\n";
+                              content += "Total XP: " + result.encounters[i].totalXp + "\n";
+                          }
+                          else if(result.encounters[i].difficulty == "Medium")
+                          {
+                              content += "Difficulty: " + result.encounters[i].difficulty + "\n";
+                              content += "You encounter: " + result.encounters[i].monster.name + "\n";
+                              content += "Alignment: " + result.encounters[i].monster.alignment + "\n";
+                              content += "Size: " + result.encounters[i].monster.size + "\n";
+                              content += "Type: " + result.encounters[i].monster.type + "\n";
+                              content += "XP: " + result.encounters[i].monster.xp + "\n";
+                              content += "Number of Monsters: " + result.encounters[i].numMonsters + "\n";
+                              content += "Terrain: " + result.encounters[i].Terrain + "\n";
+                              content += "Total XP: " + result.encounters[i].totalXp + "\n";
+                          }
+                          else if(result.encounters[i].difficulty == "Hard")
+                          {
+                              content += "Difficulty: " + result.encounters[i].difficulty + "\n";
+                              content += "You encounter: " + result.encounters[i].monster.name + "\n";
+                              content += "Alignment: " + result.encounters[i].monster.alignment + "\n";
+                              content += "Size: " + result.encounters[i].monster.size + "\n";
+                              content += "Type: " + result.encounters[i].monster.type + "\n";
+                              content += "XP: " + result.encounters[i].monster.xp + "\n";
+                              content += "Number of Monsters: " + result.encounters[i].numMonsters + "\n";
+                              content += "Terrain: " + result.encounters[i].Terrain + "\n";
+                              content += "Total XP: " + result.encounters[i].totalXp + "\n";
+                          }
+                          else
+                          {
+                              content += "Difficulty: " + result.encounters[i].difficulty + "\n";
+                              content += "You encounter: " + result.encounters[i].monster.name + "\n";
+                              content += "Alignment: " + result.encounters[i].monster.alignment + "\n";
+                              content += "Size: " + result.encounters[i].monster.size + "\n";
+                              content += "Type: " + result.encounters[i].monster.type + "\n";
+                              content += "XP: " + result.encounters[i].monster.xp + "\n";
+                              content += "Number of Monsters: " + result.encounters[i].numMonsters + "\n";
+                              content += "Terrain: " + result.encounters[i].Terrain + "\n";
+                              content += "Total XP: " + result.encounters[i].totalXp + "\n";
+                          }
+                          content += "\n";
+                      }
+
+//                    if (result.description != ""){
+//                      content += "Description: " + result.description + "\n";
+//                    }
+                  
+
+                  
+                  document.getElementById("contentResults").textContent = content;
               },
               error: function(result){
                   console.log(result);
