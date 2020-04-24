@@ -329,10 +329,10 @@ Unfinished Zircon Gem,"This gemstone has not yet been finished, but even in its 
 Unusable Scroll,"A tattered, and sadly unusable, scroll fragment, inscribed with a spell unknown to any living mage.",5. gp,Common,n/a,Treasure,,,,2
 Usk Brandy,A five gallon cask of usk brandy.,80. gp,Common,,Treasure,,,,2
 Vial of Antitoxin,A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs. ,50. gp,Common,n/a,Adventuring Gear,,,PHB,2
-Waterstar Gem,"Waterstar is also called achroite or colourless tourmaline and is rare in the Realms. This stone is riddled with flaws and inclusions and hence only a small portion is fit for cutting.	",80. gp,Common,n/a,Treasure,,,BGII,2
+Waterstar Gem,Waterstar is also called achroite or colourless tourmaline and is rare in the Realms. This stone is riddled with flaws and inclusions and hence only a small portion is fit for cutting.	,80. gp,Common,n/a,Treasure,,,BGII,2
 Wooden Wind Chimes,A set of wooden wind chimes which plays a different tune depending upon the direction of the wind which disturbs it.,0.5 gp,Common,1 lb,Mundane,,,,2
 Ziose Gemstone,"Ziose is the name given by sages to a particular facet-grade variety of ziosite; a rare mineral that yields cut stones that flash three vivid hues depending on how the light catches them; purple, blue, and red, or purple, green, and red. Very large (fist- or foot-sized) gems are found and are prized for use in pendants and brooches.	",60. gp,Common,n/a,Treasure,,,BGII,2
-Zircon Gemstone,"Zircon is a brownish crystal found in igneous (volcanic) rocks. Zircon attains its pale blue shade with heating and cutting (usually facet-cut).	",50. gp,Common,n/a,Treasure,,,DMG,2
+Zircon Gemstone,Zircon is a brownish crystal found in igneous (volcanic) rocks. Zircon attains its pale blue shade with heating and cutting (usually facet-cut).	,50. gp,Common,n/a,Treasure,,,DMG,2
 Ram's Head Mace,"A silver-headed heavy mace, the head of which is shaped into the likeness of a ram’s head.",90. gp,Common,6 lb,Weapon,,,,2
 Random Monster Taxidermy,Random monster taxidermy,,Common,,Treasure,,,,2
 Raven Statue,A life-size basalt statue of a raven.,25. gp,Common,,Treasure,,,,2
@@ -581,11 +581,11 @@ Aphrodisiac Root,A dirty canvas bag containing twenty pounds of an aphrodisiac r
 Aquamarine,"Aquamarine is a hard, transparent form of beryl, blue-green in colour. These sought after gems are found primarily among the tribes that roam the tundra.",500. gp,Rare,n/a,Treasure,,,DMG,4
 Arbalest,"A large arbalest/bolt thrower. It is disassembled and crated for shipping. It requires four strong men to lift. When reassembled, it hurls a 5’ bolt for 2d12 damage. ","3,000. gp",Rare,2000 lb,Weapon,,,PlatypusPal,4
 Architect's Underwear of Confidence,"This loincloth causes the wearer to have extremely elevated self confidence. As a result, they get +2 on Bluff Diplomacy and Intimidate checks, and -2 on Listen Search Spot and Appraise checks, they also tend to make reckless decisions more often.",500. gp,Rare,n/a,Wondrous Item,,,AtomicArchitect,4
-Armor +1,You have a +1 bonus to AC while wearing this armor.,"1,500. gp",Rare,Aug-60,Armor,"Light, Medium or Heavy",,DMG,4
+Armor +1,You have a +1 bonus to AC while wearing this armor.,"1,500. gp",Rare,8 - 60,Armor,"Light, Medium or Heavy",,DMG,4
 Armor of Barbarian Rage,This is a set of Studded Leather Armour that has been enchanted with the spirit of a long dead barbarian warrior. Once per day it allows the user to channel it's rageful spirit.,300. gp,Rare,13 lb,Armor,"Light Armor (AC is 14+DEX mod) - Once per day the user can use Barbarian Rage during this rage:
 You have advantage on Strength checks and Strength saving throws. When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels, counting your own level as the levels you would have in barbarian, as shown in the Rage Damage column of the Barbarian table. You have resistance to bludgeoning, piercing, and slashing damage. You cannot cast any spells while in the rage and any concentration spells being maintained when you enter rage instantly fade. This effect lasts for 1 minute, or dissipates if you do not deal physical or take any type of damage in a turn.
 ",Requires Attunement,PlatypusPal,4
-Armor of Resistance,You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly from the options below. ,"6,000. gp",Rare,Aug-60,Armor,"Light, Medium or Heavy",Requires Attunement,DMG,4
+Armor of Resistance,You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly from the options below. ,"6,000. gp",Rare,8 - 60,Armor,"Light, Medium or Heavy",Requires Attunement,DMG,4
 Armor of Vulnerability,"While wearing this armor, you have resistance to one of the following damage types: bludgeoning, piercing, or slashing. The DM chooses the type or determines it randomly. Curse. This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic: removing the armor fails to end the curse. While cursed you have vulnerability to two of the three damage type associated with the armor (not the one to which it grants resistance). ",,Rare,65 lb,Armor,Plate Armor,Requires Attunement,DMG,4
 Arrow-catching Shield,"You gain a +2 bonus to AC against ranged attacks while you wield this shield. This bonus is in addition to the shield's normal bonus to AC. In addition, whenever an attacker makes a ranged attack against a target within 5 feet of you, you can use your reaction to become the target of the attack instead.","6,000. gp",Rare,6 lb,Armor,,Requires Attunement,DMG,4
 Arval's Soundpiece,"Created by the very old and very crotchety wizard Arval long ago, this hollow silver box the size of a deck of playing cards has a rotating dial on top, as well as a button. When the button is pressed, a single target of the wielder's choice is linked with the device magically. By then rotating the dial, the user can alter his target's voice by up to 100%. That is to say the target can be either muted or doubled in volume, and anywhere in between. A will save DC 30 is required to resist the effect.","1,800. gp",Rare,n/a,,,,/u/LittleDizzleDaGusha,4
@@ -729,7 +729,7 @@ Star of Morning's Glory,"This Morningstar is made of solid wrought steel, with a
 Star Ruby,A translucent ruby with a white star-shaped center.,"1,000. gp",Rare,n/a,Treasure,,,DMG,4
 Star Sapphire,"Star Sapphire is a precious variation of the sapphire, however is more translucent, with a white star highlighted in its center. A star sapphire has been known to ornament devices which protect against magic.	","1,000. gp",Rare,n/a,Treasure,,,DMG,4
 Stones of Ruin,A simple leather pouch filled with 4 small runestones.,5. gp,Rare,,Wondrous Item,Requires attunement by a druid. A pouch of stone runes that predict the worst event that will happen before the next full moon. Using the runes makes the events it predicts more likely to happen.,,/u/Euphorbus11,4
-Sun Gem,"This round and polished stone glows with a fierce light and seems to dispel the shadows around you.	",500. gp,Rare,n/a,Treasure,Properties of a torch.,,BGII,4
+Sun Gem,This round and polished stone glows with a fierce light and seems to dispel the shadows around you.	,500. gp,Rare,n/a,Treasure,Properties of a torch.,,BGII,4
 Sword of Bleeding,A sharp one-sided blade that is slightly curved.,,Rare,,Weapon,The creature must a Constitution saving throw of 14 or take an addition 1d6. The creature makes this check every turn until succeeded,,Brendan M,4
 Telescoping Glaive,"This is a magical Glaive, with an ornately decorated shaft made of solid (but light) steel. The blade is made of silver, and floats near the end unattached to the shaft. Three keywords act on this weapon: anda, sinta, and pahta (long, short, and closed, in Elven). Anda is the longest extent, and the weapon acts as a two-handed glaive. Sinta makes the weapon shorten and behave as a one-handed axe, and pahta shortens the weapon to throwing-axe size. The blade also changes shape and position to fit these weapon styles.","1,400. gp",Rare,3 lb,,,,/u/LittleDizzleDaGusha,4
 The Clegane Bowl,"This large basin has bloodstains permanently ingrained in it. Any liquid placed in the Clegane Bowl immediately turns into Potion of Greater Hype. When consumed, a dose of this potion doubles the Strength score of the user for 1 hour, up to a maximum of 30 Strength.",,Rare,20 lb,Wondrous Item,,,Scribnibbler21,4
@@ -768,7 +768,7 @@ Amulets of Inedibility,These two amulets are enchanted as a pair and both must b
 Anderson's Medallion,"Once per day, you can remove AC of target granted by armor, last until end of your next turn. User takes -2 to AC for same duration. (I think lasting until the end of combat might be a bit op, also  I have named it after Hans Christian Anderson because it makes me thing of the Emperor's New Clothes)",400. gp,Very Rare,1 lb,Wondrous Item,,,PlatypusPal,5
 Animated Rope,"Smart 50’ rope – obeys simple commands, animated like snake",50gp,Very Rare,5 lb,Wondrous Item,,,PlatypusPal,5
 Animated Shield,"While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.","6,000. gp",Very Rare,6 lb,Armor,,Requires Attunement,DMG,5
-Armor +2,You have a +2 bonus to AC while wearing this armor.,"6,000. gp",Very Rare,Aug-60,Armor,"Light, Medium or Heavy",,DMG,5
+Armor +2,You have a +2 bonus to AC while wearing this armor.,"6,000. gp",Very Rare,8 - 60,Armor,"Light, Medium or Heavy",,DMG,5
 Back to the Beginning Ring,When you take off this ring and it transports you to where you first put it on and disappears.,"9,000. gp",Very Rare,n/a,Ring,,,Uberbeard,5
 Bag of Devouring,"This bag superficially resembles a bag of holding but is a feeding orifice for a gigantic extradimensional creature. Turning the bag inside out closes the orifice. The extradimensional creature attached to the bag can sense whatever is placed inside the bag. Animal or vegetable matter placed wholly in the bag is devoured and lost forever. When part of a living creature is placed in the bag, as happens when someone reaches inside it, there is a 50 percent chance that the creature is pulled inside the bag. A creature inside the bag can use its action to try to escape with a successful DC 15 Strength check. Another creature can use its action to reach into the bag to pull a creature out, doing so with a successful DC 20 Strength check (provided it isn't pulled inside the bag first). Any creature that starts its turn inside the bag is devoured, its body destroyed. Inanimate objects can be stored in the bag, which can hold a cubic foot of such material. However, once each day, the bag swallows any objects inside it and spits them out into another plane of existence. The DM determines the time and plane. If the bag is pierced or torn, it is destroyed, and anything contained within it is transported to a random location on the Astral Plane. ","10,000. gp",Very Rare,15 lb,Wondrous Item,,,DMG,5
 Bardweave Parisol,"A beautiful, vibrantly colorful cloth parasol with a light wooden handle. The object feels delicate and weightless.","1,500. gp",Very Rare,,Wondrous Item,"As a reaction, you may open this parasol to defend you, provided it is easily reachable on your character. When you make a dexterity save, you may use your reaction to open the magical parasol, giving you resistance to all damage. If you suffer more than 10 damage after this resistance, the parasol is damaged and can no longer protect you. It can be repaired with a sewing kit or a proficient tailor.",,/u/gimme_some_sunshine,5
@@ -881,7 +881,7 @@ Perpetual Tree,The sapling of a young tree. Within a few minutes it will have gr
 48-sided Garnet Gemstone,"Garnet is a general class of crystals ranging from deep red to violet in colour. a typical cut for this rare isometric gem is 12 to 24 sides, with the very rare 36 sides being known from time to time. This may be the only 48 sided garnet in existance. and as such it is highly prized.","10,000. gp",Legendary,n/a,Treasure,,,BGII,6
 Apparatus of Kwalish,"An apparatus of Kwalish appears to be a large, sealed iron barrel, but it has a secret catch that opens a hatch in one end. Inside, a character finds ten levers. The levers perform various functions, including extending or retracting the legs, tail, pincers and feelers, covering and uncovering the portholes, moving the apparatus, snapping its pincers, opening and closing its magically-lit ""eyes"", rising and sinking in water, and opening or closing the hatch. When activated the apparatus looks like a giant lobster.","10,000. gp",Legendary,500 lb,Wondrous Item,See DMG page 151.,,DMG,6
 Apple of the Gods,"Apple of the God’s – gain random ability of 1 god aspect at risk of save vs death, then random forbidden fruit side effect; ability is 1 per day/50% chance success","5,000. gp",Legendary,1 lb,Wondrous Item,,,PlatypusPal,6
-Armor +3,You have a +3 bonus to AC while wearing this armor. ,"24,000. gp",Legendary,Aug-60,Armor,"Light, Medium or Heavy",,DMG,6
+Armor +3,You have a +3 bonus to AC while wearing this armor. ,"24,000. gp",Legendary,8 - 60,Armor,"Light, Medium or Heavy",,DMG,6
 Armor of Invulnerability,"You have resistance to nonmagical damage while you wear this armor. Additionally, you can use an action to make yourself immune to nonmagical damage for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn.","18,000. gp",Legendary,65 lb,Armor,Plate Armor,Requires Attunement,DMG,6
 "Balering, the Sword of Balance","A long steel blade with an amber edge and lustrous golden hilt. When first discovered, the blade is without detail, but is filled with runes as members of other races volunteer their blood as tribute to the blade's cause.","3,000. gp",Legendary,,Weapon,"1d8, plus an additional 1d8 radiant damage to Dragons, Garou, and Spiders for each rune that appears on the blade. The blade is adorned with a rune for every 3 different races that willingly shed their blood on the sword.",,/u/gimme_some_sunshine,6
 Belt of Cloud Giant Strength,"While wearing this belt, your Strength score changes to 27. If your Strength is already
@@ -1107,9 +1107,30 @@ Albruin,"Basalin was a large man, rumored, far from his hearing, to be a werebea
 Renders user immune to poison.
 Can detect invisibility once per day.","Requires Attunement
 Strength: 11",Baldur's Gate II,4
-Algernon's Cloak,"Algernon's cloak is imbued with magical properties such that the wearer will seem to shine with an inner glow.	","1,750. gp",Rare,3 lb,Wondrous Item,Provides +2 to Charisma,Requires Attunement,Baldur's Gate II,4
+Algernon's Cloak,Algernon's cloak is imbued with magical properties such that the wearer will seem to shine with an inner glow.	,"1,750. gp",Rare,3 lb,Wondrous Item,Provides +2 to Charisma,Requires Attunement,Baldur's Gate II,4
 Ammo Belt,"This shoulder belt is ideally suited for holding sling bullets, darts, arrows or bolts.",200. gp,Common,2 lb,Adventuring Gear,More reliable than a quiver.,,Baldur's Gate II,2
 Alchemist's Fire,"This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.",50. gp,Common,1 lb,Adventuring Gear,,,PHB,2
 Silver Ring,A simple silver ring that bears no inscription or identifying marks on it's surface.,10. gp,Common,n/a,Treasure,,,Uberbeard,2
 Sharpening Sheath,"A dagger sheath of hardened leather, set with a number of cheap decorative stones. Any dagger kept within this sheath is automatically sharpened as if it were a fresh blade.",200. gp,Common,1 lb,Treasure,,,PlatypusPal,2
-The Bible,"The bible ",100 Gp,Very Rare,,Book,,,,
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100
+,,,,,,,,,100

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <listener>
+        <listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
+    </listener>
     <servlet>
         <servlet-name>DiceRollerServlet</servlet-name>
         <servlet-class>services.diceRoller.DiceRollerServlet</servlet-class>
@@ -8,6 +11,11 @@
         <servlet-name>RandomContentServlet</servlet-name>
         <servlet-class>services.content.RandomContentServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EncounterWS</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
     <servlet-mapping>
         <servlet-name>DiceRollerServlet</servlet-name>
         <url-pattern>/diceRoller</url-pattern>
@@ -15,6 +23,10 @@
     <servlet-mapping>
         <servlet-name>RandomContentServlet</servlet-name>
         <url-pattern>/randomContent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EncounterWS</servlet-name>
+        <url-pattern>/EncounterWS</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
