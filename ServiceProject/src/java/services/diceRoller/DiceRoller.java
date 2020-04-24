@@ -151,10 +151,11 @@ public class DiceRoller {
             }
             
             Collections.sort(rolls, Collections.reverseOrder()); // sort list to get highest 3
-            int total = rolls.get(0)+rolls.get(1)+rolls.get(2);
+            int total = rolls.get(0) + rolls.get(1) + rolls.get(2);
             abilityRolls.add(total);
-            
         }
+        
+        Collections.sort(abilityRolls, Collections.reverseOrder());
         return abilityRolls;
     }
    
