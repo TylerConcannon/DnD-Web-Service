@@ -142,7 +142,7 @@ public class DiceRoller {
         List<Integer> abilityRolls = new ArrayList<>();       
         int dieRoll = 0;
         
-        for(int i = 0; i < 5; i++){            
+        for(int i = 0; i < 6; i++){            
             List<Integer> rolls = new ArrayList<>();
             
             for(int j = 0; j < 4; j++ ){

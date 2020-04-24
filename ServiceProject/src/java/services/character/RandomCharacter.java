@@ -34,9 +34,9 @@ public class RandomCharacter {
         DiceRoller dice = new DiceRoller();
         List<Integer> rollScores = dice.AbilityScoreRoll();
         
-        List<Integer> classScores = null;
+        List<Integer> classScores = new ArrayList<>();
         
-        switch(inputClass){
+        switch(playerClass.getName()){
             case "Barbarian":
                 classScores.add(rollScores.get(0));
                 classScores.add(rollScores.get(2));

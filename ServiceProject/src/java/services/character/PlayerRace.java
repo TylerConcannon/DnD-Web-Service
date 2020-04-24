@@ -5,6 +5,7 @@
  */
 package services.character;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -41,7 +42,17 @@ public class PlayerRace {
     }
     
     public List<Integer> calculateAbilityScores(List<Integer> inputScores) {
-        return null;
+        
+        ArrayList<Integer> newScores  = new ArrayList<>();
+        
+        newScores.add(inputScores.get(0) + str);
+        newScores.add(inputScores.get(1) + dex);
+        newScores.add(inputScores.get(2) + con);
+        newScores.add(inputScores.get(3) + inte);
+        newScores.add(inputScores.get(4) + wis);
+        newScores.add(inputScores.get(5) + cha);
+        
+        return newScores;
     }
     
     public String getName() {
