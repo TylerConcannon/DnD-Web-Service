@@ -273,25 +273,11 @@
           //console.log(json)
           var params = "?terrain=" + terrain + "&numPlayers=" + numPlayers + "&playerLevel=" + playerLevel + "&numMonsters=" + numMonsters
           
-//           $.ajax({
-//              type:"GET",
-//              url:"http://localhost:8084/ClientProject/encounter" + params,
-////              contentType: "application/json; charset=utf-8",
-////              dataType: "json",
-////              data: JSON.stringify(json),
-//              success: function(result){
-//                  //alert(result)
-//                  console.log(result);
-//              },
-//              error: function(result){
-//                  console.log(result);
-//              }
-//          })
           
           var json = {
               "terrain": terrain,
               "numPlayers": numPlayers,
-              "playerLevel": playerLevel,
+              "groupLevel": playerLevel,
               "numMonsters": numMonsters
           }
           

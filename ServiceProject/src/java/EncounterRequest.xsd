@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema
+    xmlns="http://sweng465DndServices.org/schemas/services/encounterRequest"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="EncounterRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="terrain" type="xs:string" maxOccurs="1"/>
+                <xs:element name="groupLevel" type="xs:int" maxOccurs="1"/>
+                <xs:element name="numPlayers" type="xs:int" maxOccurs="1"/>
+                <xs:element name="numMonsters" type="xs:int" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://encounter.services/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://encounter.services/">
+
+<xs:element name="EncounterRequest">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="terrain" type="xs:string" />
+<xs:element name="groupLevel" type="xs:int" />
+<xs:element name="numPlayers" type="xs:int" />
+<xs:element name="numMonsters" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="EncounterResponse">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="encounters" type="tns:Encounter" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="generateEncounter" type="tns:generateEncounter" />
+
+<xs:element name="generateEncounterResponse" type="tns:generateEncounterResponse" />
+
+<xs:complexType name="generateEncounter">
+<xs:sequence>
+<xs:element name="EncounterRequest" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="terrain" type="xs:string" />
+<xs:element name="groupLevel" type="xs:int" />
+<xs:element name="numPlayers" type="xs:int" />
+<xs:element name="numMonsters" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="generateEncounterResponse">
+<xs:sequence>
+<xs:element name="return" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="encounters" type="tns:Encounter" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Encounter">
+<xs:sequence>
+<xs:element name="monster" type="tns:Monster" />
+<xs:element name="numMonsters" type="xs:int" />
+<xs:element name="terrain" type="xs:string" />
+<xs:element name="totalXp" type="xs:int" />
+<xs:element name="difficulty" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Monster">
+<xs:sequence>
+<xs:element name="name" type="xs:string" />
+<xs:element name="XP" type="xs:string" />
+<xs:element name="type" type="xs:string" />
+<xs:element name="size" type="xs:string" />
+<xs:element name="alignment" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

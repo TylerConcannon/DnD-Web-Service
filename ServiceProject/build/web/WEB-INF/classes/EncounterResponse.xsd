@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema 
+    xmlns="http://sweng465DndServices.com/schemas/services/encounterResponse"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="EncounterResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="encounters" type="Encounter" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="Encounter">
+        <xs:sequence>
+            <xs:element name="monster" type="Monster"/>
+            <xs:element name="numMonsters" type="xs:int"/>
+            <xs:element name="terrain" type="xs:string"/>  
+            <xs:element name="totalXp" type="xs:int"/>      
+            <xs:element name="difficulty" type="xs:string"/>     
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Monster">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="XP" type="xs:string"/>
+            <xs:element name="type" type="xs:string"/>
+            <xs:element name="size" type="xs:string"/>
+            <xs:element name="alignment" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -9,6 +9,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -17,9 +19,11 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
+import javax.jws.WebService;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.csv.CSVRecord;
+import services.encounter.generated.*;
 
 /**
  *
@@ -48,7 +52,12 @@ public class RandomEncounter {
 						 {2400,4900,7300,10900},
 						 {2800,5700,8500,12700}};
 	
-	public EncounterResponse generateEncounter(String terrain, int grouplvl, int groupnum, int numMonsters)throws IOException{
+	public EncounterResponse generateEncounter(EncounterRequest req)throws IOException{
+            String terrain = req.getTerrain();
+            int numMonsters = req.getNumMonsters();
+            int grouplvl = req.getGroupLevel();
+            int groupnum = req.getNumPlayers();
+            
 		List<Monster> monsters = getCSV(terrain);
 		
 		if(numMonsters==0){
@@ -60,6 +69,7 @@ public class RandomEncounter {
 		
 		//get deadly encounter
 		returnEncounter = getRandomEncounter(monsters,diffarray[grouplvl-1][3]*groupnum, numMonsters);
+                
 		returnEncounter.setDifficulty("Deadly");
 		returnEncounter.setTerrain(terrain);		
 		ec.addEncounter(returnEncounter);
@@ -85,7 +95,7 @@ public class RandomEncounter {
 		return ec;
 	}
 	
-	public Encounter getRandomEncounter(List<Monster> monsters, int xp, int numMonsters){
+	private Encounter getRandomEncounter(List<Monster> monsters, int xp, int numMonsters){
 		List<Monster> xpmonsters = new ArrayList<>();
 		
 		//get monsters that fit in xp range
@@ -113,14 +123,14 @@ public class RandomEncounter {
 		return encounter;
 	}
 	
-	public List<Monster> getCSV(String terrain) throws IOException{
+	private List<Monster> getCSV(String terrain) throws IOException{
 		
-		String file="Any.csv"; //default to any because why not
-		
-		if(terrain.equals("Any")){ //any
+                String file="resource/Any.csv"; //default to any because why not
+
+                if(terrain.equals("Any")){ //any
 			file = "resource/Any.csv";
 		}else if(terrain.equals("Mountain")){ //mountain
-			file = "src/java/services/encounter/Mountain.csv"; // needs fixed // leaviong for testing purposes
+			file = "resource/Mountain.csv"; // needs fixed // leaviong for testing purposes
 		}else if(terrain.equals("Underdark")){ //underdark
 			file = "resource/Underdark.csv";
 		}else if(terrain.equals("Underwater")){ //underwater
@@ -141,8 +151,10 @@ public class RandomEncounter {
 			file = "resource/Coastal.csv";
 		}
 		
-		Reader in = new FileReader(file);
-		Iterable<CSVRecord> records = CSVFormat.EXCEL.parse(in);
+                InputStream inFile = this.getClass().getResourceAsStream(file);
+                InputStreamReader reader = new InputStreamReader(inFile);
+
+		Iterable<CSVRecord> records = CSVFormat.EXCEL.parse(reader);
 		
 		List<Monster> monsters = new ArrayList<>();
 		
