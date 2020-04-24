@@ -173,9 +173,6 @@
         <li><a href="randomEncounter.html">Random Encounter Generator</a></li>
         <li><a href="randomCharacter.html">Random Character Generator</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
     </div>
   </div>
 </nav>
@@ -267,14 +264,6 @@
           var playerLevel = document.getElementById("playerLevel").value;
           var numMonsters = document.getElementById("numMonsters").value;
           
-//          var json = {
-//              "terrain": terrain,
-//              "numPlayers": numPlayers,
-//              "playerLevel": playerLevel,
-//              "numMonsters": numMonsters
-//          }
-          
-          //console.log(json)
           var params = "?terrain=" + terrain + "&numPlayers=" + numPlayers + "&playerLevel=" + playerLevel + "&numMonsters=" + numMonsters
           
           
