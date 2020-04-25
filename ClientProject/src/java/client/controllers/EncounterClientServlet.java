@@ -128,7 +128,7 @@ public class EncounterClientServlet extends HttpServlet {
     
     private GenerateEncounterResponse.Return sendCharacterRequest(EncounterRequest encounter){
         
-     //   setSecurityProps();
+        setSecurityProps();
         
         EncounterWS_Service service = new EncounterWS_Service();
         EncounterWS port = service.getEncounterWSPort();

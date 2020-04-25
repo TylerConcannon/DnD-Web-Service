@@ -129,7 +129,7 @@ public class CharacterClientServlet extends HttpServlet {
         req.setPlayerLevel(character.getPlayerLevel());
         req.setRace(character.getRace());
         
-      //  setSecurityProps();
+        setSecurityProps();
         
         CharacterWS_Service service = new CharacterWS_Service();
         CharacterWS port = service.getCharacterWSPort();
