@@ -7,10 +7,16 @@
  >
     <message name="generateEncounter"/>
     <message name="generateEncounterResponse"/>
+    <message name="getMonsters"/>
+    <message name="getMonstersResponse"/>
     <portType name="EncounterWS">
         <operation name="generateEncounter">
             <input message="tns:generateEncounter"/>
             <output message="tns:generateEncounterResponse"/>
+        </operation>
+        <operation name="getMonsters">
+            <input message="tns:getMonsters"/>
+            <output message="tns:getMonstersResponse"/>
         </operation>
     </portType>
     <binding name="EncounterWSPortBinding" type="tns:EncounterWS">
@@ -18,6 +24,10 @@
         <operation name="generateEncounter">
             <input></input>
             <output></output>
+        </operation>
+        <operation name="getMonsters">
+            <input/>
+            <output/>
         </operation>
     </binding>
     <service name="EncounterWS">

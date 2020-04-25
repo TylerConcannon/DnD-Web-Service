@@ -17,7 +17,9 @@ import java.io.BufferedReader;
 import java.io.OutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import services.character.GenerateCharacter;
 import services.encounter.EncounterResponse;
+import services.encounter.*;
 import services.encounter.EncounterWS;
 import services.encounter.EncounterWS_Service;
 import services.encounter.GenerateEncounter.EncounterRequest;
@@ -59,22 +61,21 @@ public class EncounterClientServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //String content = getBody(request);
         String terrain = request.getParameter("terrain");
-        String numPlayers = request.getParameter("numPlayers");
-        String playerLevel = request.getParameter("playerLevel");
-        String numMonsters = request.getParameter("numMonsters");
-        //EncounterRequest encounter = getBody(request);
-        int i = 0;
+        GetMonstersResponse.Return data = sendMonsterRequest(terrain);
+        sendMonstersResponse(data, response);
     }
 
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        EncounterRequest encounter = getBody(request);
-        GenerateEncounterResponse.Return data = sendCharacterRequest(encounter);
-        sendJsonResponse(data, response);
+        
+        EncounterRequest encounter = getEncounterBody(request);
+        GenerateEncounterResponse.Return data = sendEncounterRequest(encounter);
+        sendEncounterResponse(data, response);
+       
+       
     }
 
 
@@ -84,7 +85,7 @@ public class EncounterClientServlet extends HttpServlet {
     }
     
     
-    private EncounterRequest getBody(HttpServletRequest request)
+    private EncounterRequest getEncounterBody(HttpServletRequest request)
     {    
         EncounterRequest encounter = new EncounterRequest(); 
         try{
@@ -98,7 +99,42 @@ public class EncounterClientServlet extends HttpServlet {
         return encounter;
     }
     
-    private void sendJsonResponse(GenerateEncounterResponse.Return data, HttpServletResponse response)
+    private MonsterRequest getMonsterBody(HttpServletRequest request)
+    {    
+        MonsterRequest monster = new MonsterRequest(); 
+        try{
+            BufferedReader reader = request.getReader();
+            Gson gson = new Gson();
+            monster = gson.fromJson(reader, MonsterRequest.class);
+        }
+        catch (Exception e){
+            
+        }
+        return monster;
+    }
+    
+    private void sendEncounterResponse(GenerateEncounterResponse.Return data, HttpServletResponse response)
+    {
+        try {
+            
+            Gson gson = new Gson();
+            String payload = gson.toJson(data);
+        
+            PrintWriter out = response.getWriter();
+            response.addHeader("Content-type", "application/json");
+            response.setCharacterEncoding("UTF-8");
+
+            out.print(payload);
+            out.flush();
+
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+    
+    private void sendMonstersResponse(GetMonstersResponse.Return data, HttpServletResponse response)
     {
         try {
             
@@ -126,7 +162,7 @@ public class EncounterClientServlet extends HttpServlet {
         System.setProperty("javax.net.ssl.keyStorePassword", "G@nda1f");
     } 
     
-    private GenerateEncounterResponse.Return sendCharacterRequest(EncounterRequest encounter){
+    private GenerateEncounterResponse.Return sendEncounterRequest(EncounterRequest encounter){
         
         setSecurityProps();
         
@@ -137,4 +173,18 @@ public class EncounterClientServlet extends HttpServlet {
         return res;
     }
 
+    private GetMonstersResponse.Return sendMonsterRequest(String terrain){
+        
+        GetMonsters.MonsterRequest monstersReq = new GetMonsters.MonsterRequest();
+
+        monstersReq.setTerrain(terrain);
+        
+        setSecurityProps();
+        
+        EncounterWS_Service service = new EncounterWS_Service();
+        EncounterWS port = service.getEncounterWSPort();
+        GetMonstersResponse.Return res = port.getMonsters(monstersReq);
+        
+        return res;
+    }
 }

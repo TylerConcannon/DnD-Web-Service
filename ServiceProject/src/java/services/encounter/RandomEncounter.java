@@ -58,7 +58,7 @@ public class RandomEncounter {
             int grouplvl = req.getGroupLevel();
             int groupnum = req.getNumPlayers();
             
-		List<Monster> monsters = getCSV(terrain);
+		List<Monster> monsters = getMonsterCSV(terrain);
 		
 		if(numMonsters==0){
 			Random rand = new Random();
@@ -123,14 +123,14 @@ public class RandomEncounter {
 		return encounter;
 	}
 	
-	private List<Monster> getCSV(String terrain) throws IOException{
+	private List<Monster> getMonsterCSV(String terrain) throws IOException{
 		
                 String file="resource/Any.csv"; //default to any because why not
 
                 if(terrain.equals("Any")){ //any
 			file = "resource/Any.csv";
 		}else if(terrain.equals("Mountain")){ //mountain
-			file = "resource/Mountain.csv"; // needs fixed // leaviong for testing purposes
+			file = "resource/Mountain.csv"; // needs fixed // leaving for testing purposes
 		}else if(terrain.equals("Underdark")){ //underdark
 			file = "resource/Underdark.csv";
 		}else if(terrain.equals("Underwater")){ //underwater
@@ -171,5 +171,11 @@ public class RandomEncounter {
 		return monsters;	
 	}
 	
+        public MonsterResponse getMonsters(String terrain) throws IOException
+        {
+            MonsterResponse res = new MonsterResponse();
+            res.setMonsters(getMonsterCSV(terrain));
+            return res;
+        }
 
 }
