@@ -229,11 +229,18 @@
                     </select>
              </div>
              
-             <div class="dice-button">
-                      <div class="dice-button">
-                            <button type="submit" class="btn btn-primary btn-lg" onclick="getEncounters()">Generate Encounter</button>
-                        </div>
-                 </div>
+            <div class="dice-button">
+                <div class="dice-button">
+                      <button type="submit" class="btn btn-primary btn-lg" onclick="getEncounters()">Generate Encounter</button>
+                </div>
+           </div>
+
+            <div class="dice-button">
+                  <div class="dice-button">
+                        <button type="submit" class="btn btn-primary btn-lg" onclick="getMonsters()">Get All Monsters in Terrain</button>
+                    </div>
+             </div>
+             
              <div class="results">
                  <form>
                         <div class="form-group-result">
@@ -263,9 +270,6 @@
           var numPlayers = document.getElementById("numPlayers").value;
           var playerLevel = document.getElementById("playerLevel").value;
           var numMonsters = document.getElementById("numMonsters").value;
-          
-          var params = "?terrain=" + terrain + "&numPlayers=" + numPlayers + "&playerLevel=" + playerLevel + "&numMonsters=" + numMonsters
-          
           
           var json = {
               "terrain": terrain,
@@ -349,6 +353,23 @@
 
                   
                   document.getElementById("contentResults").textContent = content;
+              },
+              error: function(result){
+                  console.log(result);
+
+              }
+          })
+      }
+      
+    function getMonsters()
+      {
+          var terrain = document.getElementById("terrain").value;
+                    
+           $.ajax({
+              type:"GET",
+              url:"https://localhost:8443/ClientProject/encounter?terrain=" + terrain,
+              success: function(result){
+                  console.log(result)
               },
               error: function(result){
                   console.log(result);

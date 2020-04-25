@@ -31,8 +31,27 @@ public class EncounterWS {
             res = random.generateEncounter(encounterReq);
         }
         catch (IOException e){
-            
+            e.printStackTrace();
         }
+        return res;
+    }
+
+    /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "getMonsters")
+    public MonsterResponse getMonsters(@WebParam(name = "monsterRequest") MonsterRequest monsterRequest) {
+        
+        RandomEncounter random = new RandomEncounter();
+        MonsterResponse res = new MonsterResponse();
+        try{
+            
+            res = random.getMonsters(monsterRequest.getTerrain());
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }    
         return res;
     }
 

@@ -39,4 +39,19 @@ public interface EncounterWS {
         @WebParam(name = "EncounterRequest", targetNamespace = "")
         services.encounter.GenerateEncounter.EncounterRequest encounterRequest);
 
+    /**
+     * 
+     * @param monsterRequest
+     * @return
+     *     returns services.encounter.GetMonstersResponse.Return
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getMonsters", targetNamespace = "http://encounter.services/", className = "services.encounter.GetMonsters")
+    @ResponseWrapper(localName = "getMonstersResponse", targetNamespace = "http://encounter.services/", className = "services.encounter.GetMonstersResponse")
+    @Action(input = "http://encounter.services/EncounterWS/getMonstersRequest", output = "http://encounter.services/EncounterWS/getMonstersResponse")
+    public services.encounter.GetMonstersResponse.Return getMonsters(
+        @WebParam(name = "monsterRequest", targetNamespace = "")
+        services.encounter.GetMonsters.MonsterRequest monsterRequest);
+
 }
