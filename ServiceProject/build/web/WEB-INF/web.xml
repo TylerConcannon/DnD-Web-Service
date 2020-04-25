@@ -16,6 +16,11 @@
         <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>CharacterWS</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
     <servlet-mapping>
         <servlet-name>DiceRollerServlet</servlet-name>
         <url-pattern>/diceRoller</url-pattern>
@@ -27,6 +32,10 @@
     <servlet-mapping>
         <servlet-name>EncounterWS</servlet-name>
         <url-pattern>/EncounterWS</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CharacterWS</servlet-name>
+        <url-pattern>/CharacterWS</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

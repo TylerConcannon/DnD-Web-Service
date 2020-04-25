@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://character.services/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://character.services/">
+
+<xs:element name="CharacterRequest">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="playerClass" type="xs:string" />
+<xs:element name="name" type="xs:string" />
+<xs:element name="race" type="xs:string" />
+<xs:element name="playerLevel" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="CharacterResponse">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="character" type="tns:PlayerCharacter" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="generateCharacter" type="tns:generateCharacter" />
+
+<xs:element name="generateCharacterResponse" type="tns:generateCharacterResponse" />
+
+<xs:complexType name="generateCharacter">
+<xs:sequence>
+<xs:element name="characterRequest" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="playerClass" type="xs:string" />
+<xs:element name="name" type="xs:string" />
+<xs:element name="race" type="xs:string" />
+<xs:element name="playerLevel" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="generateCharacterResponse">
+<xs:sequence>
+<xs:element name="return" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="character" type="tns:PlayerCharacter" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PlayerCharacter">
+<xs:sequence>
+<xs:element name="name" type="xs:string" />
+<xs:element name="level" type="xs:int" />
+<xs:element name="abilityScores" type="xs:int" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="playerClass" type="tns:PlayerClass" />
+<xs:element name="playerRace" type="tns:PlayerRace" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PlayerClass">
+<xs:sequence>
+<xs:element name="name" type="xs:string" />
+<xs:element name="hitDie" type="xs:string" />
+<xs:element name="proficiencies" type="xs:string" />
+<xs:element name="savingThrows" type="xs:string" />
+<xs:element name="skills" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PlayerRace">
+<xs:sequence>
+<xs:element name="name" type="xs:string" />
+<xs:element name="speed" type="xs:int" />
+<xs:element name="str" type="xs:int" />
+<xs:element name="dex" type="xs:int" />
+<xs:element name="con" type="xs:int" />
+<xs:element name="wis" type="xs:int" />
+<xs:element name="inte" type="xs:int" />
+<xs:element name="cha" type="xs:int" />
+<xs:element name="age" type="xs:int" />
+<xs:element name="size" type="xs:string" />
+<xs:element name="traits" type="xs:string" />
+<xs:element name="languages" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -5,7 +5,6 @@
  */
 package client.controllers;
 
-import client.models.CharacterRequest;
 import client.models.Loot;
 import com.google.gson.Gson;
 import java.io.BufferedReader;
@@ -17,6 +16,11 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import services.character.CharacterWS_Service;
+import services.character.*;
+import services.character.GenerateCharacterResponse;
+
+import services.encounter.GenerateEncounterResponse;
 
 /**
  *
@@ -61,8 +65,9 @@ public class CharacterClientServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        CharacterRequest character = getBody(request);
-        int i = 0;
+        CharacterRequest characterReq = getBody(request);
+        GenerateCharacterResponse.Return character = sendCharacterRequest(characterReq);
+        sendJsonResponse(character, response);
     }
 
     @Override
@@ -82,6 +87,43 @@ public class CharacterClientServlet extends HttpServlet {
 
         }
         return character;
+    }
+    
+    private void sendJsonResponse(GenerateCharacterResponse.Return data, HttpServletResponse response)
+    {
+        try {
+            
+            Gson gson = new Gson();
+            String payload = gson.toJson(data);
+        
+            PrintWriter out = response.getWriter();
+            response.addHeader("Content-type", "application/json");
+            response.setCharacterEncoding("UTF-8");
+
+            out.print(payload);
+            out.flush();
+
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+    
+    private GenerateCharacterResponse.Return sendCharacterRequest(CharacterRequest character){
+        
+        GenerateCharacter.CharacterRequest req = new GenerateCharacter.CharacterRequest();
+
+        req.setName(character.getName());
+        req.setPlayerClass(character.getPlayerClass());
+        req.setPlayerLevel(character.getPlayerLevel());
+        req.setRace(character.getRace());
+        
+        CharacterWS_Service service = new CharacterWS_Service();
+        CharacterWS port = service.getCharacterWSPort();
+        GenerateCharacterResponse.Return res = port.generateCharacter(req);
+        
+        return res;
     }
 
 }

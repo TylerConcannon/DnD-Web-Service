@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
+import services.character.generated.*;
 import services.diceRoller.DiceRoller;
 
 /**
@@ -24,12 +25,17 @@ public class RandomCharacter {
     
     
     
-    public Character generateCharacter(String name, int level, String inputClass, String inputRace) throws IOException{
+    public PlayerCharacter generateCharacter(CharacterRequest request) throws IOException{
+        
+        String inputClass = request.getPlayerClass();
+        String inputRace = request.getRace();
+        String name = request.getName();
+        int level = request.getPlayerLevel();
         
         PlayerClass playerClass = getClass(inputClass);
         PlayerRace playerRace = getRace(inputRace);
         
-        Character generatedCharacter = new Character(name, level, playerClass, playerRace);
+        PlayerCharacter generatedCharacter = new PlayerCharacter(name, level, playerClass, playerRace);
         
         DiceRoller dice = new DiceRoller();
         List<Integer> rollScores = dice.AbilityScoreRoll();

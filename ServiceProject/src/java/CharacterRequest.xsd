@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="CharacterRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="playerClass" type="xs:string" maxOccurs="1"/>
+                <xs:element name="name" type="xs:string" maxOccurs="1"/>
+                <xs:element name="race" type="xs:string" maxOccurs="1"/>
+                <xs:element name="playerLevel" type="xs:int" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

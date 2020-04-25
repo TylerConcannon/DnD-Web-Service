@@ -270,43 +270,43 @@
 </html>
 
 <script>
-    function getCharacter()
-      {
-          var name = document.getElementById("name").value;
-          var classType = document.getElementById("classType").value;
-          var raceType = document.getElementById("raceType").value;
-          var level = document.getElementById("level").value;
-          
-          $.ajax({
-              type:"GET",
-              url:"http://localhost:8084/ClientProject/character?name=" + name + "&classType=" + classType + "&raceType=" + raceType + "&level=" + level,
-              success: function(result){
-                  
-                  console.log(result)
-                  var content
-                  
-                  if (result.name === undefined){
-                      content = "Please fill out all the fields for a random character!"
-                  }
-                  else {
-                    content = "Character Name: ";
-
-                    if (result.description != ""){
-                      content += "Description: ";
-                    }
-                    if (result.value != ""){
-                        content += "Enemy CR: ";
-                    }
-                  }
-
-                  
-                  document.getElementById("contentResults").textContent = content;
-              },
-              error: function(result){
-                  document.getElementById("diceResults").textContent = result.toString() + " Failure";
-              }
-          })
-      }
+//    function getCharacter()
+//      {
+//          var name = document.getElementById("name").value;
+//          var classType = document.getElementById("classType").value;
+//          var raceType = document.getElementById("raceType").value;
+//          var level = document.getElementById("level").value;
+//          
+//          $.ajax({
+//              type:"GET",
+//              url:"http://localhost:8084/ClientProject/character?name=" + name + "&classType=" + classType + "&raceType=" + raceType + "&level=" + level,
+//              success: function(result){
+//                  
+//                  console.log(result)
+//                  var content
+//                  
+//                  if (result.name === undefined){
+//                      content = "Please fill out all the fields for a random character!"
+//                  }
+//                  else {
+//                    content = "Character Name: ";
+//
+//                    if (result.description != ""){
+//                      content += "Description: ";
+//                    }
+//                    if (result.value != ""){
+//                        content += "Enemy CR: ";
+//                    }
+//                  }
+//
+//                  
+//                  document.getElementById("contentResults").textContent = content;
+//              },
+//              error: function(result){
+//                  document.getElementById("diceResults").textContent = result.toString() + " Failure";
+//              }
+//          })
+//      }
       
     function createCharacter()
       {
@@ -319,10 +319,9 @@
               "name": name,
               "playerClass": playerClass,
               "race": race,
-              "level": level
+              "playerLevel": level
           }
           
-          console.log(json)
           
            $.ajax({
               type:"POST",

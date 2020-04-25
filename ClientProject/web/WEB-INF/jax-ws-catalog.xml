@@ -3,4 +3,6 @@
     <nextCatalog catalog="nbproject/private/retriever/catalog.xml"/>
     <system systemId="http://localhost:8084/ServiceProject/EncounterWS?wsdl" uri="wsdl/localhost_8084/ServiceProject/EncounterWS.wsdl"/>
     <system systemId="http://localhost:8084/ServiceProject/EncounterWS?xsd=1" uri="wsdl/localhost_8084/ServiceProject/EncounterWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8084/ServiceProject/CharacterWS?wsdl" uri="wsdl/localhost_8084/ServiceProject/CharacterWS.wsdl"/>
+    <system systemId="http://localhost:8084/ServiceProject/CharacterWS?xsd=1" uri="wsdl/localhost_8084/ServiceProject/CharacterWS.xsd_1.xsd"/>
 </catalog>
