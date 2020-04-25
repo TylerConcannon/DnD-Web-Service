@@ -42,5 +42,21 @@
         <delete dir="${build.generated.sources.dir}/jax-ws/services/encounter"/>
         <delete dir="${build.generated.dir}/jax-wsCache/EncounterWS"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-EncounterWS"/>
+    <target name="wsimport-client-CharacterWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CharacterWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CharacterWS" destdir="${build.generated.dir}/jax-wsCache/CharacterWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/CharacterWS/wsdl/localhost_8084/ServiceProject/CharacterWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8084/ServiceProject/CharacterWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/CharacterWS/wsdl/localhost_8084/ServiceProject/CharacterWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CharacterWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CharacterWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CharacterWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/services/character"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/CharacterWS"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-EncounterWS, wsimport-client-CharacterWS"/>
 </project>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="CharacterResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="character" type="PlayerCharacter" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="PlayerCharacter">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="level" type="xs:int"/>
+            <xs:element name="abilityScores" type="xs:int" maxOccurs="6"/>  
+            <xs:element name="playerClass" type="PlayerClass"/>      
+            <xs:element name="playerRace" type="PlayerRace"/>     
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="PlayerClass">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" maxOccurs="1"/>
+            <xs:element name="hitDie" type="xs:string" maxOccurs="1"/>
+            <xs:element name="proficiencies" type="xs:string" maxOccurs="1"/>
+            <xs:element name="savingThrows" type="xs:string" maxOccurs="1"/>
+            <xs:element name="skills" type="xs:string" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PlayerRace">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" maxOccurs="1"/>
+            <xs:element name="speed" type="xs:int" maxOccurs="1"/>
+            <xs:element name="str" type="xs:int" maxOccurs="1"/>
+            <xs:element name="dex" type="xs:int" maxOccurs="1"/>
+            <xs:element name="con" type="xs:int" maxOccurs="1"/>
+            <xs:element name="wis" type="xs:int" maxOccurs="1"/>
+            <xs:element name="inte" type="xs:int" maxOccurs="1"/>
+            <xs:element name="cha" type="xs:int" maxOccurs="1"/>
+            <xs:element name="age" type="xs:int" maxOccurs="1"/>
+            <xs:element name="size" type="xs:string" maxOccurs="1"/>
+            <xs:element name="traits" type="xs:string" maxOccurs="1"/>
+            <xs:element name="languages" type="xs:string" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

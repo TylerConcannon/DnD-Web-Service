@@ -4,6 +4,9 @@
     <service name="EncounterWS">
       <implementation-class>services.encounter.EncounterWS</implementation-class>
     </service>
+    <service name="CharacterWS">
+      <implementation-class>services.character.CharacterWS</implementation-class>
+    </service>
   </services>
   <clients/>
   <jsr109>false</jsr109>
