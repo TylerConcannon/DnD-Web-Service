@@ -6,6 +6,7 @@
 package services.character;
 
 import java.io.IOException;
+import javax.jws.HandlerChain;
 import javax.jws.WebService;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -18,6 +19,7 @@ import services.character.generated.PlayerCharacter;
  * @author larry
  */
 @WebService(serviceName = "CharacterWS")
+@HandlerChain(file = "CharacterWS_handler_1.xml")
 public class CharacterWS {
 
     /**
