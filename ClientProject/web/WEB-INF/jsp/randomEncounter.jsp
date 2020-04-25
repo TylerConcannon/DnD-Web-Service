@@ -219,6 +219,7 @@
                  <span class="input-sides-text" id="inputGroup-sizing-default">Terrain Selection:</span>
                     <select id="terrain" class="browser-default custom-select">
                         <option selected>Select Terrain:</option>
+                        <option value="Any">Any</option>
                         <option value="Forest">Forest</option>
                         <option value="Hill">Hill</option>
                         <option value="Jungle">Jungle</option>
@@ -304,7 +305,7 @@
                               content += "Type: " + result.encounters[i].monster.type + "\n";
                               content += "XP: " + result.encounters[i].monster.xp + "\n";
                               content += "Number of Monsters: " + result.encounters[i].numMonsters + "\n";
-                              content += "Terrain: " + result.encounters[i].Terrain + "\n";
+                              content += "Terrain: " + result.encounters[i].terrain + "\n";
                               content += "Total XP: " + result.encounters[i].totalXp + "\n";
                           }
                           else if(result.encounters[i].difficulty == "Medium")
@@ -316,7 +317,7 @@
                               content += "Type: " + result.encounters[i].monster.type + "\n";
                               content += "XP: " + result.encounters[i].monster.xp + "\n";
                               content += "Number of Monsters: " + result.encounters[i].numMonsters + "\n";
-                              content += "Terrain: " + result.encounters[i].Terrain + "\n";
+                              content += "Terrain: " + result.encounters[i].terrain + "\n";
                               content += "Total XP: " + result.encounters[i].totalXp + "\n";
                           }
                           else if(result.encounters[i].difficulty == "Hard")
@@ -328,7 +329,7 @@
                               content += "Type: " + result.encounters[i].monster.type + "\n";
                               content += "XP: " + result.encounters[i].monster.xp + "\n";
                               content += "Number of Monsters: " + result.encounters[i].numMonsters + "\n";
-                              content += "Terrain: " + result.encounters[i].Terrain + "\n";
+                              content += "Terrain: " + result.encounters[i].terrain + "\n";
                               content += "Total XP: " + result.encounters[i].totalXp + "\n";
                           }
                           else
@@ -340,7 +341,7 @@
                               content += "Type: " + result.encounters[i].monster.type + "\n";
                               content += "XP: " + result.encounters[i].monster.xp + "\n";
                               content += "Number of Monsters: " + result.encounters[i].numMonsters + "\n";
-                              content += "Terrain: " + result.encounters[i].Terrain + "\n";
+                              content += "Terrain: " + result.encounters[i].terrain + "\n";
                               content += "Total XP: " + result.encounters[i].totalXp + "\n";
                           }
                           content += "\n";
@@ -369,7 +370,32 @@
               type:"GET",
               url:"https://localhost:8443/ClientProject/encounter?terrain=" + terrain,
               success: function(result){
-                  console.log(result)
+                  console.log(result.monsters)
+//                  var content1
+//                  var content2
+//                  var content3
+//                  var content4
+//                  var content5
+//                  var content6
+//                  var content7
+                  var content
+                  var i
+                  
+                  content = "";
+                  
+                  content += "Monster List for " + terrain + "\n";
+                  content += "--------------------------------------\n";
+                  
+                  for(i = 0; i < result.monsters.length; i++)
+                  {
+                      content += "Name: " + result.monsters[i].name + "\n";
+                      content += "Size: " + result.monsters[i].size  + "\n";
+                      content += "Type: " + result.monsters[i].type  + "\n";
+                      content += "Alignment: " + result.monsters[i].alignment  + "\n";
+                      content += "XP: " + result.monsters[i].xp  + "\n";
+                      content += "\n";
+                  }
+                   document.getElementById("contentResults").textContent = content;
               },
               error: function(result){
                   console.log(result);
