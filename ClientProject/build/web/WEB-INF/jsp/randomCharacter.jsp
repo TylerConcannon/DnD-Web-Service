@@ -294,8 +294,25 @@
               url:"http://localhost:8084/ClientProject/character?name=" + name + "&classType=" + classType + "&raceType=" + raceType + "&level=" + level,
               success: function(result){
                   
-                  console.log(result.character)
+                  console.log(result)
+                  var content
                   
+                  if (result.name === undefined){
+                      content = "Please fill out all the fields for a random character!"
+                  }
+                  else {
+                    content = "Character Name: ";
+
+                    if (result.description != ""){
+                      content += "Description: ";
+                    }
+                    if (result.value != ""){
+                        content += "Enemy CR: ";
+                    }
+                  }
+
+                  
+                  document.getElementById("contentResults").textContent = content;
               },
               error: function(result){
                   document.getElementById("diceResults").textContent = result.toString() + " Failure";
@@ -314,7 +331,7 @@
               "name": name,
               "playerClass": playerClass,
               "race": race,
-              "playerLevel": level
+              "level": level
           }
           
           console.log(json)
