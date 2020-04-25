@@ -3,6 +3,7 @@ package services.character;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import javax.jws.HandlerChain;
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 import javax.xml.ws.WebEndpoint;
@@ -18,6 +19,7 @@ import javax.xml.ws.WebServiceFeature;
  * 
  */
 @WebServiceClient(name = "CharacterWS", targetNamespace = "http://character.services/", wsdlLocation = "https://localhost:8443/ServiceProject/CharacterWS?wsdl")
+@HandlerChain(file = "CharacterWS_Service_handler.xml")
 public class CharacterWS_Service
     extends Service
 {

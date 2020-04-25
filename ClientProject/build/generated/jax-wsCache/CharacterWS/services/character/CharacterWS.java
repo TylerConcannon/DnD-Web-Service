@@ -1,6 +1,7 @@
 
 package services.character;
 
+import javax.jws.HandlerChain;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
@@ -18,6 +19,7 @@ import javax.xml.ws.ResponseWrapper;
  * 
  */
 @WebService(name = "CharacterWS", targetNamespace = "http://character.services/")
+@HandlerChain(file = "CharacterWS_handler.xml")
 @XmlSeeAlso({
     ObjectFactory.class
 })

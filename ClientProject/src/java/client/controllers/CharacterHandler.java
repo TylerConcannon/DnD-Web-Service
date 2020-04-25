@@ -3,23 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package services.character;
+package client.controllers;
 
-import java.util.ArrayList;
 import java.util.Set;
 import java.util.Collections;
 import java.util.Iterator;
-import java.util.List;
 import javax.xml.namespace.QName;
 import javax.xml.soap.Node;
-import javax.xml.soap.SOAPBody;
 import javax.xml.soap.SOAPEnvelope;
 import javax.xml.soap.SOAPHeader;
 import javax.xml.ws.handler.soap.SOAPHandler;
 import javax.xml.ws.handler.MessageContext;
 import javax.xml.ws.handler.soap.SOAPMessageContext;
 import javax.xml.soap.SOAPMessage;
-import org.w3c.dom.Document;
 
 public class CharacterHandler implements SOAPHandler<SOAPMessageContext>
 {
