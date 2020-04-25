@@ -3,4 +3,5 @@
   <endpoint implementation="services.encounter.EncounterWS" name="EncounterWS" url-pattern="/EncounterWS"/>
   <endpoint implementation="services.encounter.EncounterWS" name="EncounterWS" url-pattern="/EncounterWS"/>
   <endpoint implementation="services.character.CharacterWS" name="CharacterWS" url-pattern="/CharacterWS"/>
+  <endpoint implementation="services.character.CharacterWS" name="CharacterWS" url-pattern="/CharacterWS"/>
 </endpoints>
