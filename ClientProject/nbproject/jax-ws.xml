@@ -7,6 +7,10 @@
       <local-wsdl-file>localhost_8443/ServiceProject/CharacterWS.wsdl</local-wsdl-file>
       <package-name>services.character</package-name>
       <catalog-file>catalog.xml</catalog-file>
+      <binding>
+        <file-name>CharacterWS_handler.xml</file-name>
+      </binding>
+      <handler-binding-file>CharacterWS_handler.xml</handler-binding-file>
       <wsimport-options>
         <wsimport-option>
           <wsimport-option-name>extension</wsimport-option-name>

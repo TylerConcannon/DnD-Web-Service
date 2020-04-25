@@ -31,10 +31,16 @@
         <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CharacterWS" destdir="${build.generated.dir}/jax-wsCache/CharacterWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/CharacterWS/wsdl/localhost_8443/ServiceProject/CharacterWS.wsdl" catalog="catalog.xml" extension="true" verbose="true" fork="false" wsdlLocation="https://localhost:8443/ServiceProject/CharacterWS?wsdl" xnocompile="true" xendorsed="true">
             <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/CharacterWS/wsdl/localhost_8443/ServiceProject/CharacterWS.wsdl"/>
             <produces dir="${build.generated.dir}/jax-wsCache/CharacterWS"/>
+            <binding dir="${conf-dir}xml-resources/web-service-references/CharacterWS/bindings" includes="CharacterWS_handler.xml"/>
         </wsimport>
         <copy todir="${build.generated.sources.dir}/jax-ws">
             <fileset dir="${build.generated.dir}/jax-wsCache/CharacterWS">
                 <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CharacterWS">
+                <include name="**/*.xml"/>
             </fileset>
         </copy>
     </target>
