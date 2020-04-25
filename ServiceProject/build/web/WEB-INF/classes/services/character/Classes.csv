@@ -1,4 +1,5 @@
-﻿Barbarian,d12,"Light Armor, Medium Armor, Shields, Simple Weapons, Martial Weapons","Strength, Charisma","Animal Handling, Athletics"
+﻿Name,Hit Die,Proficiencies,Saving Throws,Skills
+Barbarian,d12,"Light Armor, Medium Armor, Shields, Simple Weapons, Martial Weapons","Strength, Charisma","Animal Handling, Athletics"
 Bard,d8,"Light Armor, Simple Weapons, Hand Crossbows, Longswords, Rapiers, Shortswords","Dexterity, Charisma","Perception, Stealth, Slight of Hand"
 Cleric,d8,"Light Armor, Medium Armor, Shields, Simple Weapons","Wisdom, Charisma","History, Insight"
 Druid,d8,"Light Armor, Medium Armor, Shields, Clubs, Daggers, Darts, Javelins, Maces, Quarterstaffs, Scimitars, Sickles, Slings, Spears","Intelligence, Wisdom","Arcana, Animal Handling"
