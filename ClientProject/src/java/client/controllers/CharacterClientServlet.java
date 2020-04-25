@@ -10,12 +10,14 @@ import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.xml.ws.BindingProvider;
 import services.character.CharacterWS_Service;
 import services.character.*;
 import services.character.GenerateCharacterResponse;
@@ -27,6 +29,7 @@ import services.encounter.GenerateEncounterResponse;
  * @author larry
  */
 public class CharacterClientServlet extends HttpServlet {
+    private static final String endpoint = "https://localhost:8443/ServiceProject/CharacterWS";
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -109,6 +112,13 @@ public class CharacterClientServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+       
+    private void setSecurityProps(){
+        System.setProperty("javax.net.ssl.trustStore", "C:\\Program Files\\Apache Software Foundation\\Apache Tomcat 8.0.27\\dnd.keystore");
+        System.setProperty("javax.net.ssl.trustStorePassword", "G@nda1f");
+        System.setProperty("javax.net.ssl.keyStore", "C:\\Program Files\\Apache Software Foundation\\Apache Tomcat 8.0.27\\dnd.keystore");
+        System.setProperty("javax.net.ssl.keyStorePassword", "G@nda1f");
+    } 
     
     private GenerateCharacterResponse.Return sendCharacterRequest(CharacterRequest character){
         
@@ -119,8 +129,11 @@ public class CharacterClientServlet extends HttpServlet {
         req.setPlayerLevel(character.getPlayerLevel());
         req.setRace(character.getRace());
         
+      //  setSecurityProps();
+        
         CharacterWS_Service service = new CharacterWS_Service();
         CharacterWS port = service.getCharacterWSPort();
+       
         GenerateCharacterResponse.Return res = port.generateCharacter(req);
         
         return res;

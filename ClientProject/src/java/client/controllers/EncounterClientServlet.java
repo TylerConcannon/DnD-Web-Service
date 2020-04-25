@@ -119,7 +119,16 @@ public class EncounterClientServlet extends HttpServlet {
         }
     }
     
+    private void setSecurityProps(){
+        System.setProperty("javax.net.ssl.trustStore", "C:\\Program Files\\Apache Software Foundation\\Apache Tomcat 8.0.27\\dnd.keystore");
+        System.setProperty("javax.net.ssl.trustStorePassword", "G@nda1f");
+        System.setProperty("javax.net.ssl.keyStore", "C:\\Program Files\\Apache Software Foundation\\Apache Tomcat 8.0.27\\dnd.keystore");
+        System.setProperty("javax.net.ssl.keyStorePassword", "G@nda1f");
+    } 
+    
     private GenerateEncounterResponse.Return sendCharacterRequest(EncounterRequest encounter){
+        
+     //   setSecurityProps();
         
         EncounterWS_Service service = new EncounterWS_Service();
         EncounterWS port = service.getEncounterWSPort();

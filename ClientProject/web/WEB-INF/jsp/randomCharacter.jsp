@@ -291,7 +291,7 @@
           
           $.ajax({
               type:"GET",
-              url:"http://localhost:8084/ClientProject/character?name=" + name + "&classType=" + classType + "&raceType=" + raceType + "&level=" + level,
+              url:"https://localhost:8443/ClientProject/character?name=" + name + "&classType=" + classType + "&raceType=" + raceType + "&level=" + level,
               success: function(result){
                   
                   console.log(result.character)
@@ -321,7 +321,7 @@
           
            $.ajax({
               type:"POST",
-              url:"http://localhost:8084/ClientProject/character",
+              url:"https://localhost:8443/ClientProject/character",
               contentType: "application/json; charset=utf-8",
               dataType: "json",
               data: JSON.stringify(json),
