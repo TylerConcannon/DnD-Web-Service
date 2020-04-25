@@ -127,7 +127,7 @@ public class ContentClientServlet extends HttpServlet {
         HttpClient client = HttpClientBuilder.create().build();
         Loot loot = new Loot();
         try {
-          //  setSecurityProps();
+            setSecurityProps();
             HttpGet get = new HttpGet(contentUrl + "?rarity=" + rarity + "&type=" + type);
 
             ClassicHttpResponse res = (ClassicHttpResponse) client.execute(get);
@@ -147,7 +147,7 @@ public class ContentClientServlet extends HttpServlet {
     
     private String sendPostRequest(String body) throws ParseException{
         try{
-           // setSecurityProps();
+            setSecurityProps();
 
             HttpClient client = HttpClientBuilder.create().build();
             

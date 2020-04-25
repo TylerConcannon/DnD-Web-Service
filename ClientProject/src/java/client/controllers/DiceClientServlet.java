@@ -111,7 +111,7 @@ public class DiceClientServlet extends HttpServlet {
 //        {
 //            
 //        }
-     //   setSecurityProps();
+        setSecurityProps();
 
         HttpClient client = HttpClients.custom().useSystemProperties().build();
         Gson payload = new Gson();

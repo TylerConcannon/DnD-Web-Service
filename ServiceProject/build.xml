@@ -8,7 +8,15 @@
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
 <project name="ServiceProject" default="default" basedir=".">
-    <description>Builds, tests, and runs the project ServiceProject.</description>
+<!--    <description>Builds, tests, and runs the project ServiceProject.</description>
+-->    
+    <target name="-pre-compile" if="do-clean">
+        <copy file="build/web/WEB-INF/classes/services/content/LootTable.csv" todir="src/java/services/content"></copy>
+    </target>
+    
+<!--    <target name="-copy-csv">
+        <copy file="build/web/WEB-INF/classes/services/content/LootTable.csv" todir="src/java/services/content"></copy>
+    </target>-->
     <import file="nbproject/build-impl.xml"/>
     <!--
 
@@ -68,4 +76,5 @@
     nbproject/build-impl.xml file. 
 
     -->
+
 </project>
