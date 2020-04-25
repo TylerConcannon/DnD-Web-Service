@@ -336,6 +336,7 @@
                   content += "--------------------- \n";
                   content += "Name: " + result.character.name + "\n";
                   content += "Level: " + result.character.level  + "\n";
+//                  content += "Level: " + document.getElementById("level").value  + "\n";
                   
                   content += "--------------------- \n";
                   content += "Class: " + result.character.playerClass.name + "\n";
