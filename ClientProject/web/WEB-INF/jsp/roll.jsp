@@ -282,7 +282,7 @@
           
           $.ajax({
               type:"GET",
-              url:"http://localhost:8084/ClientProject/diceClient?numDice=" + numDice + "&diceType=" + dType,
+              url:"https://localhost:8443/ClientProject/diceClient?numDice=" + numDice + "&diceType=" + dType,
               success: function(result){
                   console.log(result)
                   document.getElementById("diceResults").textContent = "Rolled " + numDice + "d" + dType + ". Total: " + result.total

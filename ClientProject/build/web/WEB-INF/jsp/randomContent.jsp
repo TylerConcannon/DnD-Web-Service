@@ -330,7 +330,7 @@
           
           $.ajax({
               type:"GET",
-              url:"http://localhost:8084/ClientProject/content?rarity=" + urlRarity + "&type=" + urlType,
+              url:"https://localhost:8443/ClientProject/content?rarity=" + urlRarity + "&type=" + urlType,
               success: function(result){
                   
                   console.log(result)
@@ -378,7 +378,7 @@
           
            $.ajax({
               type:"POST",
-              url:"http://localhost:8084/ClientProject/content",
+              url:"https://localhost:8443/ClientProject/content",
               contentType: "application/json; charset=utf-8",
               dataType: "json",
               data: JSON.stringify(json),

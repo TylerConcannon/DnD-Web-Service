@@ -278,7 +278,7 @@
           
            $.ajax({
               type:"POST",
-              url:"http://localhost:8084/ClientProject/encounter",
+              url:"https://localhost:8443/ClientProject/encounter",
               contentType: "application/json; charset=utf-8",
               dataType: "json",
               data: JSON.stringify(json),

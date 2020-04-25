@@ -35,7 +35,7 @@ import org.apache.hc.core5.http.io.entity.StringEntity;
  */
 public class ContentClientServlet extends HttpServlet {
     
-    private static final String contentUrl = "http://localhost:8084/ServiceProject/randomContent";
+    private static final String contentUrl = "https://localhost:8443/ServiceProject/randomContent";
 
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -127,14 +127,15 @@ public class ContentClientServlet extends HttpServlet {
         HttpClient client = HttpClientBuilder.create().build();
         Loot loot = new Loot();
         try {
-             HttpGet get = new HttpGet(contentUrl + "?rarity=" + rarity + "&type=" + type);
+          //  setSecurityProps();
+            HttpGet get = new HttpGet(contentUrl + "?rarity=" + rarity + "&type=" + type);
 
-             ClassicHttpResponse res = (ClassicHttpResponse) client.execute(get);
-             HttpEntity ent = res.getEntity();
-             String str = EntityUtils.toString(ent, "UTF-8");
+            ClassicHttpResponse res = (ClassicHttpResponse) client.execute(get);
+            HttpEntity ent = res.getEntity();
+            String str = EntityUtils.toString(ent, "UTF-8");
 
-             Gson gson = new Gson();
-             loot = gson.fromJson(str, Loot.class);
+            Gson gson = new Gson();
+            loot = gson.fromJson(str, Loot.class);
        }
        catch (Exception e)
        {
@@ -146,6 +147,8 @@ public class ContentClientServlet extends HttpServlet {
     
     private String sendPostRequest(String body) throws ParseException{
         try{
+           // setSecurityProps();
+
             HttpClient client = HttpClientBuilder.create().build();
             
             HttpPost post = new HttpPost(contentUrl);
@@ -190,6 +193,13 @@ public class ContentClientServlet extends HttpServlet {
         }
         String message = buffer.toString();
         return message;
+    }
+    
+    private void setSecurityProps(){
+        System.setProperty("javax.net.ssl.trustStore", "C:\\Program Files\\Apache Software Foundation\\Apache Tomcat 8.0.27\\dnd.keystore");
+        System.setProperty("javax.net.ssl.trustStorePassword", "G@nda1f");
+        System.setProperty("javax.net.ssl.keyStore", "C:\\Program Files\\Apache Software Foundation\\Apache Tomcat 8.0.27\\dnd.keystore");
+        System.setProperty("javax.net.ssl.keyStorePassword", "G@nda1f");
     }
     
     private void sendJsonResponse(HttpServletResponse response, Loot loot) throws IOException

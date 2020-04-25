@@ -18,8 +18,13 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.hc.client5.http.classic.HttpClient;
 import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
+import org.apache.hc.client5.http.impl.classic.HttpClients;
+import org.apache.hc.client5.http.ssl.NoopHostnameVerifier;
+import org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory;
+import org.apache.hc.client5.http.ssl.TrustSelfSignedStrategy;
 import org.apache.hc.core5.http.ClassicHttpResponse;
 import org.apache.hc.core5.http.HttpEntity;
+import org.apache.hc.core5.ssl.*;
 import org.apache.hc.core5.http.NotImplementedException;
 import org.apache.hc.core5.http.io.entity.EntityUtils;
 import org.apache.hc.core5.http.io.entity.StringEntity;
@@ -29,7 +34,7 @@ import org.apache.hc.core5.http.io.entity.StringEntity;
  * @author ChaseT
  */
 public class DiceClientServlet extends HttpServlet {
-    private static final String diceRollerUrl = "http://localhost:8084/ServiceProject/diceRoller";
+    private static final String diceRollerUrl = "https://localhost:8443/ServiceProject/diceRoller";
 
     public void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -55,8 +60,11 @@ public class DiceClientServlet extends HttpServlet {
         String numberDice = request.getParameter("numDice");
         String diceType = request.getParameter("diceType");
         
+        
         DiceRoll roll = getDiceRoll(numberDice, diceType);
         DiceRoll serviceRoll = sendRequest(request, roll);
+        
+        
         
         sendJsonResponse(response, serviceRoll);
         
@@ -92,7 +100,20 @@ public class DiceClientServlet extends HttpServlet {
     
     private DiceRoll sendRequest(HttpServletRequest request, DiceRoll roll)
     {
-        HttpClient client = HttpClientBuilder.create().build();
+//        try {
+//            SSLConnectionSocketFactory scsf = new SSLConnectionSocketFactory(
+//            SSLContexts.custom().loadTrustMaterial(null, new TrustSelfSignedStrategy()).build(), 
+//            NoopHostnameVerifier.INSTANCE);
+//
+//        
+//        }
+//        catch (Exception e)
+//        {
+//            
+//        }
+     //   setSecurityProps();
+
+        HttpClient client = HttpClients.custom().useSystemProperties().build();
         Gson payload = new Gson();
         DiceRoll serviceRoll = new DiceRoll();
         try {
@@ -116,6 +137,13 @@ public class DiceClientServlet extends HttpServlet {
        }
         
        return serviceRoll;
+    }
+    
+    private void setSecurityProps(){
+        System.setProperty("javax.net.ssl.trustStore", "C:\\Program Files\\Apache Software Foundation\\Apache Tomcat 8.0.27\\dnd.keystore");
+        System.setProperty("javax.net.ssl.trustStorePassword", "G@nda1f");
+        System.setProperty("javax.net.ssl.keyStore", "C:\\Program Files\\Apache Software Foundation\\Apache Tomcat 8.0.27\\dnd.keystore");
+        System.setProperty("javax.net.ssl.keyStorePassword", "G@nda1f");
     }
     
     private void sendJsonResponse(HttpServletResponse response, DiceRoll roll) throws IOException

@@ -5,4 +5,8 @@
     <system systemId="http://localhost:8084/ServiceProject/EncounterWS?xsd=1" uri="wsdl/localhost_8084/ServiceProject/EncounterWS.xsd_1.xsd"/>
     <system systemId="http://localhost:8084/ServiceProject/CharacterWS?wsdl" uri="wsdl/localhost_8084/ServiceProject/CharacterWS.wsdl"/>
     <system systemId="http://localhost:8084/ServiceProject/CharacterWS?xsd=1" uri="wsdl/localhost_8084/ServiceProject/CharacterWS.xsd_1.xsd"/>
+    <system systemId="https://localhost:8443/ServiceProject/CharacterWS?wsdl" uri="wsdl/localhost_8443/ServiceProject/CharacterWS.wsdl"/>
+    <system systemId="https://localhost:8443/ServiceProject/CharacterWS?xsd=1" uri="wsdl/localhost_8443/ServiceProject/CharacterWS.xsd_1.xsd"/>
+    <system systemId="https://localhost:8443/ServiceProject/EncounterWS?wsdl" uri="wsdl/localhost_8443/ServiceProject/EncounterWS.wsdl"/>
+    <system systemId="https://localhost:8443/ServiceProject/EncounterWS?xsd=1" uri="wsdl/localhost_8443/ServiceProject/EncounterWS.xsd_1.xsd"/>
 </catalog>
