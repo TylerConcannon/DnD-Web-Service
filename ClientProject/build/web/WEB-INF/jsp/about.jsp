@@ -121,6 +121,16 @@
       </ul>
     </div>
   </div>
+    <div class="wrapper">
+        <div class="container-fluid text-center">    
+          <div class="row content">
+            <div class="col-sm-8 text-left"> 
+                <h1 class="home-header">Random Character Generator</h1>
+                <hr>
+            </div>
+          </div>
+       </div>
+    </div>
 </nav>
   
 <div class="wrapper">

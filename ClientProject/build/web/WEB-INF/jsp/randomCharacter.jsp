@@ -150,6 +150,10 @@
       }
       .row.content {height:auto;} 
     }
+    
+    textarea.form-control {
+        height: -webkit-fill-available;
+    }
   </style>
 </head>
 <body>
@@ -195,6 +199,14 @@
                  <span class="input-sides-text" id="inputGroup-sizing-default">Class:</span>
                     <select id="classType" class="browser-default custom-select">
                         <option selected>Select Class:</option>
+                        <option value="Barbarian">Barbarian</option>
+                        <option value="Bard">Bard</option>
+                        <option value="Druid">Druid</option>
+                        <option value="Monk">Monk</option>
+                        <option value="Paladin">Paladin</option>
+                        <option value="Ranger">Ranger</option>
+                        <option value="Sorcerer">Sorcerer</option>
+                        <option value="Warlock">Warlock</option>
                         <option value="Cleric">Cleric</option>
                         <option value="Fighter">Fighter</option>
                         <option value="Rogue">Rogue</option>
@@ -217,7 +229,7 @@
              <div class="loot-rarity-selection">
                  <span class="input-sides-text" id="inputGroup-sizing-default">Level:</span>
                     <select id="level" class="browser-default custom-select">
-                        <option selected>Select Race:</option>
+                        <option selected>Select Level:</option>
                         <option value="1">Level 1</option>
                         <option value="2">Level 2</option>
                         <option value="3">Level 3</option>
@@ -270,43 +282,26 @@
 </html>
 
 <script>
-//    function getCharacter()
-//      {
-//          var name = document.getElementById("name").value;
-//          var classType = document.getElementById("classType").value;
-//          var raceType = document.getElementById("raceType").value;
-//          var level = document.getElementById("level").value;
-//          
-//          $.ajax({
-//              type:"GET",
-//              url:"http://localhost:8084/ClientProject/character?name=" + name + "&classType=" + classType + "&raceType=" + raceType + "&level=" + level,
-//              success: function(result){
-//                  
-//                  console.log(result)
-//                  var content
-//                  
-//                  if (result.name === undefined){
-//                      content = "Please fill out all the fields for a random character!"
-//                  }
-//                  else {
-//                    content = "Character Name: ";
-//
-//                    if (result.description != ""){
-//                      content += "Description: ";
-//                    }
-//                    if (result.value != ""){
-//                        content += "Enemy CR: ";
-//                    }
-//                  }
-//
-//                  
-//                  document.getElementById("contentResults").textContent = content;
-//              },
-//              error: function(result){
-//                  document.getElementById("diceResults").textContent = result.toString() + " Failure";
-//              }
-//          })
-//      }
+    function getCharacter()
+      {
+          var name = document.getElementById("name").value;
+          var classType = document.getElementById("classType").value;
+          var raceType = document.getElementById("raceType").value;
+          var level = document.getElementById("level").value;
+          
+          $.ajax({
+              type:"GET",
+              url:"http://localhost:8084/ClientProject/character?name=" + name + "&classType=" + classType + "&raceType=" + raceType + "&level=" + level,
+              success: function(result){
+                  
+                  console.log(result.character)
+                  
+              },
+              error: function(result){
+                  document.getElementById("diceResults").textContent = result.toString() + " Failure";
+              }
+          })
+      }
       
     function createCharacter()
       {
@@ -322,6 +317,7 @@
               "playerLevel": level
           }
           
+          console.log(json)
           
            $.ajax({
               type:"POST",
@@ -331,6 +327,46 @@
               data: JSON.stringify(json),
               success: function(result){
                   console.log(result);
+                  var content
+                  var i
+                  
+                  content = "";
+                  
+                  content += "Character Information \n";
+                  content += "--------------------- \n";
+                  content += "Name: " + result.character.name + "\n";
+                  content += "Level: " + result.character.level  + "\n";
+                  
+                  content += "--------------------- \n";
+                  content += "Class: " + result.character.playerClass.name + "\n";
+                  content += "Hit Dice: " + result.character.playerClass.hitDie + "\n";
+                  content += "Proficiencies: " + result.character.playerClass.proficiencies + "\n";
+                  content += "Saving Throws: " + result.character.playerClass.savingThrows + "\n";
+                  content += "Skills: " + result.character.playerClass.skills + "\n";
+                  
+                  content += "--------------------- \n";
+                  content += "Strength: " + result.character.abilityScores[0] + "\n";
+                  content += "Dexterity: " + result.character.abilityScores[1] + "\n";
+                  content += "Constitution: " + result.character.abilityScores[2] + "\n";
+                  content += "Intelligence: " + result.character.abilityScores[3] + "\n";
+                  content += "Wisdom: " + result.character.abilityScores[4] + "\n";
+                  content += "Charisma: " + result.character.abilityScores[5] + "\n";
+                  
+                  content += "--------------------- \n";
+                  content += "Race: " + result.character.playerRace.name  + "\n";
+                  content += "Age: " + result.character.playerRace.age  + "\n";
+                  content += "Size: " + result.character.playerRace.size  + "\n";
+                  content += "Speed: " + result.character.playerRace.speed  + "\n";
+                  content += "Languages: " + result.character.playerRace.languages  + "\n";
+                  content += "Traits: " + result.character.playerRace.traits  + "\n";
+                  content += "Strength Bonus: +" + result.character.playerRace.str  + "\n";
+                  content += "Dexterity Bonus: +" + result.character.playerRace.dex  + "\n";
+                  content += "Constitution Bonus: +" + result.character.playerRace.con  + "\n";
+                  content += "Intelligence Bonus: +" + result.character.playerRace.inte  + "\n";
+                  content += "Wisdom Bonus: +" + result.character.playerRace.wis  + "\n";
+                  content += "Charisma Bonus: +" + result.character.playerRace.cha  + "\n";
+                  
+                  document.getElementById("contentResults").textContent = content;
               },
               error: function(result){
                   console.log(result);
