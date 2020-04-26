@@ -57,22 +57,14 @@ public class ContentClientServlet extends HttpServlet {
 
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        //processRequest(request, response);
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String rarity = request.getParameter("rarity");
-        String type = request.getParameter("type");
-        
+        String type = request.getParameter("type");    
         Loot loot = sendGetRequest(rarity, type);
         sendJsonResponse(response, loot);
     }
-
-
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        //processRequest(request, response);
-        
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             String body = getBody(request);
             String res = sendPostRequest(body); 
@@ -80,7 +72,7 @@ public class ContentClientServlet extends HttpServlet {
         }  
         catch (Exception e)
         {
-
+            e.printStackTrace();
         }
     }
 
@@ -109,16 +101,7 @@ public class ContentClientServlet extends HttpServlet {
         }
         return content;
         
-//        Loot loot = new Loot(); 
-//        try{
-//            BufferedReader reader = request.getReader();
-//            Gson gson = new Gson();
-//            loot = gson.fromJson(reader, Loot.class);
-//        }
-//        catch (Exception e){
-//            
-//        }
-//        return loot;
+
     }
 
     
@@ -129,33 +112,26 @@ public class ContentClientServlet extends HttpServlet {
         try {
             setSecurityProps();
             HttpGet get = new HttpGet(contentUrl + "?rarity=" + rarity + "&type=" + type);
-
             ClassicHttpResponse res = (ClassicHttpResponse) client.execute(get);
             HttpEntity ent = res.getEntity();
             String str = EntityUtils.toString(ent, "UTF-8");
-
             Gson gson = new Gson();
             loot = gson.fromJson(str, Loot.class);
        }
        catch (Exception e)
        {
            e.printStackTrace();
-       }
-        
+       }    
        return loot;
-    }
-    
+    }   
     private String sendPostRequest(String body) throws ParseException{
         try{
             setSecurityProps();
-
-            HttpClient client = HttpClientBuilder.create().build();
-            
+            HttpClient client = HttpClientBuilder.create().build();  
             HttpPost post = new HttpPost(contentUrl);
             HttpEntity payload = new StringEntity(body);
             post.setHeader("Content-type", "application/json");
             post.setEntity(payload);
-
             ClassicHttpResponse res = (ClassicHttpResponse) client.execute(post);
             return parseResponse(res);
         }
@@ -179,7 +155,6 @@ public class ContentClientServlet extends HttpServlet {
             Logger.getLogger(DiceClientServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
     private String parseResponse(ClassicHttpResponse res) throws IOException{
         HttpEntity ent = res.getEntity();
         InputStream in = ent.getContent();

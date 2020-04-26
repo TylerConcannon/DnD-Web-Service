@@ -60,12 +60,9 @@ public class DiceClientServlet extends HttpServlet {
         String numberDice = request.getParameter("numDice");
         String diceType = request.getParameter("diceType");
         
-        
         DiceRoll roll = getDiceRoll(numberDice, diceType);
         DiceRoll serviceRoll = sendRequest(request, roll);
-        
-        
-        
+       
         sendJsonResponse(response, serviceRoll);
         
     }
@@ -100,17 +97,7 @@ public class DiceClientServlet extends HttpServlet {
     
     private DiceRoll sendRequest(HttpServletRequest request, DiceRoll roll)
     {
-//        try {
-//            SSLConnectionSocketFactory scsf = new SSLConnectionSocketFactory(
-//            SSLContexts.custom().loadTrustMaterial(null, new TrustSelfSignedStrategy()).build(), 
-//            NoopHostnameVerifier.INSTANCE);
-//
-//        
-//        }
-//        catch (Exception e)
-//        {
-//            
-//        }
+
         setSecurityProps();
 
         HttpClient client = HttpClients.custom().useSystemProperties().build();
