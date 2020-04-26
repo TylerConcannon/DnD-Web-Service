@@ -10,7 +10,7 @@
 <project name="ServiceProject" default="default" basedir=".">
 <!--    <description>Builds, tests, and runs the project ServiceProject.</description>
 -->    
-    <target name="-pre-compile" if="do-clean">
+    <target name="-pre-compile">
         <copy file="build/web/WEB-INF/classes/services/content/LootTable.csv" todir="src/java/services/content"></copy>
     </target>
     
